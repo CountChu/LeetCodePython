@@ -1,0 +1,208 @@
+{
+    "problems": [
+        {
+            "id": "0001",
+            "name": "1. Two Sum",
+            "testScript": "t0001.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0001-two-sum.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0001-two-sum-v2.py"
+                }
+            ]
+        },
+        {
+            "id": "0002",
+            "name": "2. Add Two Numbers",
+            "testScript": "t0002.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0002-add-two-numbers.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0002-add-two-numbers-v2.py"
+                }                
+            ]
+        }, 
+        {
+            "id": "0003",
+            "name": "3. Longest Substring Without Repeating Characters",
+            "testScript": "t0003.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0003-longest-substring-without-repeating-characters.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0003-longest-substring-without-repeating-characters-v2.py"
+                },
+                {
+                    "id": "v3",
+                    "program": "p0003-longest-substring-without-repeating-characters-v3.py"
+                }                  
+            ]
+        },       
+        {
+            "id": "0004",
+            "name": "4. Median of Two Sorted Arrays",
+            "testScript": "t0004.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0004-median-of-two-sorted-arrays.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0004-median-of-two-sorted-arrays-v2.py"
+                }
+            ]
+        },   
+        {
+            "id": "0005",
+            "name": "5. Longest Palindromic Substring",
+            "testScript": "t0005.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0005-longest-palindromic-substring.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0005-longest-palindromic-substring-v2.py"
+                }
+            ]
+        },
+        {
+            "id": "0006",
+            "name": "6. ZigZag Conversion",
+            "testScript": "t0006.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0006-zigzag-conversion.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0006-zigzag-conversion-v2.py"
+                }                
+            ]
+        },     
+        {
+            "id": "0007",
+            "name": "7. Reverse Integer",
+            "testScript": "t0007.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0007-reverse-integer.py"
+                }                
+            ],
+            "solutions": [
+                {
+                    "id": "v2",
+                    "program": "p0007-reverse-integer-v2.py"
+                }                
+            ]            
+        },         
+        {
+            "id": "0008",
+            "name": "8. String to Integer (atoi)",
+            "testScript": "t0008.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0008-string-to-integer-atoi.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0008-string-to-integer-atoi-v2.py"
+                }                
+            ]
+        },  
+        {
+            "id": "0009",
+            "name": "9. Palindrome Number    ",
+            "testScript": "t0009.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0009-palindrome-number.py"
+                },               
+                {
+                    "id": "v2",
+                    "program": "p0009-palindrome-number-v2.py"
+                }               
+            ]
+        },         
+        {
+            "id": "0010",
+            "name": "10. regular-expression-matching",
+            "testScript": "t0010.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0010-regular-expression-matching-v1.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0010-regular-expression-matching-v2.py"
+                }
+            ]
+        },
+        {
+            "id": "0011",
+            "name": "11. Container With Most Water",
+            "testScript": "t0011.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0011-container-with-most-water.py"
+                }
+            ]
+        },
+        {
+            "id": "0012",
+            "name": "12. Integer to Roman",
+            "testScript": "t0012.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0012-integer-to-roman.py"
+                }
+            ]
+        },
+        {
+            "id": "0013",
+            "name": "13. Roman to Integer",
+            "testScript": "t0013.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0013-roman-to-integer.py"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0013-roman-to-integer-v2.py"
+                }
+            ]
+        },
+        {
+            "id": "0014",
+            "name": "14. Longest Common Prefix",
+            "testScript": "t0014.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0014-longest-common-prefix.py"
+                }
+            ]
+        }        
+    ]
+}
