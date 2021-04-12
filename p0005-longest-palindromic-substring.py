@@ -50,22 +50,3 @@ class Solution:
                 max_s = s
             
         return max_s        
-        
-def test(sln, s, target):        
-    out = sln.longestPalindrome(s)
-    print(s, out)
-    assert out == target
-        
-sln = Solution()
-'''
-test(sln, 'babad', 'bab')
-test(sln, 'cbbd', 'bb')
-test(sln, 'a', 'a')
-test(sln, 'ac', 'a')
-test(sln, 'babab', 'babab')
-'''
-test(sln, 'abacab', 'bacab')
-
-
-
-    

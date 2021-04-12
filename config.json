@@ -3,206 +3,507 @@
         {
             "id": "0001",
             "name": "1. Two Sum",
+            "level": "easy",
             "testScript": "t0001.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0001-two-sum.py"
+                    "program": "p0001-two-sum.py",
+                    "date": "2021/3/28",
+                    "timeTaken": 5                    
                 },
                 {
                     "id": "v2",
-                    "program": "p0001-two-sum-v2.py"
+                    "program": "p0001-two-sum-v2.py",
+                    "date": "2021/4/10",
+                    "timeTaken": 7
                 }
             ]
         },
         {
             "id": "0002",
             "name": "2. Add Two Numbers",
+            "level": "medium",
             "testScript": "t0002.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0002-add-two-numbers.py"
+                    "program": "p0002-add-two-numbers.py",
+                    "date": "2021/3/28",
+                    "timeTaken": 15
                 },
                 {
                     "id": "v2",
-                    "program": "p0002-add-two-numbers-v2.py"
+                    "program": "p0002-add-two-numbers-v2.py",
+                    "date": "2021/4/10",
+                    "timeTaken": 28
                 }                
             ]
         }, 
         {
             "id": "0003",
             "name": "3. Longest Substring Without Repeating Characters",
+            "level": "medium",
             "testScript": "t0003.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0003-longest-substring-without-repeating-characters.py"
+                    "program": "p0003-longest-substring-without-repeating-characters.py",
+                    "date": "2021/3/28",
+                    "timeTaken": 60
                 },
                 {
                     "id": "v2",
-                    "program": "p0003-longest-substring-without-repeating-characters-v2.py"
+                    "program": "p0003-longest-substring-without-repeating-characters-v2.py",
+                    "date": "2021/4/10", 
+                    "timeTaken": 22,
+                    "bug": "Time Limit Exceeded"
                 },
                 {
                     "id": "v3",
-                    "program": "p0003-longest-substring-without-repeating-characters-v3.py"
+                    "program": "p0003-longest-substring-without-repeating-characters-v3.py",
+                    "date": "2021/4/10",
+                    "timeTaken": 29
                 }                  
             ]
         },       
         {
             "id": "0004",
             "name": "4. Median of Two Sorted Arrays",
+            "level": "hard",
             "testScript": "t0004.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0004-median-of-two-sorted-arrays.py"
+                    "program": "p0004-median-of-two-sorted-arrays.py",
+                    "date": "2021/3/28",
+                    "timeTaken": 17
                 },
                 {
                     "id": "v2",
-                    "program": "p0004-median-of-two-sorted-arrays-v2.py"
+                    "program": "p0004-median-of-two-sorted-arrays-v2.py",
+                    "date": "2021/4/10",
+                    "timeTaken": 12,
+                    "runtime": "104 ms",
+                    "memory": "14.6 MB"
                 }
             ]
         },   
         {
             "id": "0005",
             "name": "5. Longest Palindromic Substring",
+            "level": "medium",
             "testScript": "t0005.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0005-longest-palindromic-substring.py"
+                    "program": "p0005-longest-palindromic-substring.py",
+                    "date": "2021/3/29",
+                    "bug": "Time Limit Exceeded"
                 },
                 {
                     "id": "v2",
-                    "program": "p0005-longest-palindromic-substring-v2.py"
+                    "program": "p0005-longest-palindromic-substring-v2.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 60,
+                    "runtime": "3376 ms",
+                    "memory": "15.8 MB"
                 }
             ]
         },
         {
             "id": "0006",
             "name": "6. ZigZag Conversion",
+            "level": "medium",
             "testScript": "t0006.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0006-zigzag-conversion.py"
+                    "program": "p0006-zigzag-conversion.py",
+                    "date": "2021/3/29",
+                    "runtime": "496 ms",
+                    "memory": "14.4 MB"
                 },
                 {
                     "id": "v2",
-                    "program": "p0006-zigzag-conversion-v2.py"
+                    "program": "p0006-zigzag-conversion-v2.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 22,
+                    "runtime": "100 ms",
+                    "memory": "14.8 MB"
                 }                
             ]
         },     
         {
             "id": "0007",
             "name": "7. Reverse Integer",
+            "level": "easy",            
             "testScript": "t0007.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0007-reverse-integer.py"
-                }                
-            ],
-            "solutions": [
+                    "program": "p0007-reverse-integer.py",
+                    "date": "2021/4/3",
+                    "timeTaken": 9,
+                    "runtime": "32 ms",
+                    "memory": "14.3 MB"
+                },             
                 {
                     "id": "v2",
-                    "program": "p0007-reverse-integer-v2.py"
+                    "program": "p0007-reverse-integer-v2.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 8,
+                    "runtime": "24 ms",
+                    "memory": "14.1 MB"
                 }                
             ]            
         },         
         {
             "id": "0008",
             "name": "8. String to Integer (atoi)",
+            "level": "medium",
             "testScript": "t0008.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0008-string-to-integer-atoi.py"
+                    "program": "p0008-string-to-integer-atoi.py",
+                    "date": "2021/4/3",
+                    "timeTaken": 24,
+                    "runtime": "40 ms",
+                    "memory": "14.3 MB"
                 },
                 {
                     "id": "v2",
-                    "program": "p0008-string-to-integer-atoi-v2.py"
+                    "program": "p0008-string-to-integer-atoi-v2.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 31,
+                    "runtime": "32 ms",
+                    "memory": "14.2 MB"
                 }                
             ]
         },  
         {
             "id": "0009",
-            "name": "9. Palindrome Number    ",
+            "name": "9. Palindrome Number",
+            "level": "easy",
             "testScript": "t0009.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0009-palindrome-number.py"
+                    "program": "p0009-palindrome-number.py",
+                    "date": "2021/4/3",
+                    "timeTaken": 5
                 },               
                 {
                     "id": "v2",
-                    "program": "p0009-palindrome-number-v2.py"
+                    "program": "p0009-palindrome-number-v2.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 6,
+                    "runtime": "72 ms",
+                    "memory": "14.3 MB"
                 }               
             ]
         },         
         {
             "id": "0010",
             "name": "10. regular-expression-matching",
+            "level": "hard",            
             "testScript": "t0010.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0010-regular-expression-matching-v1.py"
+                    "program": "p0010-regular-expression-matching-v1.py",
+                    "date": "2021/4/10",
+                    "timeTaken": 60
                 },
                 {
                     "id": "v2",
-                    "program": "p0010-regular-expression-matching-v2.py"
+                    "program": "p0010-regular-expression-matching-v2.py",
+                    "date": "2021/4/10",
+                    "timeTaken": 60
                 }
             ]
         },
         {
             "id": "0011",
             "name": "11. Container With Most Water",
+            "level": "medium",            
             "testScript": "t0011.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0011-container-with-most-water.py"
+                    "program": "p0011-container-with-most-water.py",
+                    "date": "2021/4/3",
+                    "timeTaken": 25
                 }
             ]
         },
         {
             "id": "0012",
             "name": "12. Integer to Roman",
+            "level": "medium",                        
             "testScript": "t0012.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0012-integer-to-roman.py"
+                    "program": "p0012-integer-to-roman.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 19,
+                    "runtime": "48 ms",
+                    "memory": "14.5 MB"
                 }
             ]
         },
         {
             "id": "0013",
             "name": "13. Roman to Integer",
+            "level": "easy",                        
             "testScript": "t0013.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0013-roman-to-integer.py"
+                    "program": "p0013-roman-to-integer.py",
+                    "date": "2021/3/23",
+                    "runtime": "64 ms",
+                    "memory": "14.3 MB"
                 },
                 {
                     "id": "v2",
-                    "program": "p0013-roman-to-integer-v2.py"
+                    "program": "p0013-roman-to-integer-v2.py",
+                    "date": "2021/4/11",
+                    "timeTaken": 7,
+                    "runtime": "44 ms",
+                    "memory": "14.3 MB"
                 }
             ]
         },
         {
             "id": "0014",
             "name": "14. Longest Common Prefix",
+            "level": "easy",                        
             "testScript": "t0014.py",
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0014-longest-common-prefix.py"
+                    "program": "p0014-longest-common-prefix.py",
+                    "date": "2021/3/24"
                 }
             ]
-        }        
+        },      
+        {
+            "id": "0020",
+            "name": "20. Valid Parentheses",
+            "level": "easy",                        
+            "testScript": "t0020.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0020-valid-parentheses.py",
+                    "date": "2021/3/24"
+                }
+            ]
+        },        
+        {
+            "id": "0021",
+            "name": "21. Merge Two Sorted Lists",
+            "level": "easy",                        
+            "testScript": "t0021.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0021-merge-two-sorted-lists.py",
+                    "date": "2021/3/24"
+                }
+            ]
+        },
+        {
+            "id": "0026",
+            "name": "26. Remove Duplicates from Sorted Array",
+            "level": "easy",                        
+            "testScript": "t0026.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0026-remove-duplicates-from-sorted-array.py",
+                    "date": "2021/3/24"
+                }
+            ]
+        },     
+        {
+            "id": "0027",
+            "name": "27. Remove Element",
+            "level": "easy",                        
+            "testScript": "t0027.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0027-remove-element.py",
+                    "date": "2021/3/24"
+                }
+            ]
+        },
+        {
+            "id": "0028",
+            "name": "28. Implement strStr()",
+            "level": "easy",                        
+            "testScript": "t0028.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0028-Implement strStr().py",
+                    "date": "2021/3/25"
+                }
+            ]
+        },
+        {
+            "id": "0035",
+            "name": "35. Search Insert Position",
+            "level": "easy",                        
+            "testScript": "t0035.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0035-search-insert-position.py",
+                    "date": "2021/3/25"
+                }
+            ]
+        },       
+        {
+            "id": "0053",
+            "name": "53. Maximum Subarray",
+            "level": "easy",                        
+            "testScript": "t0053.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0053-maximum-subarray.py",
+                    "date": "2021/3/23",
+                    "bug": "Time Limit Exceeded"
+                }
+            ]
+        },
+        {
+            "id": "0058",
+            "name": "58. Length of Last Word",
+            "level": "easy",                        
+            "testScript": "t0058.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0058-length-of-last-word.py",
+                    "date": "2021/3/25"
+                }
+            ]
+        },         
+        {
+            "id": "0066",
+            "name": "66. Plus One",
+            "level": "easy",                        
+            "testScript": "t0066.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0066-plus-one.py",
+                    "date": "2021/3/25"
+                }
+            ]
+        },
+        {
+            "id": "0067",
+            "name": "67. Add Binary",
+            "level": "easy",                        
+            "testScript": "t0067.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0067-add-binary.py",
+                    "date": "2021/3/25"
+                }
+            ]
+        },  
+        {
+            "id": "0069",
+            "name": "69. Sqrt(x) ",
+            "level": "easy",                        
+            "testScript": "t0069.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0069-sqrtx.py",
+                    "date": "2021/3/26"
+                }
+            ]
+        },
+        {
+            "id": "0070",
+            "name": "70. Climbing Stairs",
+            "level": "easy",                        
+            "testScript": "t0070.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0070-climbing-stairs.py",
+                    "date": "2021/3/27",
+                    "bug": "Time Limit Exceeded"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0070-climbing-stairs-v2.py",
+                    "date": "2021/3/27"
+                }                
+            ]
+        },    
+        {
+            "id": "0083",
+            "name": "83. Remove Duplicates from Sorted List",
+            "level": "easy",
+            "testScript": "t0083.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0083-remove-duplicates-from-sorted-list.py",
+                    "date": "2021/3/27"
+                }
+            ]
+        },     
+        {
+            "id": "0088",
+            "name": "88. Merge Sorted Array",
+            "level": "easy",
+            "testScript": "t0088.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0088-merge-sorted-array.py",
+                    "date": "2021/3/27"
+                }
+            ]
+        },   
+        {
+            "id": "0100",
+            "name": "100. Same Tree",
+            "level": "easy",
+            "testScript": "t0100.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0100-same-tree.py",
+                    "date": "2021/3/27"
+                }
+            ]
+        },
+        {
+            "id": "0101",
+            "name": "101. Symmetric Tree",
+            "level": "easy",
+            "testScript": "t0101.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0101-symmetric-tree.py",
+                    "date": "2021/3/27"
+                }
+            ]
+        }                            
     ]
 }

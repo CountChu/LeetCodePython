@@ -36,8 +36,6 @@ class Solution:
             if n2 != None:
                 v2 = n2.val
                 n2 = n2.next
-
-
                 
             v3 = v1 + v2 + c
             c = 0

@@ -7,7 +7,7 @@ from typing import List
 import pdb
 
 #
-# 4/10: 12 mins, Runtime: 104 ms, Memory 14.6MB
+# 4/10: 12 mins, Runtime: 104 ms, Memory 14.6 MB
 #
 
 class Solution:

@@ -9,7 +9,7 @@ from typing import List
 import pdb
 
 #
-# 2021/3/28: 15:44 - 15:49  (5 mins)
+# 2021/3/28: 5 mins
 #
 
 class Solution:
