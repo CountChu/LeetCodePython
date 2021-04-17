@@ -7,5 +7,5 @@ def test(sln, strs, target):
 def run(sln):
     test(sln, ["ab", "a"], "a")
     test(sln, ["", "b"], "")
-    test(sln, ["flower","flow","flight"], "fl")
-    test(sln, ["dog","racecar","car"], "")
+    test(sln, ["flower", "flow", "flight"], "fl")
+    test(sln, ["dog", "racecar", "car"], "")

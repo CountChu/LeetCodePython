@@ -40,6 +40,24 @@ def main():
     #
 
     bn = problem['testScript']
+    if not os.path.exists(bn):
+        print('The testScript does not exist.')
+        print(bn)
+        answer = input('Do you want to create it? [y/Y]')
+        if answer in ['y', 'Y']:
+            f = open(bn, 'w')
+            f.write('import pdb\n')
+            f.write('\n')
+            f.write('def test(sln, nums, answer):\n')
+            f.write('    print(\'nums = %s, answer = %d\' % (nums, answer))\n')
+            f.write('    out = sln.func(nums)\n')
+            f.write('    assert out == answer, out\n')
+            f.write('\n')
+            f.write('def run(sln):\n')
+            f.write('    test(sln, [1, 2, 3], 3)\n')
+            f.close()
+            print('Build ', bn)
+
     test_module_name, ext = os.path.splitext(bn)    
     test_module = importlib.import_module(test_module_name)
         
@@ -119,6 +137,21 @@ The app is to test a problem of LeCoo by solutions.
 def solve_it(test_module, solution):
     
     bn = solution['program']
+    if not os.path.exists(bn):
+        print('The program does not exist.')
+        print(bn)
+        answer = input('Do you want to create it? [y/Y]')
+        if answer in ['y', 'Y']:
+            f = open(bn, 'w')
+            f.write('from typing import List\n')
+            f.write('import pdb\n')
+            f.write('\n')
+            f.write('class Solution:\n')
+            f.write('    def func(self, nums):\n')
+            f.write('        pdb.set_trace()\n')
+            f.close()
+            print('Build ', bn)
+
     sln_module_name, ext = os.path.splitext(bn)    
     sln_module = importlib.import_module(sln_module_name)
     sln = sln_module.Solution()

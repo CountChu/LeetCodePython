@@ -10,14 +10,34 @@
                     "id": "v1",
                     "program": "p0001-two-sum.py",
                     "date": "2021/3/28",
-                    "timeTaken": 5                    
+                    "timeTaken": 5,
+                    "runtime": "56 ms",
+                    "memory": "14.6 MB"                    
                 },
                 {
                     "id": "v2",
                     "program": "p0001-two-sum-v2.py",
                     "date": "2021/4/10",
-                    "timeTaken": 7
-                }
+                    "timeTaken": 7,
+                    "runtime": "48 ms",
+                    "memory": "14.5 MB"
+                },
+                {
+                    "id": "v3",
+                    "program": "p0001-two-sum-v3.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 150,
+                    "runtime": "86 ms",
+                    "memory": "16.2 MB"
+                },    
+                {
+                    "id": "v4",
+                    "program": "p0001-two-sum-v4.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 7,
+                    "runtime": "48 ms",
+                    "memory": "14.4 MB"
+                }                            
             ]
         },
         {
@@ -287,9 +307,116 @@
                     "id": "v1",
                     "program": "p0014-longest-common-prefix.py",
                     "date": "2021/3/24"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0014-longest-common-prefix-v2.py",
+                    "date": "2021/4/13",
+                    "timeTaken": 23,
+                    "runtime": "36 ms",
+                    "memory": "14.5 MB"                    
+                }                
+            ]
+        },     
+        {
+            "id": "0015",
+            "name": "15. 3Sum",
+            "level": "medium",                        
+            "testScript": "t0015.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0015-3sum.py",
+                    "date": "2021/4/13",
+                    "timeTaken": 26,
+                    "bug": "Time Limit Exceeded"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0015-3sum-v2.py",
+                    "date": "2021/4/17",
+                    "tiemTaken": 22,
+                    "runtime": "6812 ms",
+                    "memory": "18 MB"
+                },
+                {
+                    "id": "v3",
+                    "program": "p0015-3sum-v3.py",
+                    "date": "2021/4/17",
+                    "runtime": "3844 ms",
+                    "memory": "19.7 MB"
+                },
+                {
+                    "id": "v4",
+                    "program": "p0015-3sum-v4.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 64,
+                    "runtime": "9296 ms",
+                    "memory": "603.2 MB"
+                },
+                {
+                    "id": "s1",
+                    "program": "p0015-3sum-s1.py",
+                    "date": "2021/4/17"
+                },
+                {
+                    "id": "v5",
+                    "program": "p0015-3sum-v5.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 46,
+                    "runtime": "1060 ms",
+                    "memory": "17.8 MB"
+                }                                        
+            ]
+        },
+        {
+            "id": "0016",
+            "name": "16. 3Sum Closest",
+            "level": "medium",                        
+            "testScript": "t0016.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0016-3sum-closest.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 11,
+                    "runtime": "4432 ms",
+                    "memory": "14.4 MB"                
                 }
             ]
-        },      
+        },     
+        {
+            "id": "0017",
+            "name": "17. Letter Combinations of a Phone Number",
+            "level": "medium",                        
+            "testScript": "t0017.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0017-letter-combinations-of-a-phone-number.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 15,
+                    "runtime": "40 ms",
+                    "memory": "15.5 MB"          
+                }
+            ]
+        },          
+        {
+            "id": "0018",
+            "name": "18. 4Sum",
+            "level": "medium",                        
+            "testScript": "t0018.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0018-4sum.py",
+                    "date": "2021/4/17",
+                    "timeTaken": 27,
+                    "runtime": "1704 ms",
+                    "memory": "15.7 MB"           
+                }
+            ]
+        },                  
         {
             "id": "0020",
             "name": "20. Valid Parentheses",
