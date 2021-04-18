@@ -335,7 +335,7 @@
                     "id": "v2",
                     "program": "p0015-3sum-v2.py",
                     "date": "2021/4/17",
-                    "tiemTaken": 22,
+                    "timeTaken": 22,
                     "runtime": "6812 ms",
                     "memory": "18 MB"
                 },
@@ -416,7 +416,23 @@
                     "memory": "15.7 MB"           
                 }
             ]
-        },                  
+        },          
+        {
+            "id": "0019",
+            "name": "19. Remove Nth Node From End of List",
+            "level": "medium",                        
+            "testScript": "t0019.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0019-remove-nth-node-from-end-of-list.py",
+                    "date": "2021/4/18",
+                    "timeTaken": 31,
+                    "runtime": "32 ms",
+                    "memory": "14.2 MB"      
+                }
+            ]
+        },                 
         {
             "id": "0020",
             "name": "20. Valid Parentheses",
@@ -439,10 +455,36 @@
                 {
                     "id": "v1",
                     "program": "p0021-merge-two-sorted-lists.py",
-                    "date": "2021/3/24"
-                }
+                    "date": "2021/3/24",
+                    "runtime": "40 ms",
+                    "memory": "14.4 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0021-merge-two-sorted-lists-v2.py",
+                    "date": "2021/4/18",
+                    "timeTaken": 12,
+                    "runtime": "52 ms",
+                    "memory": "15.8 MB"
+                }                
             ]
         },
+        {
+            "id": "0024",
+            "name": "24. Swap Nodes in Pairs",
+            "level": "medium",                        
+            "testScript": "t0024.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0024-swap-nodes-in-pairs.py",
+                    "date": "2021/4/18",
+                    "timeTaken": 25,
+                    "runtime": "64 ms",
+                    "memory": "15.5 MB"
+                }                
+            ]
+        },        
         {
             "id": "0026",
             "name": "26. Remove Duplicates from Sorted Array",
@@ -521,7 +563,23 @@
                     "date": "2021/3/25"
                 }
             ]
-        },         
+        },    
+        {
+            "id": "0061",
+            "name": "61. Rotate List",
+            "level": "medium",                        
+            "testScript": "t0061.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0061-rotate-list.py",
+                    "date": "2021/4/18",
+                    "timeTaken": 34,
+                    "runtime": "44 ms",
+                    "memory": "15.6 MB"
+                }
+            ]
+        },              
         {
             "id": "0066",
             "name": "66. Plus One",
@@ -580,6 +638,22 @@
                 }                
             ]
         },    
+        {
+            "id": "0082",
+            "name": "82. Remove Duplicates from Sorted List II",
+            "level": "medium",
+            "testScript": "t0082.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0082-remove-duplicates-from-sorted-list-ii.py",
+                    "date": "2021/4/18",
+                    "timeTaken": 17,
+                    "runtime": "44 ms",
+                    "memory": "15.8 MB"
+                }
+            ]
+        },          
         {
             "id": "0083",
             "name": "83. Remove Duplicates from Sorted List",

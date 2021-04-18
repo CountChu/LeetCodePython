@@ -1,0 +1,6 @@
+Problems: 38
+Solved Problem: 37
+TIme taken:
+    easy   : count =   6, mean =  10 mins, max =  23 mins
+    medium : count =  15, mean =  28 mins, max =  60 mins
+    hard   : count =   2, mean =  36 mins, max =  60 mins

@@ -96,6 +96,7 @@ def main():
 
     print('TIme taken:')
     for level, timeTaken_ls in level_timeTaken_d.items():
+        #print(timeTaken_ls)
         max_tt = max(timeTaken_ls)
         mean = statistics.mean(timeTaken_ls)
         count = len(timeTaken_ls)

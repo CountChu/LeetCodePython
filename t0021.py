@@ -1,11 +1,14 @@
-def test(sln, list1, list2, target):
-    link1 = sln.list_to_link(list1)
-    link2 = sln.list_to_link(list2)
+import pdb
+
+def test(sln, ls1, ls2, answer):
+    print('ls1 = %s, ls2 = %s, answer = %s' % (ls1, ls2, answer))
+
+    head1 = sln.list_to_ll(ls1)
+    head2 = sln.list_to_ll(ls2)
     
-    out_link = sln.mergeTwoLists(link1, link2)
-    out = out_link = sln.link_to_list(out_link)
-    print('list1 = %s, list2 = %s, out = %s' % (list1, list2, out))
-    assert out == target
+    out = sln.mergeTwoLists(head1, head2)
+    out_ls = sln.ll_to_list(out)
+    assert out_ls == answer
 
 def run(sln):
     test(sln, [1, 2, 4], [1, 3, 4], [1, 1, 2, 3, 4, 4])

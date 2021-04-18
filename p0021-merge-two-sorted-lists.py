@@ -50,7 +50,7 @@ class Solution:
 
         return first_n3
         
-    def list_to_link(self, list):
+    def list_to_ll(self, list):
         pre_node = None
         first_node = None
         for i in range(len(list)):
@@ -72,7 +72,7 @@ class Solution:
                 break
         print(line)    
 
-    def link_to_list(self, link):
+    def ll_to_list(self, link):
         node = link
         list = []
         while True:    
