@@ -32,9 +32,4 @@ class Solution:
                     max_row = row    
         for row in table:
             print(row)      
-        return max_sum        
-
-s = Solution()
-nums =  [-2, 1, -3, 4, -1, 2, 1, -5, 4]
-sum = s.maxSubArray(nums)    
-print(sum)
+        return max_sum

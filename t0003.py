@@ -17,4 +17,5 @@ def run(sln):
     test(sln, 'au', 2)
     test(sln, 'dvdf', 3)
     test(sln, 'nfpdmpi', 5)
+    test(sln, 'ohvhjdml', 6)
 

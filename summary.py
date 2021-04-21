@@ -58,12 +58,18 @@ def main():
             last_sln = problem['solutions'][-1]
             if 'bug' in last_sln:
                 solved = False
+            if 'timeTaken' not in last_sln:
+                solved = False
         problem['solved'] = solved
         
+    unsolved_pbl_ls = []
     solved_count = 0    
     for problem in config['problems']:
         if problem['solved']:
             solved_count += 1
+        else:
+            unsolved_pbl_ls.append(problem)
+
     print('Solved Problem: %d' % solved_count)
 
     #
@@ -89,18 +95,31 @@ def main():
             if args.detail:
                 print('%s:' % name)
                 print('    level = %6s, timeTaken = %d' % (level, timeTaken))    
+    print('')
 
     #
     # Report level_timeTaken_d
     #
 
-    print('TIme taken:')
+    print('Time taken:')
     for level, timeTaken_ls in level_timeTaken_d.items():
         #print(timeTaken_ls)
         max_tt = max(timeTaken_ls)
         mean = statistics.mean(timeTaken_ls)
         count = len(timeTaken_ls)
         print('    %-7s: count = %3d, mean = %3d mins, max = %3d mins' % (level, count, mean, max_tt))
+    print('')
+
+    #
+    # Report unsolved_pbl_ls
+    #
+
+    print('Unsolved problems: (%d)' % len(unsolved_pbl_ls))
+    for problem in unsolved_pbl_ls:
+        id = problem['id']
+        level = problem['level']
+        name = problem['name']
+        print('%4s, %7s: %s' % (id, level, name))
 
     #pdb.set_trace()
                         
