@@ -23,4 +23,3 @@ class Solution:
             #print(line)
 
         return -1
-w

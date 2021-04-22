@@ -1,7 +1,7 @@
-def test(sln, haystack, needle, target):
+def test(sln, haystack, needle, answer):
+    print('haystack = %s, needle = %s, answer = %d' % (haystack, needle, answer))
     out = sln.strStr(haystack, needle)
-    print('haystack = %s, needle = %s, out = %d' % (haystack, needle, out))
-    assert out == target
+    assert out == answer, out
     
 def run(sln):
     test(sln, "hello", "ll", 2)

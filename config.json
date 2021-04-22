@@ -532,8 +532,18 @@
                 {
                     "id": "v1",
                     "program": "p0026-remove-duplicates-from-sorted-array.py",
-                    "date": "2021/3/24"
-                }
+                    "date": "2021/3/24",
+                    "runtime": "108 ms",
+                    "memory": "16 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0026-remove-duplicates-from-sorted-array-v2.py",
+                    "date": "2021/4/22",
+                    "timeTaken": 13,
+                    "runtime": "8720 ms",
+                    "memory": "17.1 MB"
+                }                
             ]
         },     
         {
@@ -545,8 +555,18 @@
                 {
                     "id": "v1",
                     "program": "p0027-remove-element.py",
-                    "date": "2021/3/24"
-                }
+                    "date": "2021/3/24",
+                    "runtime": "36 ms",
+                    "memory": "14.1 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0027-remove-element-v2.py",
+                    "date": "2021/4/22",
+                    "timeTaken": 11,
+                    "runtime": "36 ms",
+                    "memory": "14.3 MB"
+                }                
             ]
         },
         {
@@ -558,8 +578,17 @@
                 {
                     "id": "v1",
                     "program": "p0028-Implement strStr().py",
-                    "date": "2021/3/25"
-                }
+                    "date": "2021/3/25",
+                    "runtime": "76 ms",
+                    "memory": "14.7 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0028-Implement strStr()-v2.py",
+                    "date": "2021/4/22",
+                    "timeTaken": 7,
+                    "bug": "Time Limit Exceeded"
+                }                
             ]
         },
         {

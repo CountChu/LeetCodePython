@@ -10,5 +10,5 @@ For example:
 python test.py 0001 -s v1
 `
 
-The command test your solution of the problem 0001 with the solution version v1.
+The command tests your solution of the problem 0001 with the solution version v1.
 

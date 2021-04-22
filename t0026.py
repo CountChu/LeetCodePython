@@ -1,9 +1,9 @@
-def test(sln, nums, target_nums, target_count):
+def test(sln, nums, answer_nums, answer_count):
+    print('nums = %s, answer_nums = %s, answer_count = %d' % (nums, answer_nums, answer_count))	
     new_nums = nums.copy()
     count = sln.removeDuplicates(new_nums)
-    print('nums = %s, new_nums = %s, count = %d' % (nums, new_nums, count))
-    assert count == target_count
-    assert new_nums[:count] == target_nums
+    assert count == answer_count, count
+    assert new_nums[:count] == answer_nums
         
 def run(sln):
     test(sln, [1, 1, 2], [1, 2], 2)

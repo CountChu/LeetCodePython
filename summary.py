@@ -4,6 +4,7 @@ import importlib
 import statistics
 import os
 import pdb
+import datetime
 
 def main():
 
@@ -20,6 +21,12 @@ def main():
     f = open('config.json')
     config = json.load(f)
     f.close()
+
+    #
+    # Get date_str. e.g., '2021/4/22' 
+    #
+
+    date_str = datetime.date.today().strftime('%Y/%-m/%d')
 
     #
     # Check config syntex.
@@ -111,6 +118,50 @@ def main():
     print('')
 
     #
+    # Build progress_d.
+    #
+
+    progress_d = {}  # progress_d[id] = {'problem', 'solutions'}
+    for problem in config['problems']:
+        id = problem['id']
+        for sln in problem['solutions']:
+            if sln['date'] == date_str:
+                if id not in progress_d:
+                    progress_d[id] = {
+                        'problem': problem,
+                        'solutions': [] 
+                        }
+                progress_d[id]['solutions'].append(sln)
+
+    #
+    # Report progress.
+    #
+
+    #pdb.set_trace()
+    print('Progress on %s:' % date_str)
+    for id in progress_d:
+        problem = progress_d[id]['problem']
+        id = problem['id']
+        level = problem['level']
+        name = problem['name']        
+        print('    %4s, %7s: %s' % (id, level, name))
+        solutions = progress_d[id]['solutions']
+        for sln in solutions:
+            line = '                   %s: ' % sln['id']
+            if 'timeTaken' in sln:
+                line += '%d mins, ' % sln['timeTaken']
+            if 'runtime' in sln:
+                line += 'runtime: %s, ' % sln['runtime']
+            if 'memory' in sln:
+                line += 'memory: %s, ' % sln['memory']
+            if 'bug' in sln:
+                line += 'bug: %s, ' % sln['bug']
+            print(line)
+            print('')
+    print('')        
+
+
+    #
     # Report unsolved_pbl_ls
     #
 
@@ -119,7 +170,8 @@ def main():
         id = problem['id']
         level = problem['level']
         name = problem['name']
-        print('%4s, %7s: %s' % (id, level, name))
+        print('    %4s, %7s: %s' % (id, level, name))
+    print('')
 
     #pdb.set_trace()
                         

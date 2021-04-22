@@ -1,9 +1,9 @@
-def test(sln, nums, val, target_nums, target_val):
+def test(sln, nums, val, answer_nums, answer_val):
+    print('nums = %s, val = %d, answer_nums = %s, answer_val = %d' % (nums, val, answer_nums, answer_val))	
     new_nums = nums.copy()
     new_val = sln.removeElement(new_nums, val)
-    print('nums = %s, val = %d, new_nums = %s, new_val = %d' % (nums, val, new_nums, new_val))
-    assert new_val == target_val
-    assert new_nums[:new_val] == target_nums
+    assert new_val == answer_val, new_val
+    assert new_nums[:new_val] == answer_nums, new_nums[:new_val]
         
 def run(sln):
     test(sln, [3,2,2,3], 3, [2,2], 2)
