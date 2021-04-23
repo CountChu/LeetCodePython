@@ -4,6 +4,8 @@ import importlib
 import os
 import pdb
 
+import util
+
 def main():
 
     #
@@ -13,12 +15,10 @@ def main():
     args = build_args()
     
     #
-    # Read config.
+    # Merge configs into a config
     #
-    
-    f = open('config.json')
-    config = json.load(f)
-    f.close()
+
+    config = util.collect_config()
     
     #
     # Find problem in the config.
@@ -58,10 +58,9 @@ def main():
             f.close()
             print('Build ', bn)
 
-    test_module_name, ext = os.path.splitext(bn)    
+    test_module_name = get_module_name(bn) 
     test_module = importlib.import_module(test_module_name)
-        
-        
+                
     count = 0    
     for solution in problem['solutions']:
         if args.solution != None:
@@ -152,10 +151,16 @@ def solve_it(test_module, solution):
             f.close()
             print('Build ', bn)
 
-    sln_module_name, ext = os.path.splitext(bn)    
+    sln_module_name = get_module_name(bn)
     sln_module = importlib.import_module(sln_module_name)
     sln = sln_module.Solution()
     test_module.run(sln)
+
+def get_module_name(bn):
+    mn, ext = os.path.splitext(bn) 
+    mn = mn.replace('\\', '.')
+    mn = mn.replace('/', '.') 
+    return mn
 
 if __name__ == '__main__':
     main()

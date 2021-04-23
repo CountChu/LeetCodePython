@@ -1,4 +1,8 @@
 {
+    "dirs": {
+        "programDn": "solutions",
+        "testDn": "tests" 
+    },
     "problems": [
         {
             "id": "0001",

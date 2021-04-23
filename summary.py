@@ -1,10 +1,10 @@
 import json
 import argparse
-import importlib
 import statistics
-import os
-import pdb
 import datetime
+import pdb
+
+import util
 
 def main():
 
@@ -13,14 +13,12 @@ def main():
     #
 
     args = build_args()
-    
+
     #
-    # Read config.
+    # Merge configs into a config
     #
-    
-    f = open('config.json')
-    config = json.load(f)
-    f.close()
+
+    config = util.collect_config()
 
     #
     # Get date_str. e.g., '2021/4/22' 
