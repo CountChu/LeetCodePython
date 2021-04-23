@@ -1,7 +1,7 @@
-def test(sln, nums, target, target_out):
+def test(sln, nums, target, answer):
+    print('nums = %s, target = %d, answer = %d' % (nums, target, answer))
     out = sln.searchInsert(nums, target)
-    print('nums = %s, target = %d, out = %d' % (nums, target, out))
-    assert out == target_out
+    assert out == answer, out
         
 def run(sln):
     test(sln, [1, 3, 5, 6], 5, 2)

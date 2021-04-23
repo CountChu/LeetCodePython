@@ -26,7 +26,10 @@ def main():
     # Get date_str. e.g., '2021/4/22' 
     #
 
-    date_str = datetime.date.today().strftime('%Y/%-m/%d')
+    if args.date == None:
+        date_str = datetime.date.today().strftime('%Y/%-m/%d')
+    else:
+        date_str = args.date
 
     #
     # Check config syntex.
@@ -125,13 +128,14 @@ def main():
     for problem in config['problems']:
         id = problem['id']
         for sln in problem['solutions']:
-            if sln['date'] == date_str:
-                if id not in progress_d:
-                    progress_d[id] = {
-                        'problem': problem,
-                        'solutions': [] 
-                        }
-                progress_d[id]['solutions'].append(sln)
+            if 'date' in sln:
+                if sln['date'] == date_str:
+                    if id not in progress_d:
+                        progress_d[id] = {
+                            'problem': problem,
+                            'solutions': [] 
+                            }
+                    progress_d[id]['solutions'].append(sln)
 
     #
     # Report progress.
@@ -229,7 +233,12 @@ The app is to test a problem of LeCoo by solutions.
             '-d',
             dest='detail',
             action='store_true',
-            help='Detail.')             
+            help='Detail.')        
+
+    parser.add_argument(
+            '--date',
+            dest='date',
+            help='Date')     
 
     return parser.parse_args()
 

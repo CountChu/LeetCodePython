@@ -506,7 +506,19 @@
                     "memory": "15.9 MB"
                 }                
             ]
-        },        
+        }, 
+        {
+            "id": "0023",
+            "name": "23. Merge k Sorted Lists",
+            "level": "hard",                        
+            "testScript": "t0023.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0023-merge-k-sorted-lists.py"
+                }
+            ]    
+        },               
         {
             "id": "0024",
             "name": "24. Swap Nodes in Pairs",
@@ -522,7 +534,19 @@
                     "memory": "15.5 MB"
                 }                
             ]
-        },        
+        },     
+        {
+            "id": "0025",
+            "name": "25. Reverse Nodes in k-Group",
+            "level": "hard",                        
+            "testScript": "t0025.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0025-reverse-nodes-in-k-group.py"
+                }
+            ]    
+        },            
         {
             "id": "0026",
             "name": "26. Remove Duplicates from Sorted Array",
@@ -588,9 +612,97 @@
                     "date": "2021/4/22",
                     "timeTaken": 7,
                     "bug": "Time Limit Exceeded"
-                }                
+                },
+                {
+                    "id": "sln1",
+                    "program": "p0028-Implement strStr()-sln1.py",
+                    "date": "2021/4/23"
+                },         
+                {
+                    "id": "v3",
+                    "program": "p0028-Implement strStr()-v3.py",
+                    "date": "2021/4/23",
+                    "timeTaken": 8,
+                    "runtime": "52 ms",
+                    "memory": "15.9 MB"
+                }                                       
             ]
         },
+        {
+            "id": "0029",
+            "name": "29. Divide Two Integers",
+            "level": "medium",                        
+            "testScript": "t0029.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0029-divide-two-integers.py",
+                    "date": "2021/4/23",
+                    "timeTaken": 8,
+                    "bug": "Time Limit Exceeded"
+                }
+            ]    
+        },    
+        {
+            "id": "0030",
+            "name": "30. Substring with Concatenation of All Words",
+            "level": "hard",                        
+            "testScript": "t0030.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0030.py"
+                }
+            ]    
+        },    
+        {
+            "id": "0031",
+            "name": " 31 Next Permutation",
+            "level": "medium",                        
+            "testScript": "t0031.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0032.py"
+                }
+            ]    
+        }, 
+        {
+            "id": "0032",
+            "name": "32 Longest Valid Parentheses",
+            "level": "hard",                        
+            "testScript": "t0032.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0032.py"
+                }
+            ]    
+        }, 
+        {
+            "id": "0033",
+            "name": "33 Search in Rotated Sorted Array",
+            "level": "medium",                        
+            "testScript": "t0033.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0033py"
+                }
+            ]    
+        }, 
+        {
+            "id": "0034",
+            "name": "34 Find First and Last Position of Element in Sorted Array",
+            "level": "medium",                        
+            "testScript": "t0034.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0034.py"
+                }
+            ]    
+        },                                                 
         {
             "id": "0035",
             "name": "35. Search Insert Position",
@@ -600,8 +712,18 @@
                 {
                     "id": "v1",
                     "program": "p0035-search-insert-position.py",
-                    "date": "2021/3/25"
-                }
+                    "date": "2021/3/25",
+                    "runtime": "52 ms",
+                    "memory": "14.9 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0035-search-insert-position-v2.py",
+                    "date": "2021/4/23",
+                    "timeTaken": 5,
+                    "runtime": "52 ms",
+                    "memory": "15.1 MB"                    
+                }                
             ]
         },       
         {
@@ -647,8 +769,18 @@
                 {
                     "id": "v1",
                     "program": "p0058-length-of-last-word.py",
-                    "date": "2021/3/25"
-                }
+                    "date": "2021/3/25",
+                    "runtime": "64 ms",
+                    "memory": "14.4 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0058-length-of-last-word-v2.py",
+                    "date": "2021/4/23",
+                    "timeTaken": 10,
+                    "runtime": "32 ms",
+                    "memory": "14.3 MB"      
+                }                
             ]
         },    
         {
@@ -676,8 +808,18 @@
                 {
                     "id": "v1",
                     "program": "p0066-plus-one.py",
-                    "date": "2021/3/25"
-                }
+                    "date": "2021/3/25",
+                    "runtime": "32 ms",
+                    "memory": "14.3 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0066-plus-one-v2.py",
+                    "date": "2021/4/23",
+                    "timeTaken": 7,
+                    "runtime": "40 ms",
+                    "memory": "15.7 MB"                    
+                }                
             ]
         },
         {

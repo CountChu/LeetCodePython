@@ -1,7 +1,7 @@
-def test(sln, digits, target):
+def test(sln, digits, answer):
+    print('digits = %s, out = %s' % (digits, answer))	
     out = sln.plusOne(digits)
-    print('digits = %s, out = %s' % (digits, out))
-    assert out == target
+    assert out == answer, out
     
 def run(sln):    
     test(sln, [1, 2, 3], [1, 2, 4])

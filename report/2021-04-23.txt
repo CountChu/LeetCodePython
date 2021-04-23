@@ -1,0 +1,46 @@
+Problems: 49
+Solved Problem: 32
+
+Time taken:
+    easy   : count =  14, mean =   9 mins, max =  23 mins
+    medium : count =  16, mean =  27 mins, max =  60 mins
+    hard   : count =   2, mean =  36 mins, max =  60 mins
+
+Progress on 2021/4/23:
+    0028,    easy: 28. Implement strStr()
+                   sln1: 
+
+                   v3: 8 mins, runtime: 52 ms, memory: 15.9 MB, 
+
+    0029,  medium: 29. Divide Two Integers
+                   v1: 8 mins, bug: Time Limit Exceeded, 
+
+    0035,    easy: 35. Search Insert Position
+                   v2: 5 mins, runtime: 52 ms, memory: 15.1 MB, 
+
+    0058,    easy: 58. Length of Last Word
+                   v2: 10 mins, runtime: 32 ms, memory: 14.3 MB, 
+
+    0066,    easy: 66. Plus One
+                   v2: 7 mins, runtime: 40 ms, memory: 15.7 MB, 
+
+
+Unsolved problems: (17)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium:  31 Next Permutation
+    0032,    hard: 32 Longest Valid Parentheses
+    0033,  medium: 33 Search in Rotated Sorted Array
+    0034,  medium: 34 Find First and Last Position of Element in Sorted Array
+    0067,    easy: 67. Add Binary
+    0069,    easy: 69. Sqrt(x) 
+    0070,    easy: 70. Climbing Stairs
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0088,    easy: 88. Merge Sorted Array
+    0092,  medium: 92. Reverse Linked List
+    0100,    easy: 100. Same Tree
+    0101,    easy: 101. Symmetric Tree
+

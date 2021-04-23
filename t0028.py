@@ -7,3 +7,4 @@ def run(sln):
     test(sln, "hello", "ll", 2)
     test(sln, "aaaaa", "bba", -1)
     test(sln, "", "", 0)
+    test(sln, "mississippi", "issip", 4)
