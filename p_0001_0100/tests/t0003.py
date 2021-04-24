@@ -5,7 +5,7 @@
 def test(sln, s, target):
     out = sln.lengthOfLongestSubstring(s)
     print('s = %s, out = %d' % (s, out))
-    assert out == target
+    assert out == target, out
     print('')
 
 def run(sln):
@@ -18,4 +18,3 @@ def run(sln):
     test(sln, 'dvdf', 3)
     test(sln, 'nfpdmpi', 5)
     test(sln, 'ohvhjdml', 6)
-

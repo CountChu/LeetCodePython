@@ -4,6 +4,7 @@ def test(sln, x, target):
     assert out == target
         
 def run(sln):
+    test(sln, 3, 1)
     test(sln, 2, 1)
     test(sln, 1, 1)     
     test(sln, 4, 2)

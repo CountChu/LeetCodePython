@@ -1,7 +1,7 @@
-def test(sln, n, target):
+def test(sln, n, answer):
+    print('n = %d, answer = %d' % (n, answer))
     out = sln.climbStairs(n)
-    print('n = %d, out = %d' % (n, out))
-    assert out == target
+    assert out == answer, out
 
 def run(sln):
 

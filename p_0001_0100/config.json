@@ -14,7 +14,7 @@
                     "id": "v1",
                     "program": "p0001-two-sum.py",
                     "date": "2021/3/28",
-                    "timeTaken": 5,
+                    "coding": 5,
                     "runtime": "56 ms",
                     "memory": "14.6 MB"                    
                 },
@@ -22,7 +22,7 @@
                     "id": "v2",
                     "program": "p0001-two-sum-v2.py",
                     "date": "2021/4/10",
-                    "timeTaken": 7,
+                    "coding": 7,
                     "runtime": "48 ms",
                     "memory": "14.5 MB"
                 },
@@ -30,7 +30,7 @@
                     "id": "v3",
                     "program": "p0001-two-sum-v3.py",
                     "date": "2021/4/17",
-                    "timeTaken": 150,
+                    "coding": 150,
                     "runtime": "86 ms",
                     "memory": "16.2 MB"
                 },    
@@ -38,10 +38,18 @@
                     "id": "v4",
                     "program": "p0001-two-sum-v4.py",
                     "date": "2021/4/17",
-                    "timeTaken": 7,
+                    "coding": 7,
                     "runtime": "48 ms",
                     "memory": "14.4 MB"
-                }                            
+                },     
+                {
+                    "id": "v5",
+                    "program": "p0001-two-sum-v5.py",
+                    "date": "2021/4/24",
+                    "coding": 8,
+                    "runtime": "44 ms",
+                    "memory": "14.6 MB"
+                } 
             ]
         },
         {
@@ -54,13 +62,13 @@
                     "id": "v1",
                     "program": "p0002-add-two-numbers.py",
                     "date": "2021/3/28",
-                    "timeTaken": 15
+                    "coding": 15
                 },
                 {
                     "id": "v2",
                     "program": "p0002-add-two-numbers-v2.py",
                     "date": "2021/4/10",
-                    "timeTaken": 28
+                    "coding": 28
                 }                
             ]
         }, 
@@ -72,35 +80,53 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0003-longest-substring-without-repeating-characters.py",
+                    "program": "p0003.py",
                     "date": "2021/3/28",
-                    "timeTaken": 60,
+                    "coding": 60,
                     "runtime": "540 ms",
                     "memory": "14.4 MB"
                 },
                 {
                     "id": "v2",
-                    "program": "p0003-longest-substring-without-repeating-characters-v2.py",
+                    "program": "p0003-v2.py",
                     "date": "2021/4/10", 
-                    "timeTaken": 22,
+                    "coding": 22,
                     "bug": "Time Limit Exceeded"
                 },
                 {
                     "id": "v3",
-                    "program": "p0003-longest-substring-without-repeating-characters-v3.py",
+                    "program": "p0003-v3.py",
                     "date": "2021/4/10",
-                    "timeTaken": 29,
+                    "coding": 29,
                     "runtime": "508 ms",
                     "memory": "17.5 MB"
                 },
                 {
                     "id": "v4",
-                    "program": "p0003-longest-substring-without-repeating-characters-v4.py",
+                    "program": "p0003-v4.py",
                     "date": "2021/4/20",
-                    "timeTaken": 10,
+                    "coding": 10,
                     "runtime": "56 ms",
                     "memory": "15.8 MB"
-                }                               
+                },        
+                {
+                    "id": "v5",
+                    "program": "p0003-v5.py",
+                    "date": "2021/4/24",
+                    "design": 10,
+                    "coding": 11,
+                    "runtime": "716 ms",
+                    "memory": "14.3 MB"
+                },
+                {
+                    "id": "v6",
+                    "program": "p0003-v6.py",
+                    "date": "2021/4/24",
+                    "design": 5,
+                    "coding": 28,
+                    "runtime": "80 ms",
+                    "memory": "15.5 MB"     
+                }                                           
             ]
         },       
         {
@@ -113,13 +139,13 @@
                     "id": "v1",
                     "program": "p0004-median-of-two-sorted-arrays.py",
                     "date": "2021/3/28",
-                    "timeTaken": 17
+                    "coding": 17
                 },
                 {
                     "id": "v2",
                     "program": "p0004-median-of-two-sorted-arrays-v2.py",
                     "date": "2021/4/10",
-                    "timeTaken": 12,
+                    "coding": 12,
                     "runtime": "104 ms",
                     "memory": "14.6 MB"
                 }
@@ -141,7 +167,7 @@
                     "id": "v2",
                     "program": "p0005-longest-palindromic-substring-v2.py",
                     "date": "2021/4/11",
-                    "timeTaken": 60,
+                    "coding": 60,
                     "runtime": "3376 ms",
                     "memory": "15.8 MB"
                 }
@@ -164,7 +190,7 @@
                     "id": "v2",
                     "program": "p0006-zigzag-conversion-v2.py",
                     "date": "2021/4/11",
-                    "timeTaken": 22,
+                    "coding": 22,
                     "runtime": "100 ms",
                     "memory": "14.8 MB"
                 }                
@@ -180,7 +206,7 @@
                     "id": "v1",
                     "program": "p0007-reverse-integer.py",
                     "date": "2021/4/3",
-                    "timeTaken": 9,
+                    "coding": 9,
                     "runtime": "32 ms",
                     "memory": "14.3 MB"
                 },             
@@ -188,7 +214,7 @@
                     "id": "v2",
                     "program": "p0007-reverse-integer-v2.py",
                     "date": "2021/4/11",
-                    "timeTaken": 8,
+                    "coding": 8,
                     "runtime": "24 ms",
                     "memory": "14.1 MB"
                 }                
@@ -204,7 +230,7 @@
                     "id": "v1",
                     "program": "p0008-string-to-integer-atoi.py",
                     "date": "2021/4/3",
-                    "timeTaken": 24,
+                    "coding": 24,
                     "runtime": "40 ms",
                     "memory": "14.3 MB"
                 },
@@ -212,7 +238,7 @@
                     "id": "v2",
                     "program": "p0008-string-to-integer-atoi-v2.py",
                     "date": "2021/4/11",
-                    "timeTaken": 31,
+                    "coding": 31,
                     "runtime": "32 ms",
                     "memory": "14.2 MB"
                 }                
@@ -228,13 +254,13 @@
                     "id": "v1",
                     "program": "p0009-palindrome-number.py",
                     "date": "2021/4/3",
-                    "timeTaken": 5
+                    "coding": 5
                 },               
                 {
                     "id": "v2",
                     "program": "p0009-palindrome-number-v2.py",
                     "date": "2021/4/11",
-                    "timeTaken": 6,
+                    "coding": 6,
                     "runtime": "72 ms",
                     "memory": "14.3 MB"
                 }               
@@ -250,13 +276,13 @@
                     "id": "v1",
                     "program": "p0010-regular-expression-matching-v1.py",
                     "date": "2021/4/10",
-                    "timeTaken": 60
+                    "coding": 60
                 },
                 {
                     "id": "v2",
                     "program": "p0010-regular-expression-matching-v2.py",
                     "date": "2021/4/10",
-                    "timeTaken": 60
+                    "coding": 60
                 }
             ]
         },
@@ -270,7 +296,7 @@
                     "id": "v1",
                     "program": "p0011-container-with-most-water.py",
                     "date": "2021/4/3",
-                    "timeTaken": 25
+                    "coding": 25
                 }
             ]
         },
@@ -284,7 +310,7 @@
                     "id": "v1",
                     "program": "p0012-integer-to-roman.py",
                     "date": "2021/4/11",
-                    "timeTaken": 19,
+                    "coding": 19,
                     "runtime": "48 ms",
                     "memory": "14.5 MB"
                 }
@@ -307,7 +333,7 @@
                     "id": "v2",
                     "program": "p0013-roman-to-integer-v2.py",
                     "date": "2021/4/11",
-                    "timeTaken": 7,
+                    "coding": 7,
                     "runtime": "44 ms",
                     "memory": "14.3 MB"
                 }
@@ -328,7 +354,7 @@
                     "id": "v2",
                     "program": "p0014-longest-common-prefix-v2.py",
                     "date": "2021/4/13",
-                    "timeTaken": 23,
+                    "coding": 23,
                     "runtime": "36 ms",
                     "memory": "14.5 MB"                    
                 }                
@@ -344,14 +370,14 @@
                     "id": "v1",
                     "program": "p0015-3sum.py",
                     "date": "2021/4/13",
-                    "timeTaken": 26,
+                    "coding": 26,
                     "bug": "Time Limit Exceeded"
                 },
                 {
                     "id": "v2",
                     "program": "p0015-3sum-v2.py",
                     "date": "2021/4/17",
-                    "timeTaken": 22,
+                    "coding": 22,
                     "runtime": "6812 ms",
                     "memory": "18 MB"
                 },
@@ -366,7 +392,7 @@
                     "id": "v4",
                     "program": "p0015-3sum-v4.py",
                     "date": "2021/4/17",
-                    "timeTaken": 64,
+                    "coding": 64,
                     "runtime": "9296 ms",
                     "memory": "603.2 MB"
                 },
@@ -379,7 +405,7 @@
                     "id": "v5",
                     "program": "p0015-3sum-v5.py",
                     "date": "2021/4/17",
-                    "timeTaken": 46,
+                    "coding": 46,
                     "runtime": "1060 ms",
                     "memory": "17.8 MB"
                 }                                        
@@ -395,7 +421,7 @@
                     "id": "v1",
                     "program": "p0016-3sum-closest.py",
                     "date": "2021/4/17",
-                    "timeTaken": 11,
+                    "coding": 11,
                     "runtime": "4432 ms",
                     "memory": "14.4 MB"                
                 }
@@ -411,7 +437,7 @@
                     "id": "v1",
                     "program": "p0017-letter-combinations-of-a-phone-number.py",
                     "date": "2021/4/17",
-                    "timeTaken": 15,
+                    "coding": 15,
                     "runtime": "40 ms",
                     "memory": "15.5 MB"          
                 }
@@ -427,7 +453,7 @@
                     "id": "v1",
                     "program": "p0018-4sum.py",
                     "date": "2021/4/17",
-                    "timeTaken": 27,
+                    "coding": 27,
                     "runtime": "1704 ms",
                     "memory": "15.7 MB"           
                 }
@@ -443,7 +469,7 @@
                     "id": "v1",
                     "program": "p0019-remove-nth-node-from-end-of-list.py",
                     "date": "2021/4/18",
-                    "timeTaken": 31,
+                    "coding": 31,
                     "runtime": "32 ms",
                     "memory": "14.2 MB"      
                 }
@@ -466,7 +492,7 @@
                     "id": "v2",
                     "program": "p0020-valid-parentheses-v2.py",
                     "date": "2021/4/21",
-                    "timeTaken": 9,
+                    "coding": 9,
                     "runtime": "32 ms",
                     "memory": "15.7 MB"
                 }                
@@ -489,7 +515,7 @@
                     "id": "v2",
                     "program": "p0021-merge-two-sorted-lists-v2.py",
                     "date": "2021/4/18",
-                    "timeTaken": 12,
+                    "coding": 12,
                     "runtime": "52 ms",
                     "memory": "15.8 MB"
                 }                
@@ -505,7 +531,7 @@
                     "id": "v1",
                     "program": "p0022-generate-parentheses.py",
                     "date": "2021/4/21",
-                    "timeTaken": 46,
+                    "coding": 46,
                     "runtime": "92 ms",
                     "memory": "15.9 MB"
                 }                
@@ -533,7 +559,7 @@
                     "id": "v1",
                     "program": "p0024-swap-nodes-in-pairs.py",
                     "date": "2021/4/18",
-                    "timeTaken": 25,
+                    "coding": 25,
                     "runtime": "64 ms",
                     "memory": "15.5 MB"
                 }                
@@ -568,7 +594,7 @@
                     "id": "v2",
                     "program": "p0026-remove-duplicates-from-sorted-array-v2.py",
                     "date": "2021/4/22",
-                    "timeTaken": 13,
+                    "coding": 13,
                     "runtime": "8720 ms",
                     "memory": "17.1 MB"
                 }                
@@ -591,7 +617,7 @@
                     "id": "v2",
                     "program": "p0027-remove-element-v2.py",
                     "date": "2021/4/22",
-                    "timeTaken": 11,
+                    "coding": 11,
                     "runtime": "36 ms",
                     "memory": "14.3 MB"
                 }                
@@ -614,7 +640,7 @@
                     "id": "v2",
                     "program": "p0028-Implement strStr()-v2.py",
                     "date": "2021/4/22",
-                    "timeTaken": 7,
+                    "coding": 7,
                     "bug": "Time Limit Exceeded"
                 },
                 {
@@ -626,7 +652,7 @@
                     "id": "v3",
                     "program": "p0028-Implement strStr()-v3.py",
                     "date": "2021/4/23",
-                    "timeTaken": 8,
+                    "coding": 8,
                     "runtime": "52 ms",
                     "memory": "15.9 MB"
                 }                                       
@@ -642,7 +668,7 @@
                     "id": "v1",
                     "program": "p0029-divide-two-integers.py",
                     "date": "2021/4/23",
-                    "timeTaken": 8,
+                    "coding": 8,
                     "bug": "Time Limit Exceeded"
                 }
             ]    
@@ -724,7 +750,7 @@
                     "id": "v2",
                     "program": "p0035-search-insert-position-v2.py",
                     "date": "2021/4/23",
-                    "timeTaken": 5,
+                    "coding": 5,
                     "runtime": "52 ms",
                     "memory": "15.1 MB"                    
                 }                
@@ -758,7 +784,7 @@
                     "id": "v4",
                     "program": "p0053-maximum-subarray-v4.py",
                     "date": "2021/4/20",
-                    "timeTaken": 11,
+                    "coding": 11,
                     "runtime": "64 ms",
                     "memory": "16.4 MB"
                 }                          
@@ -781,7 +807,7 @@
                     "id": "v2",
                     "program": "p0058-length-of-last-word-v2.py",
                     "date": "2021/4/23",
-                    "timeTaken": 10,
+                    "coding": 10,
                     "runtime": "32 ms",
                     "memory": "14.3 MB"      
                 }                
@@ -797,7 +823,7 @@
                     "id": "v1",
                     "program": "p0061-rotate-list.py",
                     "date": "2021/4/18",
-                    "timeTaken": 34,
+                    "coding": 34,
                     "runtime": "44 ms",
                     "memory": "15.6 MB"
                 }
@@ -820,7 +846,7 @@
                     "id": "v2",
                     "program": "p0066-plus-one-v2.py",
                     "date": "2021/4/23",
-                    "timeTaken": 7,
+                    "coding": 7,
                     "runtime": "40 ms",
                     "memory": "15.7 MB"                    
                 }                
@@ -835,10 +861,33 @@
                 {
                     "id": "v1",
                     "program": "p0067-add-binary.py",
-                    "date": "2021/3/25"
-                }
+                    "date": "2021/3/25",
+                    "runtime": "64 ms",
+                    "memory": "14.2 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0067-add-binary-v2.py",
+                    "date": "2021/4/24",
+                    "design": 9,
+                    "coding": 19,
+                    "runtime": "48 ms",
+                    "memory": "15.7 MB"
+                }                
             ]
         },  
+        {
+            "id": "0068",
+            "name": "68. Text Justification",
+            "level": "hard",                        
+            "testScript": "t0068.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0068.py"
+                }
+            ]
+        },         
         {
             "id": "0069",
             "name": "69. Sqrt(x) ",
@@ -848,8 +897,19 @@
                 {
                     "id": "v1",
                     "program": "p0069-sqrtx.py",
-                    "date": "2021/3/26"
-                }
+                    "date": "2021/3/26",
+                    "runtime": "9692 ms",
+                    "memory": "14.2 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0069-sqrtx-v2.py",
+                    "date": "2021/4/24",
+                    "design": 7,
+                    "coding": 17,
+                    "runtime": "1648 ms",
+                    "memory": "17.7 MB"
+                }                
             ]
         },
         {
@@ -867,8 +927,19 @@
                 {
                     "id": "v2",
                     "program": "p0070-climbing-stairs-v2.py",
-                    "date": "2021/3/27"
-                }                
+                    "date": "2021/3/27",
+                    "runtime": "28 ms",
+                    "memory": "14.3 MB"
+                },
+                {
+                    "id": "v3",
+                    "program": "p0070-climbing-stairs-v3.py",
+                    "date": "2021/4/24",
+                    "design": 6,
+                    "coding": 3,
+                    "runtime": "44 ms",
+                    "memory": "15.8 MB"
+                }                            
             ]
         },    
         {
@@ -881,7 +952,7 @@
                     "id": "v1",
                     "program": "p0082-remove-duplicates-from-sorted-list-ii.py",
                     "date": "2021/4/18",
-                    "timeTaken": 17,
+                    "coding": 17,
                     "runtime": "44 ms",
                     "memory": "15.8 MB"
                 }

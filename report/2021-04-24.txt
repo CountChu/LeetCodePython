@@ -1,0 +1,43 @@
+Problems: 50
+Solved Problem: 35
+
+Time taken:
+    easy   : count =  17, mean =  10 mins, max =  23 mins
+    medium : count =  16, mean =  29 mins, max =  60 mins
+    hard   : count =   2, mean =  36 mins, max =  60 mins
+
+Progress on 2021/4/24:
+    0001,    easy: 1. Two Sum
+                   v5: coding: 8 mins, runtime: 44 ms, memory: 14.6 MB, 
+
+    0003,  medium: 3. Longest Substring Without Repeating Characters
+                   v5: design: 10 mins, coding: 11 mins, runtime: 716 ms, memory: 14.3 MB, 
+                   v6: design: 5 mins, coding: 28 mins, runtime: 80 ms, memory: 15.5 MB, 
+
+    0067,    easy: 67. Add Binary
+                   v2: design: 9 mins, coding: 19 mins, runtime: 48 ms, memory: 15.7 MB, 
+
+    0069,    easy: 69. Sqrt(x) 
+                   v2: design: 7 mins, coding: 17 mins, runtime: 1648 ms, memory: 17.7 MB, 
+
+    0070,    easy: 70. Climbing Stairs
+                   v3: design: 6 mins, coding: 3 mins, runtime: 44 ms, memory: 15.8 MB, 
+
+
+Unsolved problems: (15)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium:  31 Next Permutation
+    0032,    hard: 32 Longest Valid Parentheses
+    0033,  medium: 33 Search in Rotated Sorted Array
+    0034,  medium: 34 Find First and Last Position of Element in Sorted Array
+    0068,    hard: 68. Text Justification
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0088,    easy: 88. Merge Sorted Array
+    0092,  medium: 92. Reverse Linked List
+    0100,    easy: 100. Same Tree
+    0101,    easy: 101. Symmetric Tree
+

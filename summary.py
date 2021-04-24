@@ -47,7 +47,7 @@ def main():
         for sln in problem['solutions']:
             keys = sln.keys()
             for key in keys:
-                assert key in ['id', 'program', 'date', 'bug', 'timeTaken', 'runtime', 'memory'], sln
+                assert key in ['id', 'program', 'date', 'bug', 'design', 'coding', 'runtime', 'memory'], sln
 
     #
     # Report them.
@@ -66,7 +66,7 @@ def main():
             last_sln = problem['solutions'][-1]
             if 'bug' in last_sln:
                 solved = False
-            if 'timeTaken' not in last_sln:
+            if 'coding' not in last_sln:
                 solved = False
         problem['solved'] = solved
         
@@ -81,10 +81,10 @@ def main():
     print('Solved Problem: %d' % solved_count)
 
     #
-    # Report time taken.
+    # Build level_coding_d
     #
 
-    level_timeTaken_d = {
+    level_coding_d = {
         'easy': [],
         'medium': [],
         'hard': []
@@ -97,24 +97,24 @@ def main():
         name = problem['name']
         level = problem['level']
         last_sln = problem['solutions'][-1]
-        if 'timeTaken' in last_sln:
-            timeTaken = last_sln['timeTaken']
-            level_timeTaken_d[level].append(timeTaken)
+        if 'coding' in last_sln:
+            coding = last_sln['coding']
+            level_coding_d[level].append(coding)
             if args.detail:
                 print('%s:' % name)
-                print('    level = %6s, timeTaken = %d' % (level, timeTaken))    
+                print('    level = %6s, coding = %d' % (level, coding))    
     print('')
 
     #
-    # Report level_timeTaken_d
+    # Report level_coding_d
     #
 
     print('Time taken:')
-    for level, timeTaken_ls in level_timeTaken_d.items():
+    for level, coding_ls in level_coding_d.items():
         #print(timeTaken_ls)
-        max_tt = max(timeTaken_ls)
-        mean = statistics.mean(timeTaken_ls)
-        count = len(timeTaken_ls)
+        max_tt = max(coding_ls)
+        mean = statistics.mean(coding_ls)
+        count = len(coding_ls)
         print('    %-7s: count = %3d, mean = %3d mins, max = %3d mins' % (level, count, mean, max_tt))
     print('')
 
@@ -150,8 +150,10 @@ def main():
         solutions = progress_d[id]['solutions']
         for sln in solutions:
             line = '                   %s: ' % sln['id']
-            if 'timeTaken' in sln:
-                line += '%d mins, ' % sln['timeTaken']
+            if 'design' in sln:
+                line += 'design: %d mins, ' % sln['design']            
+            if 'coding' in sln:
+                line += 'coding: %d mins, ' % sln['coding']
             if 'runtime' in sln:
                 line += 'runtime: %s, ' % sln['runtime']
             if 'memory' in sln:
@@ -159,7 +161,7 @@ def main():
             if 'bug' in sln:
                 line += 'bug: %s, ' % sln['bug']
             print(line)
-            print('')
+        print('')
     print('')        
 
 
