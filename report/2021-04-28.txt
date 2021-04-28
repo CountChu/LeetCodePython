@@ -1,0 +1,46 @@
+Problems: 62
+Solved Problem: 44
+
+Time taken:
+    easy   : count =  26, mean =   9 mins, max =  23 mins
+    medium : count =  16, mean =  29 mins, max =  60 mins
+    hard   : count =   2, mean =  36 mins, max =  60 mins
+
+Progress on 2021/4/28:
+    0026,    easy: 26. Remove Duplicates from Sorted Array
+                   v4: design: 11 mins, coding: 10 mins, runtime: 88 ms, memory: 17.3 MB, 
+
+    0283,    easy: 283. Move Zeroes
+                   v1: design: 9 mins, coding: 6 mins, runtime: 400 ms, memory: 15.2 MB, 
+
+    0941,    easy: 941. Valid Mountain Array
+                   v1: design: 5 mins, coding: 13 mins, runtime: 232 ms, memory: 16.7 MB, 
+
+    1299,    easy: 1299. Replace Elements with Greatest Element on Right Side
+                   v1: design: 7 mins, coding: 11 mins, bug: Time Limit Exceeded, 
+                   v2: design: 7 mins, coding: 8 mins, runtime: 1352 ms, memory: 16.9 MB, 
+
+    1346,    easy: 1346. Check If N and Its Double Exist
+                   v1: design: 5 mins, coding: 11 mins, runtime: 52 ms, memory: 14.4 MB, 
+
+
+Unsolved problems: (18)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium: 31. Next Permutation
+    0032,    hard: 32. Longest Valid Parentheses
+    0033,  medium: 33. Search in Rotated Sorted Array
+    0034,  medium: 34. Find First and Last Position of Element in Sorted Array
+    0068,    hard: 68. Text Justification
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0092,  medium: 92. Reverse Linked List
+    0100,    easy: 100. Same Tree
+    0101,    easy: 101. Symmetric Tree
+    0414,    easy: 414. Third Maximum Number
+    0448,    easy: 448. Find All Numbers Disappeared in an Array
+    0905,    easy: 905. Sort Array By Parity
+    1051,    easy: 1051. Height Checker
+

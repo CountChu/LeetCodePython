@@ -11,26 +11,22 @@
 from typing import List
 import pdb
 
+#
+# 2021/3/24: 108 ms, 16 MB
+#
+
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         idx = 0
         idx2 = 1
         for i in range(len(nums)):
-            line = ''
-            line += 'i = %d, ' % i
             num = nums[i]
-            line += 'num = %d, ' % num
-            line += 'idx = %d, ' % idx
             num2 = nums[idx]
-            line += 'num2 = %d, ' % num2
             if num2 != num:
                 idx = i
-                line += 'idx = %d, ' % idx
                 num3 = nums[idx]
-                line += 'num3 = %d, ' % num3
                 nums[idx2] = num3
                 idx2 += 1
-            #print(line)
         return idx2
         
 

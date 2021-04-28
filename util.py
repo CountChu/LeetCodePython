@@ -22,6 +22,9 @@ def collect_config():
         }
     for config, bn in zip(config_ls, bn_ls):
         for problem in config['problems']:
+            if not 'testScript' in problem:
+                continue
+
             fn = problem['testScript']
             fn = os.path.join(bn, config['dirs']['testDn'], fn)
             problem['testScript'] = fn
@@ -30,6 +33,8 @@ def collect_config():
                 fn = os.path.join(bn, config['dirs']['programDn'], fn)
                 sln['program'] = fn
             merged_config['problems'].append(problem)
+
+    merged_config['problems'] = sorted(merged_config['problems'], key=lambda x: x['id'])
 
     return merged_config
 

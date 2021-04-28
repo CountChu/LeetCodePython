@@ -518,7 +518,7 @@
                     "coding": 12,
                     "runtime": "52 ms",
                     "memory": "15.8 MB"
-                }                
+                }
             ]
         },
         {
@@ -585,19 +585,37 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0026-remove-duplicates-from-sorted-array.py",
+                    "program": "p0026.py",
                     "date": "2021/3/24",
                     "runtime": "108 ms",
                     "memory": "16 MB"
                 },
                 {
                     "id": "v2",
-                    "program": "p0026-remove-duplicates-from-sorted-array-v2.py",
+                    "program": "p0026-v2.py",
                     "date": "2021/4/22",
                     "coding": 13,
                     "runtime": "8720 ms",
                     "memory": "17.1 MB"
-                }                
+                },
+                {
+                    "id": "v3",
+                    "program": "p0026-v3.py",
+                    "date": "2021/4/25",
+                    "design": 19,
+                    "coding": 15,
+                    "runtime": "80 ms",
+                    "memory": "17.3 MB"
+                },
+                {
+                    "id": "v4",
+                    "program": "p0026-v4.py",
+                    "date": "2021/4/28",
+                    "design": 11,
+                    "coding": 10,
+                    "runtime": "88 ms",
+                    "memory": "17.3 MB"
+                }                       
             ]
         },     
         {
@@ -620,7 +638,25 @@
                     "coding": 11,
                     "runtime": "36 ms",
                     "memory": "14.3 MB"
-                }                
+                },
+                {
+                    "id": "v3",
+                    "program": "p0027-remove-element-v3.py",
+                    "date": "2021/4/25",
+                    "design": 5,
+                    "coding": 19,
+                    "runtime": "64 ms",
+                    "memory": "15.6 MB"
+                },        
+                {
+                    "id": "v4",
+                    "program": "p0027-remove-element-v4.py",
+                    "date": "2021/4/25",
+                    "design": 5,
+                    "coding": 10,
+                    "runtime": "44 ms",
+                    "memory": "15.4 MB"
+                }              
             ]
         },
         {
@@ -687,7 +723,7 @@
         },    
         {
             "id": "0031",
-            "name": " 31 Next Permutation",
+            "name": "31. Next Permutation",
             "level": "medium",                        
             "testScript": "t0031.py",
             "solutions": [
@@ -699,7 +735,7 @@
         }, 
         {
             "id": "0032",
-            "name": "32 Longest Valid Parentheses",
+            "name": "32. Longest Valid Parentheses",
             "level": "hard",                        
             "testScript": "t0032.py",
             "solutions": [
@@ -711,7 +747,7 @@
         }, 
         {
             "id": "0033",
-            "name": "33 Search in Rotated Sorted Array",
+            "name": "33. Search in Rotated Sorted Array",
             "level": "medium",                        
             "testScript": "t0033.py",
             "solutions": [
@@ -723,7 +759,7 @@
         }, 
         {
             "id": "0034",
-            "name": "34 Find First and Last Position of Element in Sorted Array",
+            "name": "34. Find First and Last Position of Element in Sorted Array",
             "level": "medium",                        
             "testScript": "t0034.py",
             "solutions": [
@@ -993,8 +1029,19 @@
                 {
                     "id": "v1",
                     "program": "p0088-merge-sorted-array.py",
-                    "date": "2021/3/27"
-                }
+                    "date": "2021/3/27",
+                    "runtime": "36 ms",
+                    "memory": "14.3 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0088-merge-sorted-array-v2.py",
+                    "date": "2021/4/25",
+                    "design": 19,
+                    "coding": 16,
+                    "runtime": "60 ms",
+                    "memory": "15.5 MB"
+                }                
             ]
         },   
         {
