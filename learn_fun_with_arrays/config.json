@@ -171,7 +171,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0905.py"       
+                    "program": "p0905.py",
+                    "date": "2021/4/29",
+                    "design": 5,
+                    "coding": 4,
+                    "runtime": "84 ms",
+                    "memory": "14.8 MB"      
                 }
             ]
         },     
@@ -187,7 +192,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p1051.py"       
+                    "program": "p1051.py",
+                    "date": "2021/4/29",
+                    "design": 0,
+                    "coding": 2,
+                    "runtime": "36 ms",
+                    "memory": "14.2 MB"      
                 }
             ]
         },      
@@ -199,7 +209,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0414.py"       
+                    "program": "p0414.py",
+                    "date": "2021/4/29",
+                    "design": 0,
+                    "coding": 7,
+                    "runtime": "48 ms",
+                    "memory": "15.4 MB"     
                 }
             ]
         },     
@@ -211,7 +226,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0448.py"       
+                    "program": "p0448.py",
+                    "date": "2021/4/29",
+                    "design": 0,
+                    "coding": 5,
+                    "runtime": "364 ms",
+                    "memory": "25.2 MB"     
                 }
             ]
         },

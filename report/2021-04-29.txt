@@ -1,0 +1,42 @@
+Problems: 66
+Solved Problem: 48
+
+Time taken:
+    easy   : count =  30, mean =   9 mins, max =  23 mins
+    medium : count =  16, mean =  29 mins, max =  60 mins
+    hard   : count =   2, mean =  36 mins, max =  60 mins
+
+Progress on 2021/4/29:
+    0414,    easy: 414. Third Maximum Number
+                   v1: design: 0 mins, coding: 7 mins, runtime: 48 ms, memory: 15.4 MB, 
+
+    0448,    easy: 448. Find All Numbers Disappeared in an Array
+                   v1: design: 0 mins, coding: 5 mins, runtime: 364 ms, memory: 25.2 MB, 
+
+    0905,    easy: 905. Sort Array By Parity
+                   v1: design: 5 mins, coding: 4 mins, runtime: 84 ms, memory: 14.8 MB, 
+
+    1051,    easy: 1051. Height Checker
+                   v1: design: 0 mins, coding: 2 mins, runtime: 36 ms, memory: 14.2 MB, 
+
+
+Unsolved problems: (18)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium: 31. Next Permutation
+    0032,    hard: 32. Longest Valid Parentheses
+    0033,  medium: 33. Search in Rotated Sorted Array
+    0034,  medium: 34. Find First and Last Position of Element in Sorted Array
+    0068,    hard: 68. Text Justification
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0092,  medium: 92. Reverse Linked List
+    0094,  medium: 94. Binary Tree Inorder Traversal
+    0100,    easy: 100. Same Tree
+    0101,    easy: 101. Symmetric Tree
+    0102,  medium: 102. Binary Tree Level Order Traversal
+    0144,  medium: 144. Binary Tree Preorder Traversal
+    0145,  medium: 145. Binary Tree Postorder Traversal
+

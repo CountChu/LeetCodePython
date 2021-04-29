@@ -1,0 +1,56 @@
+{
+    "dirs": {
+        "programDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0144",
+            "name": "144. Binary Tree Preorder Traversal",
+            "level": "medium",
+            "testScript": "t0144.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0144.py" 
+                }
+            ]
+        },
+        {
+            "id": "0094",
+            "name": "94. Binary Tree Inorder Traversal",
+            "level": "medium",
+            "testScript": "t0094.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0094.py" 
+                }
+            ]
+        },     
+        {
+            "id": "0145",
+            "name": "145. Binary Tree Postorder Traversal",
+            "level": "medium",
+            "testScript": "t0145.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0145.py"
+                }
+            ]
+        },      
+        {
+            "id": "0102",
+            "name": "102. Binary Tree Level Order Traversal",
+            "level": "medium",
+            "testScript": "t0102.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0102.py"
+                }
+            ]
+        }             
+    ]
+}
