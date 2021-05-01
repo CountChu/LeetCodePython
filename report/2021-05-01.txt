@@ -1,0 +1,41 @@
+Problems: 68
+Solved Problem: 54
+
+Time taken:
+    easy   : count =  32, mean =   9 mins, max =  23 mins
+    medium : count =  20, mean =  24 mins, max =  60 mins
+    hard   : count =   2, mean =  36 mins, max =  60 mins
+
+Progress on 2021/5/1:
+    0094,  medium: 94. Binary Tree Inorder Traversal
+                   v1: design: 4 mins, coding: 12 mins, runtime: 44 ms, memory: 15.9 MB, 
+
+    0101,    easy: 101. Symmetric Tree
+                   v2: design: 4 mins, coding: 8 mins, runtime: 56 ms, memory: 15.8 MB, 
+
+    0102,  medium: 102. Binary Tree Level Order Traversal
+                   v1: design: 6 mins, coding: 8 mins, runtime: 40 ms, memory: 16.1 MB, 
+
+    0104,    easy: 104. Maximum Depth of Binary Tree
+                   v1: design: 1 mins, coding: 10 mins, runtime: 52 ms, memory: 17.9 MB, 
+
+    0144,  medium: 144. Binary Tree Preorder Traversal
+                   v1: design: 5 mins, coding: 9 mins, runtime: 36 ms, memory: 15.8 MB, 
+
+
+Unsolved problems: (14)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium: 31. Next Permutation
+    0032,    hard: 32. Longest Valid Parentheses
+    0033,  medium: 33. Search in Rotated Sorted Array
+    0034,  medium: 34. Find First and Last Position of Element in Sorted Array
+    0068,    hard: 68. Text Justification
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0092,  medium: 92. Reverse Linked List
+    0100,    easy: 100. Same Tree
+    0112,    easy: 112. Path Sum
+

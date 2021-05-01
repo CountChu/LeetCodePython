@@ -1069,19 +1069,6 @@
                     "date": "2021/3/27"
                 }
             ]
-        },
-        {
-            "id": "0101",
-            "name": "101. Symmetric Tree",
-            "level": "easy",
-            "testScript": "t0101.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0101-symmetric-tree.py",
-                    "date": "2021/3/27"
-                }
-            ]
-        }                            
+        }                           
     ]
 }

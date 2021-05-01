@@ -25,9 +25,10 @@ def main():
     #
 
     if args.date == None:
-        date_str = datetime.date.today().strftime('%Y/%-m/%d')
+        date_str = datetime.date.today().strftime('%Y/%-m/%-d')
     else:
         date_str = args.date
+    #pdb.set_trace()
 
     #
     # Check config syntex.

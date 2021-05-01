@@ -46,6 +46,7 @@ def main():
         answer = input('Do you want to create it? [y/Y]')
         if answer in ['y', 'Y']:
             f = open(bn, 'w')
+            f.write('from data_structure import *\n')
             f.write('import pdb\n')
             f.write('\n')
             f.write('def test(sln, nums, answer):\n')

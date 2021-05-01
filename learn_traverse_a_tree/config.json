@@ -12,7 +12,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0144.py" 
+                    "program": "p0144.py",
+                    "date": "2021/5/1",
+                    "design": 5,
+                    "coding": 9,
+                    "runtime": "36 ms",
+                    "memory": "15.8 MB"
                 }
             ]
         },
@@ -24,7 +29,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0094.py" 
+                    "program": "p0094.py",
+                    "date": "2021/5/1",
+                    "design": 4,
+                    "coding": 12,
+                    "runtime": "44 ms",
+                    "memory": "15.9 MB"
                 }
             ]
         },     
@@ -36,7 +46,11 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0145.py"
+                    "program": "p0145.py",
+                    "design": 2,
+                    "coding": 4,
+                    "runtime": "32 ms",
+                    "memory": "14.1 MB"
                 }
             ]
         },      
@@ -48,9 +62,65 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0102.py"
+                    "program": "p0102.py",
+                    "date": "2021/5/1",
+                    "design": 6,
+                    "coding": 8,
+                    "runtime": "40 ms",
+                    "memory": "16.1 MB"
                 }
             ]
-        }             
+        },
+        {
+            "id": "0104",
+            "name": "104. Maximum Depth of Binary Tree",
+            "level": "easy",
+            "testScript": "t0104.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0104.py",
+                    "date": "2021/5/1",
+                    "design": 1,
+                    "coding": 10,
+                    "runtime": "52 ms",
+                    "memory": "17.9 MB"
+                }
+            ]
+        },
+        {
+            "id": "0101",
+            "name": "101. Symmetric Tree",
+            "level": "easy",
+            "testScript": "t0101.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0101.py",
+                    "date": "2021/3/27"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0101_v2.py",
+                    "date": "2021/5/1",
+                    "design": 4,
+                    "coding": 8,
+                    "runtime": "56 ms",
+                    "memory": "15.8 MB"
+                }
+            ]
+        },       
+        {
+            "id": "0112",
+            "name": "112. Path Sum",
+            "level": "easy",
+            "testScript": "t0112.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0112.py"
+                }
+            ]
+        }       
     ]
 }
