@@ -118,9 +118,124 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0112.py"
+                    "program": "p0112.py",
+                    "date": "2021/5/2",
+                    "design": 3,
+                    "coding": 14,
+                    "runtime": "68 ms",
+                    "memory": "17.5 MB"
                 }
             ]
-        }       
+        },
+        {
+            "id": "0106",
+            "name": "106. Construct Binary Tree from Inorder and Postorder Traversal",
+            "level": "easy",
+            "testScript": "t0106.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0106.py",
+                    "date": "2021/5/2",
+                    "design": 10,
+                    "coding": 30,
+                    "bug": "Time Limit Exceeded"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0106_v2.py",
+                    "date": "2021/5/2",
+                    "design": 7,
+                    "coding": 13,
+                    "runtime": "212 ms",
+                    "memory": "92 MB"
+                }                
+            ]
+        },    
+        {
+            "id": "0105",
+            "name": "105. Construct Binary Tree from Preorder and Inorder Traversal",
+            "level": "medium",
+            "testScript": "t0105.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0105.py",
+                    "date": "2021/5/3",
+                    "design": 6,
+                    "coding": 8,
+                    "runtime": "200 ms",
+                    "memory": "91.7 MB"
+                }
+            ]
+        },         
+        {
+            "id": "0116",
+            "name": "116. Populating Next Right Pointers in Each Node",
+            "level": "medium",
+            "testScript": "t0116.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0116.py",
+                    "date": "2021/5/3",
+                    "design": 13,
+                    "coding": 21,
+                    "runtime": "84 ms",
+                    "memory": "17.4 MB"
+                }
+            ]
+        },        
+        {
+            "id": "0117",
+            "name": "117. Populating Next Right Pointers in Each Node II",
+            "level": "medium",
+            "testScript": "t0117.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0117.py",
+                    "date": "2021/5/4",
+                    "design": 18,
+                    "coding": 27,
+                    "runtime": "56 ms",
+                    "memory": "16.9 MB"
+                }
+            ]
+        },           
+        {
+            "id": "0236",
+            "name": "236. Lowest Common Ancestor of a Binary Tree",
+            "level": "medium",
+            "testScript": "t0236.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0236.py",
+                    "date": "2021/5/4",
+                    "design": 10,
+                    "coding": 21,
+                    "runtime": "1608 ms",
+                    "memory": "518.2 MB"
+                }
+            ]
+        },        
+        {
+            "id": "0297",
+            "name": "297. Serialize and Deserialize Binary Tree",
+            "level": "hard",
+            "testScript": "t0297.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0297.py",
+                    "date": "2021/5/4",
+                    "design": 5,
+                    "coding": 28,
+                    "runtime": "168 ms",
+                    "memory": "20.4 MB"
+                }
+            ]
+        }        
     ]
 }

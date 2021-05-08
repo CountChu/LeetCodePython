@@ -6,21 +6,15 @@ Time taken:
     medium : count =  29, mean =  22 mins, max =  60 mins
     hard   : count =   3, mean =  33 mins, max =  60 mins
 
-Progress on 2021/5/1:
-    0094,  medium: 94. Binary Tree Inorder Traversal
-                   v1: design: 4 mins, coding: 12 mins, runtime: 44 ms, memory: 15.9 MB, 
+Progress on 2021/5/5:
+    0235,    easy: 235. Lowest Common Ancestor of a Binary Search Tree
+                   v1: design: 4 mins, coding: 13 mins, runtime: 80 ms, memory: 19.6 MB, 
 
-    0101,    easy: 101. Symmetric Tree
-                   v2: design: 4 mins, coding: 8 mins, runtime: 56 ms, memory: 15.8 MB, 
+    0450,  medium: 450. Delete Node in a BST
+                   v1: design: 10 mins, coding: 50 mins, runtime: 84 ms, memory: 20.1 MB, 
 
-    0102,  medium: 102. Binary Tree Level Order Traversal
-                   v1: design: 6 mins, coding: 8 mins, runtime: 40 ms, memory: 16.1 MB, 
-
-    0104,    easy: 104. Maximum Depth of Binary Tree
-                   v1: design: 1 mins, coding: 10 mins, runtime: 52 ms, memory: 17.9 MB, 
-
-    0144,  medium: 144. Binary Tree Preorder Traversal
-                   v1: design: 5 mins, coding: 9 mins, runtime: 36 ms, memory: 15.8 MB, 
+    0703,    easy: 703. Kth Largest Element in a Stream
+                   v1: design: 30 mins, coding: 60 mins, runtime: 208 ms, memory: 21.3 MB, 
 
 
 Unsolved problems: (15)

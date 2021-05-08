@@ -54,7 +54,7 @@ def main():
             f.write('    out = sln.func(nums)\n')
             f.write('    assert out == answer, out\n')
             f.write('\n')
-            f.write('def run(sln):\n')
+            f.write('def run(sln, module):\n')
             f.write('    test(sln, [1, 2, 3], 3)\n')
             f.close()
             print('Build ', bn)
@@ -155,7 +155,7 @@ def solve_it(test_module, solution):
     sln_module_name = get_module_name(bn)
     sln_module = importlib.import_module(sln_module_name)
     sln = sln_module.Solution()
-    test_module.run(sln)
+    test_module.run(sln, sln_module)
 
 def get_module_name(bn):
     mn, ext = os.path.splitext(bn) 

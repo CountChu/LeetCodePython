@@ -6,21 +6,13 @@ Time taken:
     medium : count =  29, mean =  22 mins, max =  60 mins
     hard   : count =   3, mean =  33 mins, max =  60 mins
 
-Progress on 2021/5/1:
-    0094,  medium: 94. Binary Tree Inorder Traversal
-                   v1: design: 4 mins, coding: 12 mins, runtime: 44 ms, memory: 15.9 MB, 
+Progress on 2021/5/2:
+    0106,    easy: 106. Construct Binary Tree from Inorder and Postorder Traversal
+                   v1: design: 10 mins, coding: 30 mins, bug: Time Limit Exceeded, 
+                   v2: design: 7 mins, coding: 13 mins, runtime: 212 ms, memory: 92 MB, 
 
-    0101,    easy: 101. Symmetric Tree
-                   v2: design: 4 mins, coding: 8 mins, runtime: 56 ms, memory: 15.8 MB, 
-
-    0102,  medium: 102. Binary Tree Level Order Traversal
-                   v1: design: 6 mins, coding: 8 mins, runtime: 40 ms, memory: 16.1 MB, 
-
-    0104,    easy: 104. Maximum Depth of Binary Tree
-                   v1: design: 1 mins, coding: 10 mins, runtime: 52 ms, memory: 17.9 MB, 
-
-    0144,  medium: 144. Binary Tree Preorder Traversal
-                   v1: design: 5 mins, coding: 9 mins, runtime: 36 ms, memory: 15.8 MB, 
+    0112,    easy: 112. Path Sum
+                   v1: design: 3 mins, coding: 14 mins, runtime: 68 ms, memory: 17.5 MB, 
 
 
 Unsolved problems: (15)

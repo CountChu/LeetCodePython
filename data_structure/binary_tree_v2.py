@@ -1,7 +1,7 @@
 import pdb
 
 #
-# 2021/5/1: 
+# 2021/5/1: 9 min, 25 min
 #
 
 class TreeNode:
@@ -19,13 +19,15 @@ def transform_ls(nums):
     count = 0
     for i in range(n):
         if v[i] == None:
-            null_ls.append(i)
-            null_ls.append(i * 2 + 1)
-            null_ls.append(i * 2 + 2)
+            idx = i
+            while idx in null_ls:
+                idx += 1
+            null_ls.append(idx)
+            null_ls.append(idx*2 + 1)
+            null_ls.append(idx*2 + 2)
             count += 3
         else:
             count += 1
-
 
     if d:
         print('null_ls = %s, count = %d' % (null_ls, count))
@@ -35,17 +37,17 @@ def transform_ls(nums):
     last_idx = -1
     for i in range(n):
         if v[i] != None:
-            while True:
-                if j in null_ls:
-                    j += 1
-                else:
-                    break
-            out[j] = v[i]     
+            while j in null_ls:
+                j += 1
+
+            out[j] = v[i]
             last_idx = j
+
             j += 1
 
     if d:
-        print('out = %s, last_idx = %d' % (out, last_idx))
+        print('out = %s' % out)
+        print('last_idx = %d' % last_idx)
 
     out = out[:last_idx+1]
     return out

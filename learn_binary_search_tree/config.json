@@ -1,0 +1,174 @@
+{
+    "dirs": {
+        "programDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0098",
+            "name": "98. Validate Binary Search Tree",
+            "level": "medium",
+            "testScript": "t0098.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0098.py",
+                    "date": "2021/5/4",
+                    "design": 1,
+                    "coding": 7,
+                    "runtime": "48 ms",
+                    "memory": "18.5 MB"
+                }
+            ]
+        },
+        {
+            "id": "0173",
+            "name": "173. Binary Search Tree Iterator",
+            "level": "medium",
+            "testScript": "t0173.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0173.py",
+                    "date": "2021/5/4",
+                    "design": 15,
+                    "coding": 15,
+                    "runtime": "80 ms",
+                    "memory": "22.2 MB"
+                }
+            ]
+        },
+        {
+            "id": "0700",
+            "name": "700. Search in a Binary Search Tree",
+            "level": "easy",
+            "testScript": "t0700.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0700.py",
+                    "date": "2021/5/4",
+                    "design": 2,
+                    "coding": 4,
+                    "runtime": "80 ms",
+                    "memory": "17.4 MB"
+                }
+            ]
+        },
+        {
+            "id": "0701",
+            "name": "701. Insert into a Binary Search Tree",
+            "level": "medium",
+            "testScript": "t0701.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0701.py",
+                    "date": "2021/5/4",
+                    "design": 1,
+                    "coding": 8,
+                    "runtime": "132 ms",
+                    "memory": "18.2 MB"   
+                }
+            ]
+        },
+        {
+            "id": "0450",
+            "name": "450. Delete Node in a BST",
+            "level": "medium",
+            "testScript": "t0450.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0450.py",
+                    "date": "2021/5/5",
+                    "design": 10,
+                    "coding": 50,
+                    "runtime": "84 ms",
+                    "memory": "20.1 MB"
+                }
+            ]
+        },
+        {
+            "id": "0703",
+            "name": "703. Kth Largest Element in a Stream",
+            "level": "easy",
+            "testScript": "t0703.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0703.py",
+                    "date": "2021/5/5",
+                    "design": 30,
+                    "coding": 60,
+                    "runtime": "208 ms",
+                    "memory": "21.3 MB"
+                }
+            ]
+        },
+        {
+            "id": "0235",
+            "name": "235. Lowest Common Ancestor of a Binary Search Tree",
+            "level": "easy",
+            "testScript": "t0235.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0235.py",
+                    "date": "2021/5/5",
+                    "design": 4,
+                    "coding": 13,
+                    "runtime": "80 ms",
+                    "memory": "19.6 MB"     
+                }
+            ]
+        },
+        {
+            "id": "0220",
+            "name": "220. Contains Duplicate III",
+            "level": "medium",
+            "testScript": "t0220.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0220.py",
+                    "date": "2021/5/8",
+                    "bug": "Time Limit Exceeded"    
+                },
+                {
+                    "id": "v2",
+                    "program": "p0220_v2.py",
+                    "date": "2021/5/8",
+                    "design": 3,
+                    "coding": 7,
+                    "runtime": "140 ms",
+                    "memory": "18.2 MB"
+                }                
+            ]
+        },
+        {
+            "id": "0110",
+            "name": "110. Balanced Binary Tree",
+            "level": "easy",
+            "testScript": "t0110.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0110.py"     
+                }
+            ]
+        },      
+        {
+            "id": "0108",
+            "name": "108. Convert Sorted Array to Binary Search Tree",
+            "level": "easy",
+            "testScript": "t0108.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0108.py"     
+                }
+            ]
+        }                                                             
+    ]
+}
