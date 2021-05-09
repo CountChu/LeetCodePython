@@ -1,0 +1,221 @@
+{
+    "dirs": {
+        "programDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0344",
+            "name": "344. Reverse String",
+            "level": "easy",
+            "testScript": "t0344.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0344.py",
+                    "date": "2021/5/9",
+                    "design": 9,
+                    "coding": 12,
+                    "runtime": "216 ms",
+                    "memory": "66.4 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0344-v2.py",
+                    "date": "2021/5/9",
+                    "design": 2,
+                    "coding": 2,
+                    "runtime": "204 ms",
+                    "memory": "41.7 MB"
+                }                
+            ]
+        },
+        {
+            "id": "0024",
+            "name": "24. Swap Nodes in Pairs",
+            "level": "medium",                        
+            "testScript": "t0024.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0024.py",
+                    "date": "2021/4/18",
+                    "coding": 25,
+                    "runtime": "64 ms",
+                    "memory": "15.5 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0024-v2.py",
+                    "date": "2021/5/9",
+                    "design": 6,
+                    "coding": 4,
+                    "runtime": "44 ms",
+                    "memory": "15.5 MB"
+                }          
+            ]
+        },        
+        {
+            "id": "0206",
+            "name": "206. Reverse Linked List",
+            "level": "easy",
+            "testScript": "t0206.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0206.py",
+                    "date": "2021/5/9",
+                    "design": 6,
+                    "coding": 13,
+                    "runtime": "60 ms",
+                    "memory": "21.7 MB"
+                }
+            ]
+        },    
+        {
+            "id": "0700-ref",
+            "name": "700. Search in a Binary Search Tree"
+        },       
+        {
+            "id": "0119",
+            "name": "119. Pascal's Triangle II",
+            "level": "easy",
+            "testScript": "t0119.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0119.py",
+                    "date": "2021/5/9",
+                    "design": 18,
+                    "coding": 9,
+                    "runtime": "44 ms",
+                    "memory": "15.7 MB"
+                }
+            ]
+        },       
+        {
+            "id": "0509",
+            "name": "509. Fibonacci Number",
+            "level": "easy",
+            "testScript": "t0509.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0509.py",
+                    "date": "2021/5/9",
+                    "design": 0,
+                    "coding": 7,
+                    "runtime": "976 ms",
+                    "memory": "15.7 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0509-v2.py",
+                    "date": "2021/5/9",
+                    "design": 3,
+                    "coding": 7,
+                    "runtime": "36 ms",
+                    "memory": "15.6 MB"
+                }                
+            ]
+        },        
+        {
+            "id": "0070",
+            "name": "70. Climbing Stairs",
+            "level": "easy",                        
+            "testScript": "t0070.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0070.py",
+                    "date": "2021/3/27",
+                    "bug": "Time Limit Exceeded"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0070-v2.py",
+                    "date": "2021/3/27",
+                    "runtime": "28 ms",
+                    "memory": "14.3 MB"
+                },
+                {
+                    "id": "v3",
+                    "program": "p0070-v3.py",
+                    "date": "2021/4/24",
+                    "design": 6,
+                    "coding": 3,
+                    "runtime": "44 ms",
+                    "memory": "15.8 MB"
+                }                            
+            ]
+        },     
+        {
+            "id": "0104-ref",
+            "name": "104. Maximum Depth of Binary Tree"
+        },   
+        {
+            "id": "0050",
+            "name": "50. Pow(x, n)",
+            "level": "medium",
+            "testScript": "t0050.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0050.py",
+                    "date": "2021/5/9",
+                    "design": 6,
+                    "coding": 12,
+                    "runtime": "44 ms",
+                    "memory": "15.6 MB"
+                }
+            ]
+        },     
+        {
+            "id": "0021",
+            "name": "21. Merge Two Sorted Lists",
+            "level": "easy",                        
+            "testScript": "t0021.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0021-merge-two-sorted-lists.py",
+                    "date": "2021/3/24",
+                    "runtime": "40 ms",
+                    "memory": "14.4 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0021-merge-two-sorted-lists-v2.py",
+                    "date": "2021/4/18",
+                    "coding": 12,
+                    "runtime": "52 ms",
+                    "memory": "15.8 MB"
+                }
+            ]
+        },      
+        {
+            "id": "0779",
+            "name": "779. K-th Symbol in Grammar",
+            "level": "medium",
+            "testScript": "t0779.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0779.py"
+                }
+            ]
+        },      
+        {
+            "id": "0095",
+            "name": "95. Unique Binary Search Trees II",
+            "level": "medium",
+            "testScript": "t0095.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0095.py"
+                }
+            ]
+        }                              
+    ]
+}

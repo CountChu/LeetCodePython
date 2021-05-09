@@ -1,8 +1,8 @@
-Problems: 84
-Solved Problem: 69
+Problems: 91
+Solved Problem: 73
 
 Time taken:
-    easy   : count =  37, mean =  10 mins, max =  60 mins
+    easy   : count =  41, mean =  10 mins, max =  60 mins
     medium : count =  29, mean =  22 mins, max =  60 mins
     hard   : count =   3, mean =  33 mins, max =  60 mins
 
@@ -22,8 +22,11 @@ Progress on 2021/5/1:
     0144,  medium: 144. Binary Tree Preorder Traversal
                    v1: design: 5 mins, coding: 9 mins, runtime: 36 ms, memory: 15.8 MB, 
 
+    0145,  medium: 145. Binary Tree Postorder Traversal
+                   v1: design: 2 mins, coding: 4 mins, runtime: 32 ms, memory: 14.1 MB, 
 
-Unsolved problems: (15)
+
+Unsolved problems: (18)
     0023,    hard: 23. Merge k Sorted Lists
     0025,    hard: 25. Reverse Nodes in k-Group
     0029,  medium: 29. Divide Two Integers
@@ -32,11 +35,14 @@ Unsolved problems: (15)
     0032,    hard: 32. Longest Valid Parentheses
     0033,  medium: 33. Search in Rotated Sorted Array
     0034,  medium: 34. Find First and Last Position of Element in Sorted Array
+    0050,  medium: 50. Pow(x, n)
     0068,    hard: 68. Text Justification
     0083,    easy: 83. Remove Duplicates from Sorted List
     0086,  medium: 86. Partition List
-    0092,  medium: 92. Reverse Linked List
+    0092,  medium: 92. Reverse Linked List II
+    0095,  medium: 95. Unique Binary Search Trees II
     0100,    easy: 100. Same Tree
     0108,    easy: 108. Convert Sorted Array to Binary Search Tree
     0110,    easy: 110. Balanced Binary Tree
+    0779,  medium: 779. K-th Symbol in Grammar
 

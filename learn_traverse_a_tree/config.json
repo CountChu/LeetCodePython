@@ -47,6 +47,7 @@
                 {
                     "id": "v1",
                     "program": "p0145.py",
+                    "date": "2021/5/1",
                     "design": 2,
                     "coding": 4,
                     "runtime": "32 ms",
@@ -101,7 +102,7 @@
                 },
                 {
                     "id": "v2",
-                    "program": "p0101_v2.py",
+                    "program": "p0101-v2.py",
                     "date": "2021/5/1",
                     "design": 4,
                     "coding": 8,
@@ -143,7 +144,7 @@
                 },
                 {
                     "id": "v2",
-                    "program": "p0106_v2.py",
+                    "program": "p0106-v2.py",
                     "date": "2021/5/2",
                     "design": 7,
                     "coding": 13,

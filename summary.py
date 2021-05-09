@@ -40,7 +40,7 @@ def main():
         assert 'level' in problem
 
         level = problem['level']
-        assert level in ['easy', 'medium', 'hard']
+        assert level in ['easy', 'medium', 'hard'], level
 
         keys = problem.keys()
         for key in keys:
@@ -49,7 +49,10 @@ def main():
             keys = sln.keys()
             for key in keys:
                 assert key in ['id', 'program', 'date', 'bug', 'design', 'coding', 'runtime', 'memory'], sln
-
+                if 'runtime' in keys:
+                    assert 'date' in keys, sln
+                if 'bug' in keys:
+                    assert 'date' in keys, sln
     #
     # Report them.
     #    
