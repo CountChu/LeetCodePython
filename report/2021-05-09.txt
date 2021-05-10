@@ -1,0 +1,48 @@
+Problems: 91
+Solved Problem: 75
+
+Time taken:
+    easy   : count =  41, mean =  10 mins, max =  60 mins
+    medium : count =  31, mean =  21 mins, max =  60 mins
+    hard   : count =   3, mean =  33 mins, max =  60 mins
+
+Progress on 2021/5/9:
+    0024,  medium: 24. Swap Nodes in Pairs
+                   v2: design: 6 mins, coding: 4 mins, runtime: 44 ms, memory: 15.5 MB, 
+
+    0050,  medium: 50. Pow(x, n)
+                   v1: design: 6 mins, coding: 12 mins, runtime: 44 ms, memory: 15.6 MB, 
+
+    0119,    easy: 119. Pascal's Triangle II
+                   v1: design: 18 mins, coding: 9 mins, runtime: 44 ms, memory: 15.7 MB, 
+
+    0206,    easy: 206. Reverse Linked List
+                   v1: design: 6 mins, coding: 13 mins, runtime: 60 ms, memory: 21.7 MB, 
+
+    0344,    easy: 344. Reverse String
+                   v1: design: 9 mins, coding: 12 mins, runtime: 216 ms, memory: 66.4 MB, 
+                   v2: design: 2 mins, coding: 2 mins, runtime: 204 ms, memory: 41.7 MB, 
+
+    0509,    easy: 509. Fibonacci Number
+                   v1: design: 0 mins, coding: 7 mins, runtime: 976 ms, memory: 15.7 MB, 
+                   v2: design: 3 mins, coding: 7 mins, runtime: 36 ms, memory: 15.6 MB, 
+
+
+Unsolved problems: (16)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium: 31. Next Permutation
+    0032,    hard: 32. Longest Valid Parentheses
+    0033,  medium: 33. Search in Rotated Sorted Array
+    0034,  medium: 34. Find First and Last Position of Element in Sorted Array
+    0068,    hard: 68. Text Justification
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0092,  medium: 92. Reverse Linked List II
+    0095,  medium: 95. Unique Binary Search Trees II
+    0100,    easy: 100. Same Tree
+    0108,    easy: 108. Convert Sorted Array to Binary Search Tree
+    0110,    easy: 110. Balanced Binary Tree
+

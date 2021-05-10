@@ -201,7 +201,12 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0779.py"
+                    "program": "p0779.py",
+                    "date": "2021/5/10",
+                    "design": 14,
+                    "coding": 9,
+                    "runtime": "40 ms",
+                    "memory": "15.7 MB"
                 }
             ]
         },      
