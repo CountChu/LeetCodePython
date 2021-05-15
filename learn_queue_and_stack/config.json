@@ -1,0 +1,140 @@
+{
+    "dirs": {
+        "programDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0622",
+            "name": "622. Design Circular Queue",
+            "level": "medium",
+            "testScript": "t0622.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0622.py",
+                    "date": "2021/5/12",
+                    "design": 14,
+                    "coding": 39,
+                    "runtime": "73 ms",
+                    "memory": "16.4 MB"
+                }           
+            ]
+
+        },
+        {
+            "id": "0200",
+            "name": "200. Number of Islands",
+            "level": "medium",
+            "testScript": "t0200.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0200.py",
+                    "date": "2021/5/14",
+                    "design": 7,
+                    "coding": 20,
+                    "runtime": "144 ms",
+                    "memory": "20.4 MB"
+                }           
+            ]
+        },
+        {
+            "id": "0752",
+            "name": "752. Open the Lock",
+            "level": "medium",
+            "testScript": "t0752.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0752.py",
+                    "date": "2021/5/15",
+                    "design": 11,
+                    "coding": 45,
+                    "runtime": "2568 ms",
+                    "memory": "18 MB"
+                }           
+            ]
+        },
+        {
+            "id": "0279",
+            "name": "279. Perfect Squares",
+            "level": "medium",
+            "testScript": "t0279.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0279.py",
+                    "date": "2021/5/15",
+                    "design": 9,
+                    "coding": 13,
+                    "bug": "Time Limit Exceeded"
+                }           
+            ]
+        },
+        {
+            "id": "0155",
+            "name": "155. Min Stack",
+            "level": "easy",
+            "testScript": "t0155.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0155.py",
+                    "date": "2021/5/15",
+                    "design": 0,
+                    "coding": 6,
+                    "runtime": "72 ms",
+                    "memory": "19.3 MB"
+                }           
+            ]
+        },
+        {
+            "id": "0020",
+            "name": "20. Valid Parentheses",
+            "level": "easy",                        
+            "testScript": "t0020.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0020.py",
+                    "date": "2021/3/24",
+                    "runtime": "32 ms",
+                    "memory": "14.3 MB"
+                },
+                {
+                    "id": "v2",
+                    "program": "p0020-v2.py",
+                    "date": "2021/4/21",
+                    "coding": 9,
+                    "runtime": "32 ms",
+                    "memory": "15.7 MB"
+                }                
+            ]
+        },      
+        {
+            "id": "0739",
+            "name": "739. Daily Temperatures",
+            "level": "medium",
+            "testScript": "t0739.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0739.py"
+                }           
+            ]
+        },          
+        {
+            "id": "0150",
+            "name": "150. Evaluate Reverse Polish Notation",
+            "level": "medium",
+            "testScript": "t0150.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0150.py"
+                }           
+            ]
+        }        
+    ]
+}

@@ -474,30 +474,7 @@
                     "memory": "14.2 MB"      
                 }
             ]
-        },                 
-        {
-            "id": "0020",
-            "name": "20. Valid Parentheses",
-            "level": "easy",                        
-            "testScript": "t0020.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0020-valid-parentheses.py",
-                    "date": "2021/3/24",
-                    "runtime": "32 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0020-valid-parentheses-v2.py",
-                    "date": "2021/4/21",
-                    "coding": 9,
-                    "runtime": "32 ms",
-                    "memory": "15.7 MB"
-                }                
-            ]
-        },        
+        },                        
         {
             "id": "0022",
             "name": "22. Generate Parentheses",
