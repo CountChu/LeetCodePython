@@ -1,0 +1,40 @@
+Problems: 101
+Solved Problem: 82
+
+Time taken:
+    easy   : count =  42, mean =  10 mins, max =  60 mins
+    medium : count =  37, mean =  21 mins, max =  60 mins
+    hard   : count =   3, mean =  33 mins, max =  60 mins
+
+Progress on 2021/5/22:
+    0150,  medium: 150. Evaluate Reverse Polish Notation
+                   v1: design: 13 mins, coding: 6 mins, runtime: 72 ms, memory: 14.7 MB, 
+
+    0200a,  medium: 0200. Number of Islands (stack)
+                   v1: design: 30 mins, coding: 7 mins, runtime: 160 ms, memory: 20.2 MB, 
+
+    0739,  medium: 739. Daily Temperatures
+                   v2: design: 16 mins, coding: 18 mins, runtime: 640 ms, memory: 22.1 MB, 
+
+
+Unsolved problems: (19)
+    0023,    hard: 23. Merge k Sorted Lists
+    0025,    hard: 25. Reverse Nodes in k-Group
+    0029,  medium: 29. Divide Two Integers
+    0030,    hard: 30. Substring with Concatenation of All Words
+    0031,  medium: 31. Next Permutation
+    0032,    hard: 32. Longest Valid Parentheses
+    0033,  medium: 33. Search in Rotated Sorted Array
+    0034,  medium: 34. Find First and Last Position of Element in Sorted Array
+    0068,    hard: 68. Text Justification
+    0083,    easy: 83. Remove Duplicates from Sorted List
+    0086,  medium: 86. Partition List
+    0092,  medium: 92. Reverse Linked List II
+    0095,  medium: 95. Unique Binary Search Trees II
+    0100,    easy: 100. Same Tree
+    0108,    easy: 108. Convert Sorted Array to Binary Search Tree
+    0110,    easy: 110. Balanced Binary Tree
+    0133,  medium: 133. Clone Graph
+    0279,  medium: 279. Perfect Squares
+    0494,  medium: 494. Target Sum
+

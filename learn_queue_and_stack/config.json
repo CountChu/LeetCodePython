@@ -120,8 +120,21 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0739.py"
-                }           
+                    "program": "p0739.py",
+                    "date": "2021/5/21",
+                    "coding": 18,
+                    "design": 16,
+                    "bug": "Time Limit Exceeded"
+                },  
+                {
+                    "id": "v2",
+                    "program": "p0739-v2.py",
+                    "date": "2021/5/22",
+                    "coding": 18,
+                    "design": 16,
+                    "runtime": "640 ms",
+                    "memory": "22.1 MB"
+                }                     
             ]
         },          
         {
@@ -132,9 +145,55 @@
             "solutions": [
                 {
                     "id": "v1",
-                    "program": "p0150.py"
+                    "program": "p0150.py",
+                    "date": "2021/5/22",                    
+                    "coding": 6,
+                    "design": 13,
+                    "runtime": "72 ms",
+                    "memory": "14.7 MB"
                 }           
             ]
-        }        
+        },
+        {
+            "id": "0200a",
+            "name": "0200. Number of Islands (stack)",
+            "level": "medium",
+            "testScript": "t0200.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0200a.py",
+                    "date": "2021/5/22",                    
+                    "coding": 7,
+                    "design": 30,
+                    "runtime": "160 ms",
+                    "memory": "20.2 MB"
+                }           
+            ]
+        },       
+        {
+            "id": "0133",
+            "name": "133. Clone Graph",
+            "level": "medium",
+            "testScript": "t0133.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0133.py"
+                }           
+            ]
+        },         
+        {
+            "id": "0494",
+            "name": "494. Target Sum",
+            "level": "medium",
+            "testScript": "t0494.py",
+            "solutions": [
+                {
+                    "id": "v1",
+                    "program": "p0494.py"
+                }           
+            ]
+        }       
     ]
 }
