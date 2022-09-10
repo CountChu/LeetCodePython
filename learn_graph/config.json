@@ -1,0 +1,30 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "my003",
+            "inferId": "quick-find", 
+            "name": "Implement Disjoint Set with quick find",
+            "level": "easy",
+            "like": true
+        },
+        {
+            "id": "my004",
+            "inferId": "quick-union", 
+            "name": "Implement Disjoint Set with quick union",
+            "level": "easy",
+            "like": true
+        },
+        {
+            "id": "my005",
+            "inferId": "quick-union-ab",
+            "name": "Implement Disjoint Set with quick union by Abdual Bari",
+            "level": "easy",
+            "like": true
+        }
+    ]
+}

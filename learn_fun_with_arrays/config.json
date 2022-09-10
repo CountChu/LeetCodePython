@@ -1,242 +1,105 @@
 {
     "dirs": {
-        "programDn": "solutions",
+        "problemDn": "problems",
+        "solutionDn": "solutions",
         "testDn": "tests" 
     },
     "problems": [
         {
             "id": "0485",
+            "inferId": "max-con-ones",
             "name": "485. Max Consecutive Ones",
-            "level": "easy",
-            "testScript": "t0485.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0485.py",
-                    "date": "2021/4/25",
-                    "design": 2,
-                    "coding": 6,
-                    "runtime": "388 ms",
-                    "memory": "14.5 MB"       
-                }
-            ]
+            "level": "easy"
         },
         {
             "id": "1295",
+            "inferId": "find-numbers",
             "name": "1295. Find Numbers with Even Number of Digits",
-            "level": "easy",
-            "testScript": "t1295.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p1295.py",
-                    "date": "2021/4/25",
-                    "coding": 8,
-                    "runtime": "72 ms",
-                    "memory": "15.6 MB"               
-                }
-            ]
+            "level": "easy"
         },
         {
             "id": "0977",
+            "inferId": "squares",
             "name": "977. Squares of a Sorted Array",
-            "level": "easy",
-            "testScript": "t0977.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0977.py",
-                    "date": "2021/4/25",
-                    "coding": 4,
-                    "runtime": "252 ms",
-                    "memory": "17.4 MB"         
-                }
-            ]
+            "level": "easy"
         },  
         {
             "id": "1089",
+            "inferId": "duplicate-zero",
             "name": "1089. Duplicate Zeros",
-            "level": "easy",
-            "testScript": "t1089.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p1089.py",
-                    "date": "2021/4/25",
-                    "design": 3,
-                    "coding": 7,
-                    "runtime": "1584 ms",
-                    "memory": "16.4 MB"   
-                }
-            ]
+            "level": "easy"
         },      
         {
-            "id": "0088-",
+            "id-": "0088-",
             "name": "0088. Merge Sorted Array"
         },
         {
-            "id": "0027-",
+            "id-": "0027-",
             "name": "0027. Remove Element"
         },   
 
         {
-            "id": "0026-",
+            "id-": "0026-",
             "name": "0026. Remove Duplicates from Sorted Array"
         },    
         {
             "id": "1299",
+            "inferId": "replace",
             "name": "1299. Replace Elements with Greatest Element on Right Side",
-            "level": "easy",
-            "testScript": "t1299.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p1299.py",
-                    "date": "2021/4/28",
-                    "design": 7,
-                    "coding": 11,
-                    "bug": "Time Limit Exceeded" 
-                },
-                {
-                    "id": "v2",
-                    "program": "p1299-v2.py",
-                    "date": "2021/4/28",
-                    "design": 7,
-                    "coding": 8,
-                    "runtime": "1352 ms",
-                    "memory": "16.9 MB"
-                }                
-            ]
+            "level": "easy"
         },         
         {
             "id": "1346",
+            "inferId": "check-double-exist",
             "name": "1346. Check If N and Its Double Exist",
-            "level": "easy",
-            "testScript": "t1346.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p1346.py",
-                    "date": "2021/4/28",
-                    "design": 5,
-                    "coding": 11,
-                    "runtime": "52 ms",
-                    "memory": "14.4 MB" 
-                }
-            ]
+            "level": "easy"
         },  
         {
             "id": "0941",
+            "inferId": "valid-mountain",
             "name": "941. Valid Mountain Array",
-            "level": "easy",
-            "testScript": "t0941.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0941.py",
-                    "date": "2021/4/28",
-                    "design": 5,
-                    "coding": 13,
-                    "runtime": "232 ms",
-                    "memory": "16.7 MB"   
-                }
-            ]
+            "level": "easy"
         },   
         {
-            "id": "0026-2",
+            "id-": "0026-2",
             "name": "0026. Remove Duplicates from Sorted Array"
         }, 
         {
             "id": "0283",
+            "inferId": "move-zeros",
             "name": "283. Move Zeroes",
-            "level": "easy",
-            "testScript": "t0283.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0283.py",
-                    "date": "2021/4/28",
-                    "design": 9,
-                    "coding": 6,
-                    "runtime": "400 ms",
-                    "memory": "15.2 MB"
-                }
-            ]
+            "level": "easy"
         }, 
         {
             "id": "0905",
+            "inferId": "sort-by-parity",
             "name": "905. Sort Array By Parity",
-            "level": "easy",
-            "testScript": "t0905.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0905.py",
-                    "date": "2021/4/29",
-                    "design": 5,
-                    "coding": 4,
-                    "runtime": "84 ms",
-                    "memory": "14.8 MB"      
-                }
-            ]
+            "level": "easy"
         },     
         {
-            "id": "0027-2",
+            "id-": "0027-2",
             "name": "0027. Remove Element"
         },
         {
             "id": "1051",
+            "inferId": "height-checker",
             "name": "1051. Height Checker",
-            "level": "easy",
-            "testScript": "t1051.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p1051.py",
-                    "date": "2021/4/29",
-                    "design": 0,
-                    "coding": 2,
-                    "runtime": "36 ms",
-                    "memory": "14.2 MB"      
-                }
-            ]
+            "level": "easy"
         },      
         {
             "id": "0414",
+            "inferId": "third-max-num",
             "name": "414. Third Maximum Number",
-            "level": "easy",
-            "testScript": "t0414.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0414.py",
-                    "date": "2021/4/29",
-                    "design": 0,
-                    "coding": 7,
-                    "runtime": "48 ms",
-                    "memory": "15.4 MB"     
-                }
-            ]
+            "level": "easy"
         },     
         {
             "id": "0448",
+            "inferId": "find-all-nums",
             "name": "448. Find All Numbers Disappeared in an Array",
-            "level": "easy",
-            "testScript": "t0448.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0448.py",
-                    "date": "2021/4/29",
-                    "design": 0,
-                    "coding": 5,
-                    "runtime": "364 ms",
-                    "memory": "25.2 MB"     
-                }
-            ]
+            "level": "easy"
         },
         {
-            "id": "0977-2",
+            "id-": "0977-2",
             "name": "0977. Squares of a Sorted Array"
         }
     ]

@@ -2,23 +2,103 @@ import json
 import argparse
 import statistics
 import datetime
-import pdb
+import sys
 
+import config
 import util
 
-def main():
+import pdb
+br = pdb.set_trace
+
+#
+# Build argument parser and return it.
+#
+
+def build_args():
+    desc = '''
+The app is to test a problem of LeCoo by solutions.
+'''
+
+    parser = argparse.ArgumentParser(
+                formatter_class=argparse.RawTextHelpFormatter,
+                description=desc)
 
     #
-    # Parse arguments
+    # Anonymous arguments.
     #
 
-    args = build_args()
+    parser.add_argument(
+            'object',      
+            help='')
+    
+    #
+    # Specific arguments
+    #
+
+    parser.add_argument(
+            '-d',
+            dest='detail',
+            action='store_true',
+            help='Detail.')        
+
+    parser.add_argument(
+            '--date',
+            dest='date',
+            help='Date. E.g., "2022/9/3"')     
+
+    parser.add_argument(
+            '--like',
+            dest='like',
+            action='store_true',
+            help='Display problem I like.')     
+
+    parser.add_argument(
+            '-l',
+            dest='lesson',
+            help='E.g., p_0001_0100')  
+
+    return parser.parse_args()
+
+def display_problems(title, pbl_ls):
+    print('%s: (%d)' % (title, len(pbl_ls)))
+
+    w = 0
+    for problem in pbl_ls:
+        id = problem['id']
+        w = max(0, len(id))
+
+    for problem in pbl_ls:
+        id = problem['id']
+        level = problem['level']
+        name = problem['name']
+        fmt = '    %'+str(w)+'s, %7s: %s'
+        print(fmt % (id, level, name))
+    print('')
+
+def display_references(title, refer_ls):
+    print('%s: (%d)' % (title, len(refer_ls)))
+
+    w = 0
+    for refer in refer_ls:
+        id = refer['ref']
+        problem = refer['problem']
+        lesson = problem['lesson']
+        level = problem['level']
+        name = problem['name']
+
+        fmt = '    %s @ %s, %s: %s'
+        print(fmt %(id, lesson, level, name))
+    print('')
+
+def handle_problem(args, cfg):
 
     #
-    # Merge configs into a config
+    # Check args.
     #
 
-    config = util.collect_config()
+    if args.like and (args.lesson != None):
+        print('Error --like and -l can not be set at the same time.')
+        sys.exit(0)
 
     #
     # Get date_str. e.g., '2021/4/22' 
@@ -28,42 +108,55 @@ def main():
         date_str = datetime.date.today().strftime('%Y/%-m/%-d')
     else:
         date_str = args.date
-    #pdb.set_trace()
+
 
     #
-    # Check config syntex.
-    # 
+    # If --like, report problems I like.
+    #
 
-    for problem in config['problems']:
-        assert 'id' in problem
-        assert 'name' in problem
-        assert 'level' in problem
+    if args.like:
+        problems = []
+        for problem in cfg['problems']:
+            if 'like' in problem:
+                if problem['like']:
+                    problems.append(problem)
 
-        level = problem['level']
-        assert level in ['easy', 'medium', 'hard'], level
+        display_problems('Liked problems', problems)
+        sys.exit(0)
 
-        keys = problem.keys()
-        for key in keys:
-            assert key in ['id', 'name', 'level', 'testScript', 'solutions'], problem
-        for sln in problem['solutions']:
-            keys = sln.keys()
-            for key in keys:
-                assert key in ['id', 'program', 'date', 'bug', 'design', 'coding', 'runtime', 'memory'], sln
-                if 'runtime' in keys:
-                    assert 'date' in keys, sln
-                if 'bug' in keys:
-                    assert 'date' in keys, sln
+    #
+    # If -l, report problems in the lesson.
+    #
+
+    if args.lesson:
+        problems = []
+        for problem in cfg['problems']:
+            if problem['lesson'] == args.lesson:
+                problems.append(problem)
+
+        display_problems('Liked problems', problems)
+
+
+        references = []
+        for reference in cfg['references']:
+            if reference['lesson'] == args.lesson:
+                references.append(reference)
+        display_references('Liked problems(refer)', references)
+
+        sys.exit(0)
+
     #
     # Report them.
     #    
 
-    print('Problems: %d' % len(config['problems']))
+    problems = cfg['problems']
+    print('Problems: %d' % len(problems))
 
     #
     # Report solved solutions.
     #
 
-    for problem in config['problems']:
+    for problem in problems:
         solved = False
         if len(problem['solutions']) >= 1:
             solved = True
@@ -76,7 +169,7 @@ def main():
         
     unsolved_pbl_ls = []
     solved_count = 0    
-    for problem in config['problems']:
+    for problem in problems:
         if problem['solved']:
             solved_count += 1
         else:
@@ -94,7 +187,7 @@ def main():
         'hard': []
         }
 
-    for problem in config['problems']:
+    for problem in problems:
         if not problem['solved']:
             continue
 
@@ -103,6 +196,9 @@ def main():
         last_sln = problem['solutions'][-1]
         if 'coding' in last_sln:
             coding = last_sln['coding']
+            if coding == 0:
+                continue
+
             level_coding_d[level].append(coding)
             if args.detail:
                 print('%s:' % name)
@@ -127,7 +223,7 @@ def main():
     #
 
     progress_d = {}  # progress_d[id] = {'problem', 'solutions'}
-    for problem in config['problems']:
+    for problem in problems:
         id = problem['id']
         for sln in problem['solutions']:
             if 'date' in sln:
@@ -168,84 +264,88 @@ def main():
         print('')
     print('')        
 
-
     #
     # Report unsolved_pbl_ls
     #
 
-    print('Unsolved problems: (%d)' % len(unsolved_pbl_ls))
-    for problem in unsolved_pbl_ls:
-        id = problem['id']
+    display_problems('Unsolved problems', unsolved_pbl_ls)
+
+def handle_lesson(args, cfg):
+    problems = cfg['problems']
+
+    lessons = set()
+    for problem in problems:
+        lessons.add(problem['lesson'])
+
+    lesson_ls = list(lessons)
+    lesson_ls.sort()
+    print('Lessons:')
+    for lesson in lesson_ls:
+        print('    '+lesson)
+
+def main():
+
+    #
+    # Parse arguments
+    #
+
+    args = build_args()
+
+    #
+    # Merge configs into a config
+    #
+
+    cfg = config.collect()
+
+    #
+    # Check cfg syntex.
+    # 
+
+    for problem in cfg['problems']:
+        assert 'id' in problem
+        assert 'name' in problem
+        assert 'level' in problem, problem
+
         level = problem['level']
-        name = problem['name']
-        print('    %4s, %7s: %s' % (id, level, name))
-    print('')
+        assert level in ['easy', 'medium', 'hard'], level
 
-    #pdb.set_trace()
-                        
+        keys = problem.keys()
+        for key in keys:
+            if key not in ['id', 'name', 'inferId', 'level', 'testScript', 'lesson', 'fn', 'solutions', 'like']:
+                print('Error. The key %s is wrong in the problem' % key)
+                print(problem)
+                sys.exit(0)
 
-#
-# Build argument parser and return it.
-#
+        if 'solutions' not in problem:
+            print('Error the solutions are not in the problem')
+            print(problem)
+            sys.exit(0)
 
-def build_args():
-    desc = '''
-The app is to test a problem of LeCoo by solutions.
-'''
+        for sln in problem['solutions']:
+            keys = sln.keys()
+            for key in keys:
+                if key not in ['id', 'program', 'date', 'bug', 'design', 'coding', 'runtime', 'memory', 'fasterThan']:
+                    print('Error. The key %s is wrong in the solution' % key)
+                    print(sln)
+                    sys.exit(0)
 
-    parser = argparse.ArgumentParser(
-                formatter_class=argparse.RawTextHelpFormatter,
-                description=desc)
-
-    #
-    # Standard arguments
-    #
-
-    parser.add_argument(
-            '--verbose',
-            dest='verbose',
-            action='store_true',
-            help='Print verbose messages')
-
-    parser.add_argument(
-            '--log',
-            dest='log',
-            action='store_true',
-            help='Enable to save log in a file.')
-            
-    parser.add_argument(
-            '--level',
-            dest='level',
-            default='info',
-            help='Level of logging. debug->info->warning->error->critical')             
+                if 'runtime' in keys:
+                    assert 'date' in keys, sln
+                if 'bug' in keys:
+                    assert 'date' in keys, sln
 
     #
-    # Anonymous arguments.
+    # Dispatch object
     #
 
-    '''    
-    parser.add_argument(
-            'problem',       
-            help='An ID of the problem that is defined in config.json. E.g., 010')
-    '''
-    
-    #
-    # Specific arguments
-    #
+    if args.object in ['problem', 'p']:
+        handle_problem(args, cfg)
 
-    parser.add_argument(
-            '-d',
-            dest='detail',
-            action='store_true',
-            help='Detail.')        
+    elif args.object == 'lesson':
+        handle_lesson(args, cfg)
 
-    parser.add_argument(
-            '--date',
-            dest='date',
-            help='Date')     
-
-    return parser.parse_args()
-
+    else:
+        assert False
 
 
 if __name__ == '__main__':

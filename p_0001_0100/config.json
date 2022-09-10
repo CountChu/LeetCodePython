@@ -1,982 +1,286 @@
 {
     "dirs": {
-        "programDn": "solutions",
+        "problemDn": "problems",
+        "solutionDn": "solutions",
         "testDn": "tests" 
     },
     "problems": [
         {
             "id": "0001",
+            "inferId": "two-sum", 
             "name": "1. Two Sum",
-            "level": "easy",
-            "testScript": "t0001.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0001-two-sum.py",
-                    "date": "2021/3/28",
-                    "coding": 5,
-                    "runtime": "56 ms",
-                    "memory": "14.6 MB"                    
-                },
-                {
-                    "id": "v2",
-                    "program": "p0001-two-sum-v2.py",
-                    "date": "2021/4/10",
-                    "coding": 7,
-                    "runtime": "48 ms",
-                    "memory": "14.5 MB"
-                },
-                {
-                    "id": "v3",
-                    "program": "p0001-two-sum-v3.py",
-                    "date": "2021/4/17",
-                    "coding": 150,
-                    "runtime": "86 ms",
-                    "memory": "16.2 MB"
-                },    
-                {
-                    "id": "v4",
-                    "program": "p0001-two-sum-v4.py",
-                    "date": "2021/4/17",
-                    "coding": 7,
-                    "runtime": "48 ms",
-                    "memory": "14.4 MB"
-                },     
-                {
-                    "id": "v5",
-                    "program": "p0001-two-sum-v5.py",
-                    "date": "2021/4/24",
-                    "coding": 8,
-                    "runtime": "44 ms",
-                    "memory": "14.6 MB"
-                } 
-            ]
+            "level": "easy"
         },
         {
             "id": "0002",
+            "inferId": "add-two-numbers", 
             "name": "2. Add Two Numbers",
             "level": "medium",
-            "testScript": "t0002.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0002-add-two-numbers.py",
-                    "date": "2021/3/28",
-                    "coding": 15
-                },
-                {
-                    "id": "v2",
-                    "program": "p0002-add-two-numbers-v2.py",
-                    "date": "2021/4/10",
-                    "coding": 28
-                }                
-            ]
+            "testScript": "0002-t.py"
         }, 
         {
             "id": "0003",
+            "inferId": "longest-substr",
             "name": "3. Longest Substring Without Repeating Characters",
             "level": "medium",
-            "testScript": "t0003.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0003.py",
-                    "date": "2021/3/28",
-                    "coding": 60,
-                    "runtime": "540 ms",
-                    "memory": "14.4 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0003-v2.py",
-                    "date": "2021/4/10", 
-                    "coding": 22,
-                    "bug": "Time Limit Exceeded"
-                },
-                {
-                    "id": "v3",
-                    "program": "p0003-v3.py",
-                    "date": "2021/4/10",
-                    "coding": 29,
-                    "runtime": "508 ms",
-                    "memory": "17.5 MB"
-                },
-                {
-                    "id": "v4",
-                    "program": "p0003-v4.py",
-                    "date": "2021/4/20",
-                    "coding": 10,
-                    "runtime": "56 ms",
-                    "memory": "15.8 MB"
-                },        
-                {
-                    "id": "v5",
-                    "program": "p0003-v5.py",
-                    "date": "2021/4/24",
-                    "design": 10,
-                    "coding": 11,
-                    "runtime": "716 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v6",
-                    "program": "p0003-v6.py",
-                    "date": "2021/4/24",
-                    "design": 5,
-                    "coding": 28,
-                    "runtime": "80 ms",
-                    "memory": "15.5 MB"     
-                }                                           
-            ]
+            "testScript": "0003-t.py"
         },       
         {
             "id": "0004",
+            "inferId": "median-of-two-sorted-arrays",
             "name": "4. Median of Two Sorted Arrays",
             "level": "hard",
-            "testScript": "t0004.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0004-median-of-two-sorted-arrays.py",
-                    "date": "2021/3/28",
-                    "coding": 17
-                },
-                {
-                    "id": "v2",
-                    "program": "p0004-median-of-two-sorted-arrays-v2.py",
-                    "date": "2021/4/10",
-                    "coding": 12,
-                    "runtime": "104 ms",
-                    "memory": "14.6 MB"
-                }
-            ]
+            "testScript": "0004-t.py"
         },   
         {
             "id": "0005",
+            "inferId": "longest-palindromic-substr",
             "name": "5. Longest Palindromic Substring",
             "level": "medium",
-            "testScript": "t0005.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0005-longest-palindromic-substring.py",
-                    "date": "2021/3/29",
-                    "bug": "Time Limit Exceeded"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0005-longest-palindromic-substring-v2.py",
-                    "date": "2021/4/11",
-                    "coding": 60,
-                    "runtime": "3376 ms",
-                    "memory": "15.8 MB"
-                }
-            ]
+            "testScript": "0005-t.py"
         },
         {
             "id": "0006",
+            "inferId": "zigzag-conversion",
             "name": "6. ZigZag Conversion",
             "level": "medium",
-            "testScript": "t0006.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0006-zigzag-conversion.py",
-                    "date": "2021/3/29",
-                    "runtime": "496 ms",
-                    "memory": "14.4 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0006-zigzag-conversion-v2.py",
-                    "date": "2021/4/11",
-                    "coding": 22,
-                    "runtime": "100 ms",
-                    "memory": "14.8 MB"
-                }                
-            ]
-        },     
+            "testScript": "0006-t.py"
+        },
         {
             "id": "0007",
+            "inferId": "reverse-int",
             "name": "7. Reverse Integer",
-            "level": "easy",            
-            "testScript": "t0007.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0007-reverse-integer.py",
-                    "date": "2021/4/3",
-                    "coding": 9,
-                    "runtime": "32 ms",
-                    "memory": "14.3 MB"
-                },             
-                {
-                    "id": "v2",
-                    "program": "p0007-reverse-integer-v2.py",
-                    "date": "2021/4/11",
-                    "coding": 8,
-                    "runtime": "24 ms",
-                    "memory": "14.1 MB"
-                }                
-            ]            
+            "level": "medium",            
+            "testScript": "0007-t.py"
         },         
         {
             "id": "0008",
+            "inferId": "atoi",
             "name": "8. String to Integer (atoi)",
             "level": "medium",
-            "testScript": "t0008.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0008-string-to-integer-atoi.py",
-                    "date": "2021/4/3",
-                    "coding": 24,
-                    "runtime": "40 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0008-string-to-integer-atoi-v2.py",
-                    "date": "2021/4/11",
-                    "coding": 31,
-                    "runtime": "32 ms",
-                    "memory": "14.2 MB"
-                }                
-            ]
+            "testScript": "0008-t.py"
         },  
         {
             "id": "0009",
+            "inferId": "palindrome-num",
             "name": "9. Palindrome Number",
             "level": "easy",
-            "testScript": "t0009.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0009-palindrome-number.py",
-                    "date": "2021/4/3",
-                    "coding": 5
-                },               
-                {
-                    "id": "v2",
-                    "program": "p0009-palindrome-number-v2.py",
-                    "date": "2021/4/11",
-                    "coding": 6,
-                    "runtime": "72 ms",
-                    "memory": "14.3 MB"
-                }               
-            ]
+            "testScript": "0009-t.py"
         },         
         {
             "id": "0010",
+            "inferId": "reg-match",
             "name": "10. regular-expression-matching",
             "level": "hard",            
-            "testScript": "t0010.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0010-regular-expression-matching-v1.py",
-                    "date": "2021/4/10",
-                    "coding": 60
-                },
-                {
-                    "id": "v2",
-                    "program": "p0010-regular-expression-matching-v2.py",
-                    "date": "2021/4/10",
-                    "coding": 60
-                }
-            ]
+            "testScript": "0010-t.py"
         },
         {
             "id": "0011",
+            "inferId": "most-water",
             "name": "11. Container With Most Water",
-            "level": "medium",            
-            "testScript": "t0011.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0011-container-with-most-water.py",
-                    "date": "2021/4/3",
-                    "coding": 25
-                }
-            ]
+            "level": "medium"
         },
         {
             "id": "0012",
+            "inferId": "int-to-roman",
             "name": "12. Integer to Roman",
-            "level": "medium",                        
-            "testScript": "t0012.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0012-integer-to-roman.py",
-                    "date": "2021/4/11",
-                    "coding": 19,
-                    "runtime": "48 ms",
-                    "memory": "14.5 MB"
-                }
-            ]
+            "level": "medium"
         },
         {
             "id": "0013",
+            "inferId": "roman-to-int",
             "name": "13. Roman to Integer",
-            "level": "easy",                        
-            "testScript": "t0013.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0013-roman-to-integer.py",
-                    "date": "2021/3/23",
-                    "runtime": "64 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0013-roman-to-integer-v2.py",
-                    "date": "2021/4/11",
-                    "coding": 7,
-                    "runtime": "44 ms",
-                    "memory": "14.3 MB"
-                }
-            ]
+            "level": "easy"
         },
         {
             "id": "0014",
+            "inferId": "longest-common-prefix",
             "name": "14. Longest Common Prefix",
-            "level": "easy",                        
-            "testScript": "t0014.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0014-longest-common-prefix.py",
-                    "date": "2021/3/24"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0014-longest-common-prefix-v2.py",
-                    "date": "2021/4/13",
-                    "coding": 23,
-                    "runtime": "36 ms",
-                    "memory": "14.5 MB"                    
-                }                
-            ]
+            "level": "easy"
         },     
         {
             "id": "0015",
+            "inferId": "3sum",
             "name": "15. 3Sum",
-            "level": "medium",                        
-            "testScript": "t0015.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0015-3sum.py",
-                    "date": "2021/4/13",
-                    "coding": 26,
-                    "bug": "Time Limit Exceeded"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0015-3sum-v2.py",
-                    "date": "2021/4/17",
-                    "coding": 22,
-                    "runtime": "6812 ms",
-                    "memory": "18 MB"
-                },
-                {
-                    "id": "v3",
-                    "program": "p0015-3sum-v3.py",
-                    "date": "2021/4/17",
-                    "runtime": "3844 ms",
-                    "memory": "19.7 MB"
-                },
-                {
-                    "id": "v4",
-                    "program": "p0015-3sum-v4.py",
-                    "date": "2021/4/17",
-                    "coding": 64,
-                    "runtime": "9296 ms",
-                    "memory": "603.2 MB"
-                },
-                {
-                    "id": "s1",
-                    "program": "p0015-3sum-s1.py",
-                    "date": "2021/4/17"
-                },
-                {
-                    "id": "v5",
-                    "program": "p0015-3sum-v5.py",
-                    "date": "2021/4/17",
-                    "coding": 46,
-                    "runtime": "1060 ms",
-                    "memory": "17.8 MB"
-                }                                        
-            ]
+            "level": "medium"
         },
         {
             "id": "0016",
+            "inferId": "3sum-closest",
             "name": "16. 3Sum Closest",
-            "level": "medium",                        
-            "testScript": "t0016.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0016-3sum-closest.py",
-                    "date": "2021/4/17",
-                    "coding": 11,
-                    "runtime": "4432 ms",
-                    "memory": "14.4 MB"                
-                }
-            ]
+            "level": "medium"
         },     
         {
             "id": "0017",
+            "inferId": "phone-num",
             "name": "17. Letter Combinations of a Phone Number",
-            "level": "medium",                        
-            "testScript": "t0017.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0017-letter-combinations-of-a-phone-number.py",
-                    "date": "2021/4/17",
-                    "coding": 15,
-                    "runtime": "40 ms",
-                    "memory": "15.5 MB"          
-                }
-            ]
+            "level": "medium"
         },          
         {
             "id": "0018",
+            "inferId": "4sum",
             "name": "18. 4Sum",
-            "level": "medium",                        
-            "testScript": "t0018.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0018-4sum.py",
-                    "date": "2021/4/17",
-                    "coding": 27,
-                    "runtime": "1704 ms",
-                    "memory": "15.7 MB"           
-                }
-            ]
+            "level": "medium"
         },          
         {
             "id": "0019",
+            "inferId": "rm-node",
             "name": "19. Remove Nth Node From End of List",
-            "level": "medium",                        
-            "testScript": "t0019.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0019-remove-nth-node-from-end-of-list.py",
-                    "date": "2021/4/18",
-                    "coding": 31,
-                    "runtime": "32 ms",
-                    "memory": "14.2 MB"      
-                }
-            ]
+            "level": "medium"
         },                        
         {
             "id": "0022",
+            "inferId": "gen-parentheses",
             "name": "22. Generate Parentheses",
-            "level": "medium",                        
-            "testScript": "t0022.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0022-generate-parentheses.py",
-                    "date": "2021/4/21",
-                    "coding": 46,
-                    "runtime": "92 ms",
-                    "memory": "15.9 MB"
-                }                
-            ]
+            "level": "medium"
         }, 
         {
-            "id": "0023",
+            "id-": "0023",
             "name": "23. Merge k Sorted Lists",
-            "level": "hard",                        
-            "testScript": "t0023.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0023-merge-k-sorted-lists.py"
-                }
-            ]    
+            "level": "hard"
         },                    
         {
-            "id": "0025",
+            "id-": "0025",
             "name": "25. Reverse Nodes in k-Group",
-            "level": "hard",                        
-            "testScript": "t0025.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0025-reverse-nodes-in-k-group.py"
-                }
-            ]    
+            "level": "hard"
         },            
         {
             "id": "0026",
+            "inferId": "rm-dup",
             "name": "26. Remove Duplicates from Sorted Array",
-            "level": "easy",                        
-            "testScript": "t0026.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0026.py",
-                    "date": "2021/3/24",
-                    "runtime": "108 ms",
-                    "memory": "16 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0026-v2.py",
-                    "date": "2021/4/22",
-                    "coding": 13,
-                    "runtime": "8720 ms",
-                    "memory": "17.1 MB"
-                },
-                {
-                    "id": "v3",
-                    "program": "p0026-v3.py",
-                    "date": "2021/4/25",
-                    "design": 19,
-                    "coding": 15,
-                    "runtime": "80 ms",
-                    "memory": "17.3 MB"
-                },
-                {
-                    "id": "v4",
-                    "program": "p0026-v4.py",
-                    "date": "2021/4/28",
-                    "design": 11,
-                    "coding": 10,
-                    "runtime": "88 ms",
-                    "memory": "17.3 MB"
-                }                       
-            ]
+            "level": "easy"
         },     
         {
             "id": "0027",
+            "inferId": "rm-element",
             "name": "27. Remove Element",
-            "level": "easy",                        
-            "testScript": "t0027.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0027-remove-element.py",
-                    "date": "2021/3/24",
-                    "runtime": "36 ms",
-                    "memory": "14.1 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0027-remove-element-v2.py",
-                    "date": "2021/4/22",
-                    "coding": 11,
-                    "runtime": "36 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v3",
-                    "program": "p0027-remove-element-v3.py",
-                    "date": "2021/4/25",
-                    "design": 5,
-                    "coding": 19,
-                    "runtime": "64 ms",
-                    "memory": "15.6 MB"
-                },        
-                {
-                    "id": "v4",
-                    "program": "p0027-remove-element-v4.py",
-                    "date": "2021/4/25",
-                    "design": 5,
-                    "coding": 10,
-                    "runtime": "44 ms",
-                    "memory": "15.4 MB"
-                }              
-            ]
+            "level": "easy"
         },
         {
             "id": "0028",
+            "inferId": "strStr",
             "name": "28. Implement strStr()",
-            "level": "easy",                        
-            "testScript": "t0028.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0028-Implement strStr().py",
-                    "date": "2021/3/25",
-                    "runtime": "76 ms",
-                    "memory": "14.7 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0028-Implement strStr()-v2.py",
-                    "date": "2021/4/22",
-                    "coding": 7,
-                    "bug": "Time Limit Exceeded"
-                },
-                {
-                    "id": "sln1",
-                    "program": "p0028-Implement strStr()-sln1.py",
-                    "date": "2021/4/23"
-                },         
-                {
-                    "id": "v3",
-                    "program": "p0028-Implement strStr()-v3.py",
-                    "date": "2021/4/23",
-                    "coding": 8,
-                    "runtime": "52 ms",
-                    "memory": "15.9 MB"
-                }                                       
-            ]
+            "level": "easy"
         },
         {
             "id": "0029",
+            "inferId": "divide-two-ints",
             "name": "29. Divide Two Integers",
-            "level": "medium",                        
-            "testScript": "t0029.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0029-divide-two-integers.py",
-                    "date": "2021/4/23",
-                    "coding": 8,
-                    "bug": "Time Limit Exceeded"
-                }
-            ]    
+            "level": "medium"
         },    
         {
-            "id": "0030",
+            "id-": "0030",
             "name": "30. Substring with Concatenation of All Words",
-            "level": "hard",                        
-            "testScript": "t0030.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0030.py"
-                }
-            ]    
+            "level": "hard"  
         },    
         {
-            "id": "0031",
+            "id-": "0031",
             "name": "31. Next Permutation",
-            "level": "medium",                        
-            "testScript": "t0031.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0032.py"
-                }
-            ]    
+            "level": "medium"
         }, 
         {
-            "id": "0032",
+            "id-": "0032",
             "name": "32. Longest Valid Parentheses",
-            "level": "hard",                        
-            "testScript": "t0032.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0032.py"
-                }
-            ]    
+            "level": "hard"
         }, 
         {
-            "id": "0033",
+            "id-": "0033",
             "name": "33. Search in Rotated Sorted Array",
-            "level": "medium",                        
-            "testScript": "t0033.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0033py"
-                }
-            ]    
+            "level": "medium"
         }, 
         {
-            "id": "0034",
+            "id-": "0034",
             "name": "34. Find First and Last Position of Element in Sorted Array",
-            "level": "medium",                        
-            "testScript": "t0034.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0034.py"
-                }
-            ]    
+            "level": "medium"
         },                                                 
         {
             "id": "0035",
+            "inferId": "search-insert-pos",
             "name": "35. Search Insert Position",
-            "level": "easy",                        
-            "testScript": "t0035.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0035-search-insert-position.py",
-                    "date": "2021/3/25",
-                    "runtime": "52 ms",
-                    "memory": "14.9 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0035-search-insert-position-v2.py",
-                    "date": "2021/4/23",
-                    "coding": 5,
-                    "runtime": "52 ms",
-                    "memory": "15.1 MB"                    
-                }                
-            ]
+            "level": "easy"
         },       
         {
             "id": "0053",
+            "inferId": "max-subarray",
             "name": "53. Maximum Subarray",
-            "level": "easy",                        
-            "testScript": "t0053.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0053-maximum-subarray.py",
-                    "date": "2021/3/23",
-                    "bug": "Time Limit Exceeded"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0053-maximum-subarray-v2.py",
-                    "date": "2021/4/19",
-                    "bug": "Time Limit Exceeded"
-                }, 
-                {
-                    "id": "v3",
-                    "program": "p0053-maximum-subarray-v3.py",
-                    "date": "2021/4/19",
-                    "bug": "Wrong Answere"
-                },                          
-                {
-                    "id": "v4",
-                    "program": "p0053-maximum-subarray-v4.py",
-                    "date": "2021/4/20",
-                    "coding": 11,
-                    "runtime": "64 ms",
-                    "memory": "16.4 MB"
-                }                          
-            ]
+            "level": "easy"
         },
         {
             "id": "0058",
+            "inferId": "length-of-last-word",
             "name": "58. Length of Last Word",
-            "level": "easy",                        
-            "testScript": "t0058.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0058-length-of-last-word.py",
-                    "date": "2021/3/25",
-                    "runtime": "64 ms",
-                    "memory": "14.4 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0058-length-of-last-word-v2.py",
-                    "date": "2021/4/23",
-                    "coding": 10,
-                    "runtime": "32 ms",
-                    "memory": "14.3 MB"      
-                }                
-            ]
+            "level": "easy"
         },    
         {
             "id": "0061",
+            "inferId": "rotate-list",
             "name": "61. Rotate List",
-            "level": "medium",                        
-            "testScript": "t0061.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0061-rotate-list.py",
-                    "date": "2021/4/18",
-                    "coding": 34,
-                    "runtime": "44 ms",
-                    "memory": "15.6 MB"
-                }
-            ]
+            "level": "medium"
         },              
         {
             "id": "0066",
+            "inferId": "plus-one",
             "name": "66. Plus One",
-            "level": "easy",                        
-            "testScript": "t0066.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0066-plus-one.py",
-                    "date": "2021/3/25",
-                    "runtime": "32 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0066-plus-one-v2.py",
-                    "date": "2021/4/23",
-                    "coding": 7,
-                    "runtime": "40 ms",
-                    "memory": "15.7 MB"                    
-                }                
-            ]
+            "level": "easy"
         },
         {
             "id": "0067",
+            "inferId": "add-binary",
             "name": "67. Add Binary",
-            "level": "easy",                        
-            "testScript": "t0067.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0067-add-binary.py",
-                    "date": "2021/3/25",
-                    "runtime": "64 ms",
-                    "memory": "14.2 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0067-add-binary-v2.py",
-                    "date": "2021/4/24",
-                    "design": 9,
-                    "coding": 19,
-                    "runtime": "48 ms",
-                    "memory": "15.7 MB"
-                }                
-            ]
+            "level": "easy"
         },  
         {
-            "id": "0068",
+            "id-": "0068",
             "name": "68. Text Justification",
-            "level": "hard",                        
-            "testScript": "t0068.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0068.py"
-                }
-            ]
+            "level": "hard"
         },         
         {
             "id": "0069",
+            "inferId": "sqrtx",
             "name": "69. Sqrt(x) ",
-            "level": "easy",                        
-            "testScript": "t0069.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0069-sqrtx.py",
-                    "date": "2021/3/26",
-                    "runtime": "9692 ms",
-                    "memory": "14.2 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0069-sqrtx-v2.py",
-                    "date": "2021/4/24",
-                    "design": 7,
-                    "coding": 17,
-                    "runtime": "1648 ms",
-                    "memory": "17.7 MB"
-                }                
-            ]
+            "level": "easy"
         },    
         {
             "id": "0082",
+            "inferId": "rm-dup",
             "name": "82. Remove Duplicates from Sorted List II",
-            "level": "medium",
-            "testScript": "t0082.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0082-remove-duplicates-from-sorted-list-ii.py",
-                    "date": "2021/4/18",
-                    "coding": 17,
-                    "runtime": "44 ms",
-                    "memory": "15.8 MB"
-                }
-            ]
+            "level": "medium"
         },          
         {
             "id": "0083",
+            "inferId": "rm-dup",
             "name": "83. Remove Duplicates from Sorted List",
-            "level": "easy",
-            "testScript": "t0083.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0083-remove-duplicates-from-sorted-list.py",
-                    "date": "2021/3/27"
-                }
-            ]
+            "level": "easy"
         },   
         {
             "id": "0086",
+            "inferId": "partition-list",
             "name": "86. Partition List",
-            "level": "medium",
-            "testScript": "t0086.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0086-partition-list.py",
-                    "date": "2021/4/19"
-                }
-            ]
+            "level": "medium"
         },           
         {
             "id": "0088",
+            "inferId": "merge-sorted",
             "name": "88. Merge Sorted Array",
-            "level": "easy",
-            "testScript": "t0088.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0088-merge-sorted-array.py",
-                    "date": "2021/3/27",
-                    "runtime": "36 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0088-merge-sorted-array-v2.py",
-                    "date": "2021/4/25",
-                    "design": 19,
-                    "coding": 16,
-                    "runtime": "60 ms",
-                    "memory": "15.5 MB"
-                }                
-            ]
+            "level": "easy"
         },   
         {
             "id": "0092",
+            "inferId": "reverse-ll",
             "name": "92. Reverse Linked List II",
-            "level": "medium",
-            "testScript": "t0092.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0092-reverse-linked-list-ii.py",
-                    "date": "2021/4/19"
-                }
-            ]
+            "level": "medium"
         },        
         {
             "id": "0100",
+            "inferId": "same-tree",
             "name": "100. Same Tree",
-            "level": "easy",
-            "testScript": "t0100.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0100-same-tree.py",
-                    "date": "2021/3/27"
-                }
-            ]
-        }                           
+            "level": "easy"
+        },
+        {
+            "id": "my999",
+            "inferId": "test",
+            "name": "100. Same Tree",
+            "level": "easy"
+        }                                     
     ]
 }

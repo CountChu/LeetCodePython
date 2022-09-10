@@ -1,199 +1,127 @@
 {
     "dirs": {
-        "programDn": "solutions",
+        "problemDn": "problems",
+        "solutionDn": "solutions",
         "testDn": "tests" 
     },
     "problems": [
         {
             "id": "0622",
+            "inferId": "circ-q", 
             "name": "622. Design Circular Queue",
             "level": "medium",
-            "testScript": "t0622.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0622.py",
-                    "date": "2021/5/12",
-                    "design": 14,
-                    "coding": 39,
-                    "runtime": "73 ms",
-                    "memory": "16.4 MB"
-                }           
-            ]
-
+            "like": true
         },
+        {
+            "id": "0622a",
+            "inferId": "ll-q", 
+            "name": "622a. Design Queue with Linked List",
+            "level": "medium",
+            "testScript": "0622-t.py",
+            "like": true
+        },        
         {
             "id": "0200",
+            "inferId": "islands",
             "name": "200. Number of Islands",
-            "level": "medium",
-            "testScript": "t0200.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0200.py",
-                    "date": "2021/5/14",
-                    "design": 7,
-                    "coding": 20,
-                    "runtime": "144 ms",
-                    "memory": "20.4 MB"
-                }           
-            ]
+            "level": "medium"
         },
         {
-            "id": "0752",
+            "id-": "0752",
+            "inferId": "open",
             "name": "752. Open the Lock",
-            "level": "medium",
-            "testScript": "t0752.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0752.py",
-                    "date": "2021/5/15",
-                    "design": 11,
-                    "coding": 45,
-                    "runtime": "2568 ms",
-                    "memory": "18 MB"
-                }           
-            ]
+            "level": "medium"
         },
         {
-            "id": "0279",
+            "id-": "0279",
+            "inferId": "perfect-squares",
             "name": "279. Perfect Squares",
-            "level": "medium",
-            "testScript": "t0279.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0279.py",
-                    "date": "2021/5/15",
-                    "design": 9,
-                    "coding": 13,
-                    "bug": "Time Limit Exceeded"
-                }           
-            ]
+            "level": "medium"
         },
         {
             "id": "0155",
+            "inferId": "min-stack",
             "name": "155. Min Stack",
-            "level": "easy",
-            "testScript": "t0155.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0155.py",
-                    "date": "2021/5/15",
-                    "design": 0,
-                    "coding": 6,
-                    "runtime": "72 ms",
-                    "memory": "19.3 MB"
-                }           
-            ]
+            "level": "easy"
         },
         {
-            "id": "0020",
+            "id": "my006",
+            "inferId": "stack",
+            "name": "Stack",
+            "level": "easy", 
+            "like": true
+        },
+        {
+            "id-": "0020",
+            "inferId": "valid-parentheses",
             "name": "20. Valid Parentheses",
-            "level": "easy",                        
-            "testScript": "t0020.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0020.py",
-                    "date": "2021/3/24",
-                    "runtime": "32 ms",
-                    "memory": "14.3 MB"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0020-v2.py",
-                    "date": "2021/4/21",
-                    "coding": 9,
-                    "runtime": "32 ms",
-                    "memory": "15.7 MB"
-                }                
-            ]
+            "level": "easy"
         },      
         {
-            "id": "0739",
+            "id-": "0739",
+            "inferId": "daily-temp",
             "name": "739. Daily Temperatures",
-            "level": "medium",
-            "testScript": "t0739.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0739.py",
-                    "date": "2021/5/21",
-                    "coding": 18,
-                    "design": 16,
-                    "bug": "Time Limit Exceeded"
-                },  
-                {
-                    "id": "v2",
-                    "program": "p0739-v2.py",
-                    "date": "2021/5/22",
-                    "coding": 18,
-                    "design": 16,
-                    "runtime": "640 ms",
-                    "memory": "22.1 MB"
-                }                     
-            ]
+            "level": "medium"
         },          
         {
-            "id": "0150",
+            "id-": "0150",
+            "inferId": "reverse-polish",
             "name": "150. Evaluate Reverse Polish Notation",
-            "level": "medium",
-            "testScript": "t0150.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0150.py",
-                    "date": "2021/5/22",                    
-                    "coding": 6,
-                    "design": 13,
-                    "runtime": "72 ms",
-                    "memory": "14.7 MB"
-                }           
-            ]
+            "level": "medium"
         },
         {
-            "id": "0200a",
+            "id-": "0200a",
+            "inferId": "islands-stack",
             "name": "0200. Number of Islands (stack)",
-            "level": "medium",
-            "testScript": "t0200.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0200a.py",
-                    "date": "2021/5/22",                    
-                    "coding": 7,
-                    "design": 30,
-                    "runtime": "160 ms",
-                    "memory": "20.2 MB"
-                }           
-            ]
+            "level": "medium"
         },       
         {
-            "id": "0133",
+            "id-": "0133",
+            "inferId": "clone-graph",
             "name": "133. Clone Graph",
-            "level": "medium",
-            "testScript": "t0133.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0133.py"
-                }           
-            ]
+            "level": "medium"
         },         
         {
-            "id": "0494",
+            "id-": "0494",
+            "inferId": "target-sum",
             "name": "494. Target Sum",
-            "level": "medium",
-            "testScript": "t0494.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0494.py"
-                }           
-            ]
-        }       
+            "level": "medium"
+        },
+        {
+            "id-": "0232",
+            "inferId": "q-with-stack",
+            "name": "232. Implement Queue using Stacks",
+            "level": "easy"
+        },           
+        {
+            "id-": "0225",
+            "inferId": "stack-with-q",
+            "name": "225. Implement Stack using Queues",
+            "level": "easy"
+        },          
+        {
+            "id-": "0394",
+            "inferId": "decode-str",
+            "name": "394. Decode String",
+            "level": "medium"
+        },     
+        {
+            "id-": "0733",
+            "inferId": "flood-fill",
+            "name": "733. Flood Fill",
+            "level": "easy"
+        },        
+        {
+            "id-": "0542",
+            "inferId": "01-matrix",
+            "name": "542. 01 Matrix",
+            "level": "medium"
+        },     
+        {
+            "id-": "0841",
+            "inferId": "keys-rooms",
+            "name": "841. Keys and Rooms",
+            "level": "medium"
+        }                
     ]
 }

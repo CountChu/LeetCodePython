@@ -1,242 +1,89 @@
 {
     "dirs": {
-        "programDn": "solutions",
+        "problemDn": "problems",
+        "solutionDn": "solutions",
         "testDn": "tests" 
     },
     "problems": [
         {
             "id": "0144",
+            "inferId": "bin-tree-pre",
             "name": "144. Binary Tree Preorder Traversal",
             "level": "medium",
-            "testScript": "t0144.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0144.py",
-                    "date": "2021/5/1",
-                    "design": 5,
-                    "coding": 9,
-                    "runtime": "36 ms",
-                    "memory": "15.8 MB"
-                }
-            ]
+            "like": true
         },
         {
             "id": "0094",
+            "inferId": "bin-tree-in",
             "name": "94. Binary Tree Inorder Traversal",
             "level": "medium",
-            "testScript": "t0094.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0094.py",
-                    "date": "2021/5/1",
-                    "design": 4,
-                    "coding": 12,
-                    "runtime": "44 ms",
-                    "memory": "15.9 MB"
-                }
-            ]
+            "like": true
         },     
         {
             "id": "0145",
+            "inferId": "bin-tree-post",
             "name": "145. Binary Tree Postorder Traversal",
-            "level": "medium",
-            "testScript": "t0145.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0145.py",
-                    "date": "2021/5/1",
-                    "design": 2,
-                    "coding": 4,
-                    "runtime": "32 ms",
-                    "memory": "14.1 MB"
-                }
-            ]
+            "level": "medium"
         },      
         {
             "id": "0102",
+            "inferId": "bin-tree-level",            
             "name": "102. Binary Tree Level Order Traversal",
-            "level": "medium",
-            "testScript": "t0102.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0102.py",
-                    "date": "2021/5/1",
-                    "design": 6,
-                    "coding": 8,
-                    "runtime": "40 ms",
-                    "memory": "16.1 MB"
-                }
-            ]
+            "level": "medium"
         },
         {
             "id": "0104",
+            "inferId": "max-depth-bin-tree",            
             "name": "104. Maximum Depth of Binary Tree",
-            "level": "easy",
-            "testScript": "t0104.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0104.py",
-                    "date": "2021/5/1",
-                    "design": 1,
-                    "coding": 10,
-                    "runtime": "52 ms",
-                    "memory": "17.9 MB"
-                }
-            ]
+            "level": "easy"
         },
         {
             "id": "0101",
+            "inferId": "sym-tree",            
             "name": "101. Symmetric Tree",
-            "level": "easy",
-            "testScript": "t0101.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0101.py",
-                    "date": "2021/3/27"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0101-v2.py",
-                    "date": "2021/5/1",
-                    "design": 4,
-                    "coding": 8,
-                    "runtime": "56 ms",
-                    "memory": "15.8 MB"
-                }
-            ]
+            "level": "easy"
         },       
         {
             "id": "0112",
+            "inferId": "path-sum",            
             "name": "112. Path Sum",
-            "level": "easy",
-            "testScript": "t0112.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0112.py",
-                    "date": "2021/5/2",
-                    "design": 3,
-                    "coding": 14,
-                    "runtime": "68 ms",
-                    "memory": "17.5 MB"
-                }
-            ]
+            "level": "easy"
         },
         {
             "id": "0106",
+            "inferId": "bin-tree-i-p",            
             "name": "106. Construct Binary Tree from Inorder and Postorder Traversal",
-            "level": "easy",
-            "testScript": "t0106.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0106.py",
-                    "date": "2021/5/2",
-                    "design": 10,
-                    "coding": 30,
-                    "bug": "Time Limit Exceeded"
-                },
-                {
-                    "id": "v2",
-                    "program": "p0106-v2.py",
-                    "date": "2021/5/2",
-                    "design": 7,
-                    "coding": 13,
-                    "runtime": "212 ms",
-                    "memory": "92 MB"
-                }                
-            ]
+            "level": "easy"
         },    
         {
             "id": "0105",
+            "inferId": "bin-tree-p-i",            
             "name": "105. Construct Binary Tree from Preorder and Inorder Traversal",
-            "level": "medium",
-            "testScript": "t0105.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0105.py",
-                    "date": "2021/5/3",
-                    "design": 6,
-                    "coding": 8,
-                    "runtime": "200 ms",
-                    "memory": "91.7 MB"
-                }
-            ]
+            "level": "medium"
         },         
         {
             "id": "0116",
+            "inferId": "next-right-pointers",            
             "name": "116. Populating Next Right Pointers in Each Node",
-            "level": "medium",
-            "testScript": "t0116.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0116.py",
-                    "date": "2021/5/3",
-                    "design": 13,
-                    "coding": 21,
-                    "runtime": "84 ms",
-                    "memory": "17.4 MB"
-                }
-            ]
+            "level": "medium"
         },        
         {
             "id": "0117",
+            "inferId": "next-right-pointers-ii",
             "name": "117. Populating Next Right Pointers in Each Node II",
-            "level": "medium",
-            "testScript": "t0117.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0117.py",
-                    "date": "2021/5/4",
-                    "design": 18,
-                    "coding": 27,
-                    "runtime": "56 ms",
-                    "memory": "16.9 MB"
-                }
-            ]
+            "level": "medium"
         },           
         {
             "id": "0236",
+            "inferId": "lca-bin-tree",
             "name": "236. Lowest Common Ancestor of a Binary Tree",
-            "level": "medium",
-            "testScript": "t0236.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0236.py",
-                    "date": "2021/5/4",
-                    "design": 10,
-                    "coding": 21,
-                    "runtime": "1608 ms",
-                    "memory": "518.2 MB"
-                }
-            ]
+            "level": "medium"
         },        
         {
             "id": "0297",
+            "inferId": "serialize",
             "name": "297. Serialize and Deserialize Binary Tree",
-            "level": "hard",
-            "testScript": "t0297.py",
-            "solutions": [
-                {
-                    "id": "v1",
-                    "program": "p0297.py",
-                    "date": "2021/5/4",
-                    "design": 5,
-                    "coding": 28,
-                    "runtime": "168 ms",
-                    "memory": "20.4 MB"
-                }
-            ]
+            "level": "hard"
         }        
     ]
 }

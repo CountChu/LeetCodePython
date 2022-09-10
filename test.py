@@ -1,111 +1,29 @@
 import json
 import argparse
-import importlib
 import os
-import pdb
+import importlib
+import shutil
+import sys
 
+import config
+import gen 
 import util
 
-def main():
+import pdb
+br = pdb.set_trace
 
-    #
-    # Parse arguments
-    #
-
-    args = build_args()
-    
-    #
-    # Merge configs into a config
-    #
-
-    config = util.collect_config()
-    
-    #
-    # Find problem in the config.
-    #
-    
-    problem = None
-    for i, _problem in enumerate(config['problems']):
-        if args.problem == _problem['id']:
-            assert problem == None, 'The problem ID %s is duplicated.' % _problem['id']
-            problem = _problem
-    if problem == None:
-        print('Error. The problem ID %s is not found.' % args.problem)
-        sys.exit(0)
-    print('Problem: %s' % problem['name'])  
-    print('')
-
-    #
-    # Import testScript
-    #
-
-    bn = problem['testScript']
-    if not os.path.exists(bn):
-        print('The testScript does not exist.')
-        print(bn)
-        answer = input('Do you want to create it? [y/Y]')
-        if answer in ['y', 'Y']:
-            f = open(bn, 'w')
-            f.write('from data_structure import *\n')
-            f.write('import pdb\n')
-            f.write('\n')
-            f.write('def test(sln, nums, answer):\n')
-            f.write('    print(\'nums = %s, answer = %d\' % (nums, answer))\n')
-            f.write('    out = sln.func(nums)\n')
-            f.write('    assert out == answer, out\n')
-            f.write('\n')
-            f.write('def run(sln, module):\n')
-            f.write('    test(sln, [1, 2, 3], 3)\n')
-            f.close()
-            print('Build ', bn)
-
-    test_module_name = get_module_name(bn) 
-    test_module = importlib.import_module(test_module_name)
-                
-    count = 0    
-    for solution in problem['solutions']:
-        if args.solution != None:
-            if solution['id'] == args.solution:
-                assert count == 0, 'The solution ID %s is duplicated.' % solution['id']
-                count += 1
-                solve_it(test_module, solution)
-        else:
-            solve_it(test_module, solution)
-            
 #
 # Build argument parser and return it.
 #
 
 def build_args():
     desc = '''
-The app is to test a problem of LeCoo by solutions.
+The app is to test a problem of LeCood by solutions.
 '''
 
     parser = argparse.ArgumentParser(
                 formatter_class=argparse.RawTextHelpFormatter,
                 description=desc)
-
-    #
-    # Standard arguments
-    #
-
-    parser.add_argument(
-            '--verbose',
-            dest='verbose',
-            action='store_true',
-            help='Print verbose messages')
-
-    parser.add_argument(
-            '--log',
-            dest='log',
-            action='store_true',
-            help='Enable to save log in a file.')
-            
-    parser.add_argument(
-            '--level',
-            dest='level',
-            default='info',
-            help='Level of logging. debug->info->warning->error->critical')             
 
     #
     # Anonymous arguments.
@@ -121,7 +39,7 @@ The app is to test a problem of LeCoo by solutions.
 
     parser.add_argument(
             '-s',
-            dest='solution',
+            dest='sid',
             help='A solution ID that is defined in config.json. E.g., v1') 
             
     '''
@@ -142,26 +60,105 @@ def solve_it(test_module, solution):
         print(bn)
         answer = input('Do you want to create it? [y/Y]')
         if answer in ['y', 'Y']:
+            content = gen.solution()
             f = open(bn, 'w')
-            f.write('from typing import List\n')
-            f.write('import pdb\n')
-            f.write('\n')
-            f.write('class Solution:\n')
-            f.write('    def func(self, nums):\n')
-            f.write('        pdb.set_trace()\n')
-            f.close()
+            f.wirtelines(content)
             print('Build ', bn)
+        sys.exit(0)
 
-    sln_module_name = get_module_name(bn)
+    sln_module_name = util.get_module_name(bn)
     sln_module = importlib.import_module(sln_module_name)
     sln = sln_module.Solution()
-    test_module.run(sln, sln_module)
+    #test_module.run(sln, sln_module)
+    test_module.run(sln)
 
-def get_module_name(bn):
-    mn, ext = os.path.splitext(bn) 
-    mn = mn.replace('\\', '.')
-    mn = mn.replace('/', '.') 
-    return mn
+def main():
+
+    #
+    # Parse arguments
+    #
+
+    args = build_args()
+    
+    #
+    # Merge configs into a config
+    #
+
+    cfg = config.collect()
+    
+    #
+    # Find problem in the config.
+    #
+    
+    problem = None
+    for i, _problem in enumerate(cfg['problems']):
+        if args.problem == _problem['id']:
+            assert problem == None, 'The problem ID %s is duplicated.' % _problem['id']
+            problem = _problem
+    
+    if problem == None:
+        print('Error. The problem ID %s is not found.' % args.problem)
+        br()
+        sys.exit(0)
+
+    print('Problem: %s' % problem['name'])  
+    print('')
+
+    #
+    # Import testScript
+    #
+
+    bn = problem['testScript']
+    if not os.path.exists(bn):
+        print('The testScript does not exist.')
+        print(bn)
+        answer = input('Do you want to create it? [y/Y]')
+        if answer in ['y', 'Y']:
+            f = open(bn, 'w')
+            content = gen.test()
+            f.write(content)
+            f.close()
+            print('Build ', bn)
+        sys.exit(0)
+
+    test_module_name = util.get_module_name(bn) 
+    test_module = importlib.import_module(test_module_name)
+
+
+    if args.sid == None:
+        for solution in problem['solutions']:
+            solve_it(test_module, solution)
+
+    else:
+
+        #
+        # Get solution......
+        #
+
+        found_solution = None 
+        for solution in problem['solutions']:
+            if solution['id'] == args.sid:
+                found_solution = solution
+
+        if found_solution:
+            solve_it(test_module, found_solution)
+        else:
+            print('The solution %s is not found.' % args.sid)
+            if problem['inferId']:
+                answer = input('Do you want to create the solution %s for the problem %s-%s? [y/Y]' % (
+                            args.sid, 
+                            problem['id'], 
+                            problem['inferId']))
+                
+                if answer in ['y', 'Y']:
+                    if 'fn' in problem:
+                        solution_bn = '%s-%s-%s.py' % (problem['id'], problem['inferId'], args.sid)
+                        solution_fn = os.path.join(problem['lesson'], 'solutions', solution_bn)
+                        assert not os.path.exists(solution_fn)
+                        shutil.copy(problem['fn'], solution_fn)
+                        print(solution_fn)
+
+                sys.exit(0)
 
 if __name__ == '__main__':
     main()

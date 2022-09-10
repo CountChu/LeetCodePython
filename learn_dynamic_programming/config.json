@@ -1,0 +1,28 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0198",
+            "inferId": "house-robber",
+            "name": "198. House Robber",
+            "level": "medium"
+        },
+        {
+            "id": "0746",
+            "inferId": "min-climb",
+            "name": "746. Min Cost Climbing Stairs",
+            "level": "easy"
+
+        },
+        {
+            "id": "1137",
+            "inferId": "tribonacci",
+            "name": "1137. N-th Tribonacci Number",
+            "level": "easy"
+        }             
+    ]
+}
