@@ -146,29 +146,18 @@ def collect():
             cfg_ls.append(cfg)
 
     #
-    # Build problems = [problem]
-    # problem = {'id', 'inferId', 'fn', 'lesson'}
+    # Check duplicated problem id.
     #
-    '''
-    problems = []
-    for lesson_dn in lesson_dn_ls:
-        problem_dn = os.path.join(lesson_dn, 'problems')
-        if not os.path.exists(problem_dn):
-            continue
 
-        for bn in os.listdir(problem_dn):
-            (id, inferId) = bn.split('-', 1)
-            (inferId, ext) = inferId.split('.')
-            assert ext == 'py'
-            fn = os.path.join(problem_dn, bn)
-            problem = {
-                'id': id,
-                'inferId': inferId,
-                'fn': fn,
-                'lesson': lesson_dn
-                }
-            problems.append(problem)
-    '''
+    id_ls = []
+    for cfg, lesson_dn in zip(cfg_ls, lesson_dn_ls):
+        for problem in cfg['problems']:
+            if 'id' in problem:
+                if problem['id'] in id_ls:
+                    print('Error. The problem id %s is duplicated.' % problem['id'])
+                    sys.exit(0)
+                
+                id_ls.append(problem['id'])
     
     #
     # Transform cfg_ls into merged_cfg (combined)
