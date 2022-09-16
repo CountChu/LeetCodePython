@@ -9,22 +9,74 @@
             "id": "my003",
             "inferId": "quick-find", 
             "name": "Implement Disjoint Set with quick find",
-            "level": "easy",
-            "like": true
+            "level": "easy"
         },
         {
             "id": "my004",
             "inferId": "quick-union", 
             "name": "Implement Disjoint Set with quick union",
-            "level": "easy",
-            "like": true
+            "level": "easy"
         },
         {
             "id": "my005",
             "inferId": "quick-union-ab",
             "name": "Implement Disjoint Set with quick union by Abdual Bari",
+            "level": "easy"
+        },
+        {
+            "id": "my007",
+            "inferId": "w-quick-union",
+            "name": "Implement Disjoint Set with weighted quick union",
+            "level": "easy"
+        },        
+        {
+            "id": "my008",
+            "inferId": "find-root",
+            "name": "Find a root of a given x",
             "level": "easy",
             "like": true
-        }
+        },        
+        {
+            "id": "my009",
+            "inferId": "path-compress",
+            "name": "Implement path compression",
+            "level": "easy",
+            "like": true
+        },
+        {
+            "id": "my010",
+            "inferId": "qupc",
+            "name": "Quick union and path compression",
+            "level": "easy"
+        },
+        {
+            "id": "my011",
+            "inferId": "wqupc",
+            "name": "Weighted quick union and path compression",
+            "level": "easy",
+            "like": true
+        },
+        {
+            "id": "1971",
+            "inferId": "path-exist-dfs",
+            "name": "1971. Find if Path Exists in Graph - DFS",
+            "level": "easy",
+            "like": true
+        },
+        {
+            "id": "1971b",
+            "inferId": "path-exist-bfs",
+            "name": "1971. Find if Path Exists in Graph - BFS",
+            "level": "easy",
+            "like": true,
+            "testScript": "1971-t.py"
+        },
+        {
+            "id": "1584",
+            "inferId": "min-cost",
+            "name": "1584. Min Cost to Connect All Points",
+            "level": "medium",
+            "like": true
+        }        
     ]
 }
