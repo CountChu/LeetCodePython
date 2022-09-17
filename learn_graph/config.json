@@ -74,9 +74,32 @@
         {
             "id": "1584",
             "inferId": "min-cost",
-            "name": "1584. Min Cost to Connect All Points",
+            "name": "1584. Min Cost to Connect All Points (Kruskal)",
             "level": "medium",
             "like": true
-        }        
+        },
+        {
+            "id": "1584b",
+            "inferId": "min-cost-prim",
+            "name": "1584. Min Cost to Connect All Points (Prim)",
+            "level": "medium",
+            "like": true,
+            "testScript": "1584-t.py"
+        },
+        {
+            "id": "my012",
+            "inferId": "dijkstra",
+            "name": "Get single source shortest path with Diakjstra ",
+            "level": "easy",
+            "like": true
+        },        
+        {
+            "id-": "0743",
+            "inferId": "net",
+            "name": "Network Delay Time",
+            "level": "medium",
+            "like": true
+        }
+
     ]
 }
