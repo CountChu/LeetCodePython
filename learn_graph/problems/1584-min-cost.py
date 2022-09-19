@@ -18,6 +18,8 @@
 # Example 2: 
 #       Input: points = [[3,12],[-2,5],[-4,1]]
 #       Output: 18
+#
+# Please implement it with Kruskal's algorithm.
 # 
 
 from typing import List

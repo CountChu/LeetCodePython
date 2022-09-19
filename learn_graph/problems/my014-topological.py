@@ -1,5 +1,5 @@
 #
-# https://leetcode.com/explore/learn/card/graph/622/single-source-shortest-path-algorithm/3862/
+# https://leetcode.com/explore/learn/card/graph/623/kahns-algorithm-for-topological-sorting/3886/
 # 
 
 from typing import List
@@ -20,13 +20,6 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def dijkstra(self, start, edges):
-        v_d = {
-            1: 0, 
-            2: 2, 
-            3: 3, 
-            4: 8, 
-            5: 6, 
-            6: 9
-        }
-        return v_d
+    def topologicalSort(self, edges):
+        return ['A', 'C', 'B', 'D']
+

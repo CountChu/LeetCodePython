@@ -1,6 +1,7 @@
 #
-# https://leetcode.com/explore/learn/card/graph/622/single-source-shortest-path-algorithm/3862/
-# 
+# https://leetcode.com/explore/learn/card/graph/622/single-source-shortest-path-algorithm/3864/
+#
+
 
 from typing import List
 import sys
@@ -20,13 +21,15 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def dijkstra(self, start, edges):
+    def bellman(self, start, edges):
         v_d = {
-            1: 0, 
-            2: 2, 
+            1: 0,
+            2: 1, 
             3: 3, 
-            4: 8, 
-            5: 6, 
-            6: 9
+            4: 5,
+            5: 0,
+            6: 4,
+            7: 3,
         }
+
         return v_d

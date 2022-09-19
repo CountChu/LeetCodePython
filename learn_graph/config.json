@@ -89,7 +89,7 @@
         {
             "id": "my012",
             "inferId": "dijkstra",
-            "name": "Get single source shortest path with Diakjstra ",
+            "name": "Get single source shortest path with Diakjstra",
             "level": "easy",
             "like": true
         },        
@@ -99,7 +99,20 @@
             "name": "Network Delay Time",
             "level": "medium",
             "like": true
+        },
+        {
+            "id": "my013",
+            "inferId": "bellman",
+            "name": "Get single source shortest path with Bellman",
+            "level": "easy",
+            "like": true
+        },
+        {
+            "id": "my014",
+            "inferId": "topological",
+            "name": "Topological Sort",
+            "level": "easy",
+            "like": true
         }
-
     ]
 }
