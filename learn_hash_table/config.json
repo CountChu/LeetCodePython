@@ -1,0 +1,21 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0705",
+            "inferId": "hash-set",
+            "name": "705. Design HashSet",
+            "level": "easy"
+        },
+        {
+            "id": "0706",
+            "inferId": "hash-map",
+            "name": "706. Design HashMap",
+            "level": "easy"
+        }
+    ]
+}

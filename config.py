@@ -146,6 +146,17 @@ def collect():
             cfg_ls.append(cfg)
 
     #
+    # For each problem, check the syntax of it.
+    #
+
+    for cfg, lesson_dn in zip(cfg_ls, lesson_dn_ls):
+        for problem in cfg['problems']:
+            for key in problem:
+                if key not in ['id-', 'id', 'like', 'testScript', 'ref', 'inferId', 'name', 'level']:
+                    print('Error! The %s is invalid for the problem %s' % (key, problem))
+                    sys.exit(0)    
+
+    #
     # Check duplicated problem id.
     #
 
