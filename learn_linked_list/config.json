@@ -1,0 +1,21 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0707",
+            "inferId": "linked-list",
+            "name": "707. Design Linked List",
+            "level": "medium"
+        },
+        {
+            "id": "0141",
+            "inferId": "ll-cycle",
+            "name": "141. Linked List Cycle",
+            "level": "easy" 
+        }        
+    ]
+}

@@ -16,6 +16,12 @@
             "inferId": "hash-map",
             "name": "706. Design HashMap",
             "level": "easy"
-        }
+        },
+        {
+            "id": "0217",
+            "inferId": "dup",
+            "name": "217. Contains Duplicate",
+            "level": "easy"
+        }        
     ]
 }

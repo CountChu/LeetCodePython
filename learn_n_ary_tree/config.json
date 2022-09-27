@@ -1,0 +1,33 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "my015",
+            "inferId": "build-n-ary-tree",
+            "name": "Buid a N-ary Tree",
+            "level": "easy"
+        },
+        {
+            "id": "0429",
+            "inferId": "n-ary-tree-level",
+            "name": "429. N-ary Tree Level Order Traversal",
+            "level": "medium"
+        },
+        {
+            "id": "0589",
+            "inferId": "n-ary-tree-pre",
+            "name": "589. N-ary Tree Preorder Traversal",
+            "level": "easy"
+        },
+        {
+            "id": "0590",
+            "inferId": "n-ary-tree-post",
+            "name": "590. N-ary Tree Postorder Traversal",
+            "level": "easy"
+        }        
+    ]
+}
