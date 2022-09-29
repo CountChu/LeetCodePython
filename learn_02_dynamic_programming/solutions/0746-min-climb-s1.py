@@ -28,6 +28,7 @@ br = pdb.set_trace
 
 solution_json = {
     "date": "2022/9/8",
+    "again": ["2022/9/29"],
     "design": 0,
     "coding": 0,
     "runtime": "117 ms",
@@ -35,27 +36,25 @@ solution_json = {
     "memory": "14.1 MB" 
 }
 
-"""
+'''
+     0    1  2  3  4    5  6  7    8  9
+    [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
 
-    nums = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
-     dp  = [0,   0, 0, 0, 0,   0, 0, 0,   0, 0, 0]
-    i = 2,          1
-    i = 3,             2   
-    i = 4,                2 
-    i = 5,                     3 
-    i = 6,                        3
-    i = 7,                           4
-    i = 8,                                4    
-    i = 9                                    5
-    i = 10                                      6
+n = 2
+     0    1   2
+    [1, 100]
+          V   V
+     V        V
+    dp[2] = min(c[1], c[0])
 
+n = 3
+     0    1  2   3
+    [1, 100, 1]
+             V   V
+          V      V
+    dp[3] = min(c[2]+dp[2], c[1]+dp[1])
 
-    dp[i]:
-        case1: cost[i-1] + dp[i-1]
-        case2: cost[i-1] + dp[i-2]
-    dp[0] = cost[0]
-    dp[1] = min(cost[0], cost[1])
-"""
+'''
 
 class Solution:
     def minCostClimbingStairs(self, cost: List[int]) -> int:
