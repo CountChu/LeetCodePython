@@ -5,20 +5,21 @@
 # such that N is the double of M ( i.e. N = 2 * M).
 #
 # Example 1:
-#       Input: arr = [10,2,5,3]
+#       Input: arr = [10, 2, 5, 3]
 #       Output: true
 #
 # Example 2:
-#       Input: arr = [7,1,14,11]
+#       Input: arr = [7, 1, 14, 11]
 #       Output: true
 #
 # Example 3:
-#       Input: arr = [3,1,7,11]
+#       Input: arr = [3, 1, 7, 11]
 #       Output: false
 #
 
 from typing import List
 import pdb
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",

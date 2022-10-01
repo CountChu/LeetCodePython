@@ -2,6 +2,7 @@ import os
 import json
 import importlib
 import sys
+from datetime import datetime
 
 import gen 
 import util
@@ -119,6 +120,11 @@ def handle_id(problem, cfg, lesson_dn, solution_bns, merged_cfg):
             fn = sln['program']
             fn = os.path.join(lesson_dn, cfg['dirs']['solutionDn'], fn)
             sln['program'] = fn
+
+            t = os.path.getmtime(fn)
+            dt = datetime.fromtimestamp(t)
+            sln['programDate'] = dt.strftime('%Y/%-m/%-d')
+            sln['programTime'] = dt.strftime('%H:%M')
 
     merged_cfg['problems'].append(problem)
     merged_cfg['idProblem'][problem['id']] = problem

@@ -21,7 +21,7 @@ from typing import List
 import pdb
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/9/1",
     "design": 0,
     "coding": 0,
     "runtime": "4621 ms",

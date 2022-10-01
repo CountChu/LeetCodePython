@@ -30,18 +30,23 @@
             "level": "easy"
         },      
         {
-            "id-": "0088-",
-            "name": "0088. Merge Sorted Array"
+            "id": "0088",
+            "inferId": "merge-sorted",
+            "name": "88. Merge Sorted Array",
+            "level": "easy"
         },
         {
-            "id-": "0027-",
-            "name": "0027. Remove Element"
-        },   
-
+            "id": "0027",
+            "inferId": "rm-element",
+            "name": "27. Remove Element",
+            "level": "easy"
+        },
         {
-            "id-": "0026-",
-            "name": "0026. Remove Duplicates from Sorted Array"
-        },    
+            "id": "0026",
+            "inferId": "rm-dup",
+            "name": "26. Remove Duplicates from Sorted Array",
+            "level": "easy"
+        },
         {
             "id": "1299",
             "inferId": "replace",

@@ -18,31 +18,33 @@ import pdb
 
 solution_json = {
     "date": "2022/8/31",
+    "again": ["2022/10/1"],
     "design": 0,
     "coding": 0,
-    "runtime": "71 ms",
-    "fasterThan": "73%",
-    "memory": "15.4 MB" 
+    "runtime": "66 ms",
+    "fasterThan": "81%",
+    "memory": "14.1 MB" 
 }
 
-class Solution:
+def digits(num):
+    if num == 0:
+        return 1
+
+    out = 0
+    while True:
+        if num == 0:
+            break 
+        num = num // 10
+        out += 1
     
-    def get_digits(self, num):
-        out = 0
-        while True:
-            out += 1
-            num = num // 10
-            if num == 0:
-                break
-        return out
+    return out
 
+class Solution:
     def findNumbers(self, nums: List[int]) -> int:
-
         out = 0
-        for n in nums:
-            d = self.get_digits(n)
-            #print(n, d)
-            if d % 2 == 0:
-                out += 1
 
+        for n in nums:
+            if digits(n) % 2 == 0:
+                out += 1
+        
         return out

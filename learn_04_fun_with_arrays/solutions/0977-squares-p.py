@@ -16,15 +16,14 @@
 
 from typing import List
 import pdb
+br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/8/31",
-    "again": ["2022/10/1"],
+    "date": "2022/?/??",
     "design": 0,
     "coding": 0,
-    "runtime": "255 ms",
-    "fasterThan": "84%",
-    "memory": "18.2 MB"       
+    "runtime": "?? ms",
+    "memory": "?? MB"       
 }
 
 class Solution:
@@ -37,4 +36,4 @@ class Solution:
             out.append(h[n])
 
         out.sort()
-        return out   
+        return out

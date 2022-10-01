@@ -145,18 +145,6 @@
             "level": "hard"
         },            
         {
-            "id": "0026",
-            "inferId": "rm-dup",
-            "name": "26. Remove Duplicates from Sorted Array",
-            "level": "easy"
-        },     
-        {
-            "id": "0027",
-            "inferId": "rm-element",
-            "name": "27. Remove Element",
-            "level": "easy"
-        },
-        {
             "id": "0028",
             "inferId": "strStr",
             "name": "28. Implement strStr()",
@@ -257,13 +245,7 @@
             "inferId": "partition-list",
             "name": "86. Partition List",
             "level": "medium"
-        },           
-        {
-            "id": "0088",
-            "inferId": "merge-sorted",
-            "name": "88. Merge Sorted Array",
-            "level": "easy"
-        },   
+        },
         {
             "id": "0092",
             "inferId": "reverse-ll",

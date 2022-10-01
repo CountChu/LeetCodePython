@@ -26,12 +26,21 @@ br = pdb.set_trace
 
 solution_json = {
     "date": "2022/9/8",
+    "again": ["2022/9/30"],
     "design": 0,
     "coding": 0,
     "runtime": "55 ms",
     "fasterThan": "25%",
     "memory": "13.8 MB" 
 }
+
+'''
+    T0 = 0
+    T1 = 1
+    T2 = 1
+    T3 = 0 + 1 + 1 = 2 
+    T4 = 1 + 1 + 2 = 4
+'''
 
 class Solution:
     def tribonacci(self, n: int) -> int:

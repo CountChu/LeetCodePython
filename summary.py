@@ -29,7 +29,7 @@ The app is to test a problem of LeCoo by solutions.
 
     parser.add_argument(
             'object',      
-            help='')
+            help='object is lesson or problem(p)')
     
     #
     # Specific arguments
@@ -225,6 +225,7 @@ def handle_problem(args, cfg):
     progress_d = {}  # progress_d[id] = {'problem', 'solutions'}
     for problem in problems:
         id = problem['id']
+
         for sln in problem['solutions']:
             if 'date' in sln:
                 if sln['date'] == date_str:
@@ -235,12 +236,23 @@ def handle_problem(args, cfg):
                             }
                     progress_d[id]['solutions'].append(sln)
 
+            if 'again' in sln:
+                for d in sln['again']:
+                    if d == date_str:
+                        if id not in progress_d:
+                            progress_d[id] = {
+                                'problem': problem,
+                                'solutions': [] 
+                                }
+                        progress_d[id]['solutions'].append(sln)   
+
     #
     # Report progress.
     #
 
     #pdb.set_trace()
     print('Progress on %s:' % date_str)
+    print('')
     for id in progress_d:
         problem = progress_d[id]['problem']
         id = problem['id']
@@ -249,15 +261,28 @@ def handle_problem(args, cfg):
         print('    %4s, %7s: %s' % (id, level, name))
         solutions = progress_d[id]['solutions']
         for sln in solutions:
-            line = '                   %s: ' % sln['id']
+            if sln['programDate'] == date_str:
+                line = '                   %s | %2s | ' % (sln['programTime'], sln['id'])
+            else:
+                line = '                   %s %s | %2s | ' % (sln['programDate'], sln['programTime'], sln['id'])
+            
             if 'design' in sln:
-                line += 'design: %d mins, ' % sln['design']            
+                if sln['design'] != 0:
+                    line += 'design: %d mins, ' % sln['design']            
+            
             if 'coding' in sln:
-                line += 'coding: %d mins, ' % sln['coding']
+                if sln['coding'] != 0:
+                    line += 'coding: %d mins, ' % sln['coding']
+            
             if 'runtime' in sln:
                 line += 'runtime: %s, ' % sln['runtime']
+            
+            if 'fasterThan' in sln:
+                line += 'fasterThan: %s, ' % sln['fasterThan']
+
             if 'memory' in sln:
                 line += 'memory: %s, ' % sln['memory']
+            
             if 'bug' in sln:
                 line += 'bug: %s, ' % sln['bug']
             print(line)
@@ -324,15 +349,19 @@ def main():
         for sln in problem['solutions']:
             keys = sln.keys()
             for key in keys:
-                if key not in ['id', 'program', 'date', 'bug', 'design', 'coding', 'runtime', 'memory', 'fasterThan']:
+                if key not in ['id', 'program', 'programDate', 'programTime', 'date', 'bug', 'design', 'coding', 'runtime', 'memory', 'fasterThan', 'again']:
                     print('Error. The key %s is wrong in the solution' % key)
                     print(sln)
                     sys.exit(0)
 
                 if 'runtime' in keys:
                     assert 'date' in keys, sln
+
                 if 'bug' in keys:
                     assert 'date' in keys, sln
+
+                if 'again' in keys:
+                    assert type(sln['again']) == list, sln
 
     #
     # Dispatch object

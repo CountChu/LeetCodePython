@@ -18,6 +18,7 @@ import pdb
 
 solution_json = {
     "date": "2022/8/31",
+    "again": ["2022/10/1"],
     "design": 0,
     "coding": 0,
     "runtime": "352 ms",
@@ -28,8 +29,8 @@ solution_json = {
 class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         s = 'init'
-        max_count = 0 
-        count = 0
+        out = 0 
+        acc = 0
         for i in range(len(nums)):
             n = nums[i]
             if s in ['init', '1', '0']:
@@ -43,16 +44,16 @@ class Solution:
                 assert False 
 
             if s == '1':
-                count += 1
+                acc += 1
             elif s == '0':
-                max_count = max(count, max_count)
-                count = 0
+                out = max(acc, out)
+                acc = 0
             else:
                 assert False
 
             #print(s, n)
 
-        max_count = max(count, max_count)
-        return max_count
+        out = max(acc, out)
+        return out
 
 
