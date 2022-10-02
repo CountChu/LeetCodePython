@@ -27,10 +27,10 @@ def test_module(module, script_ls):
             assert out == answer 
         elif op == 'get_w':
             out = obj.get_w()
-            assert out == answer
+            assert out == answer, out
         elif op == 'get_a':
             out = obj.get_a()
-            assert out == answer
+            assert out == answer, out
         else :
             assert False, op        
 

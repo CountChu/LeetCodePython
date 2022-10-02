@@ -27,7 +27,7 @@ def test_module(module, script_ls):
             assert out == answer 
         elif op == 'str':
             out = str(obj)
-            assert out == answer
+            assert out == answer, out
         else :
             assert False, op        
 
@@ -49,10 +49,20 @@ def run(sln):
                                   #   0   1  2   3   4   5   6   7   8
 
                 ('union',      [3, 4],  None),
+                ('str',        [], '[-1, -2, 1, -2, 3, -1, -1, -1, -1]'),
+
                 ('union',      [5, 6],  None),
+                ('str',        [], '[-1, -2, 1, -2, 3, -2, 5, -1, -1]'),
+
                 ('union',      [7, 8],  None),
+                ('str',        [], '[-1, -2, 1, -2, 3, -2, 5, -2, 7]'),
+
                 ('union',      [2, 4],  None),
+                ('str',        [], '[-1, -4, 1, 1, 3, -2, 5, -2, 7]'),
+
                 ('union',      [2, 5],  None),
+                ('str',        [], '[-1, -6, 1, 1, 3, 1, 5, -2, 7]'),
+
                 ('connected',  [1, 3],  True),
                 ('union',      [6, 8],  None),
                 ('connected',  [5, 7],  True),

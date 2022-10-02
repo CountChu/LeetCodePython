@@ -6,8 +6,8 @@ def test(sln, heights, answer):
     assert out == answer, out
 
 def run(sln):
-    test(sln, [1,1,4,2,1,3], 3)
-    test(sln, [5,1,2,3,4], 5)
-    test(sln, [1,2,3,4,5], 0)
+    test(sln, [1, 1, 4, 2, 1, 3], 3)
+    test(sln, [5, 1, 2, 3, 4], 5)
+    test(sln, [1, 2, 3, 4, 5], 0)
 
 

@@ -5,21 +5,22 @@
 # If the third maximum does not exist, return the maximum number.
 #
 # Example 1:
-#       Input: nums = [3,2,1]
+#       Input: nums = [3, 2, 1]
 #       Output: 1
 #
 # Example 2: 
-#       Input: nums = [1,2]
+#       Input: nums = [1, 2]
 #       Output: 2
 # 
 # Example 3: 
-#       Input: nums = [2,2,3,1]
+#       Input: nums = [2, 2, 3, 1]
 #       Output: 1
 # 
 
 from typing import List
+import sys
 import pdb
-br = pdb.set_trace()
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",

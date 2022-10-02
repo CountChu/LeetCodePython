@@ -64,11 +64,7 @@
             "inferId": "valid-mountain",
             "name": "941. Valid Mountain Array",
             "level": "easy"
-        },   
-        {
-            "id-": "0026-2",
-            "name": "0026. Remove Duplicates from Sorted Array"
-        }, 
+        },
         {
             "id": "0283",
             "inferId": "move-zeros",
@@ -80,10 +76,6 @@
             "inferId": "sort-by-parity",
             "name": "905. Sort Array By Parity",
             "level": "easy"
-        },     
-        {
-            "id-": "0027-2",
-            "name": "0027. Remove Element"
         },
         {
             "id": "1051",
@@ -102,10 +94,6 @@
             "inferId": "find-all-nums",
             "name": "448. Find All Numbers Disappeared in an Array",
             "level": "easy"
-        },
-        {
-            "id-": "0977-2",
-            "name": "0977. Squares of a Sorted Array"
         }
     ]
 }        

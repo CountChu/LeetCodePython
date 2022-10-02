@@ -28,8 +28,9 @@
 # 
 
 from typing import List
+import sys
 import pdb
-br = pdb.set_trace()
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",

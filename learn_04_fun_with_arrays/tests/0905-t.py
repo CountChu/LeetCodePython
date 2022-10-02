@@ -6,4 +6,5 @@ def test(sln, A, answer):
     assert out == answer, out
 
 def run(sln):
-    test(sln, [3,1,2,4], [2,4,3,1])
+    test(sln, [3, 1, 2, 4], [2, 4, 3, 1])
+    test(sln, [0], [0])

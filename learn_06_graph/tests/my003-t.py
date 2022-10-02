@@ -27,7 +27,7 @@ def test_module(module, script_ls):
             assert out == answer 
         elif op == 'str':
             out = str(obj)
-            assert out == answer
+            assert out == answer, out
         else :
             assert False, op        
 
@@ -43,18 +43,18 @@ def run(sln):
                 ('UnionFind',  [10],  None),
                 # 0 1-2-5-6-7 3-8-9 4
                 ('union',      [1, 2],  None),
-                #('union',      [2, 5],  None),
-                #('union',      [5, 6],  None),
-                #('union',      [6, 7],  None),
-                #('union',      [3, 8],  None),
-                #('union',      [8, 9],  None),
-                #('str',        [], '[0, 1, 1, 3, 4, 1, 1, 1, 3, 3]'),
-                #('connected',  [1, 5],  True),
-                #('connected',  [5, 7],  True),
-                #('connected',  [4, 9],  False),
-                ## 0 1-2-5-6-7 3-8-9-4
-                #('union',      [9, 4],  None),
-                #('connected',  [4, 9],  True),
+                ('union',      [2, 5],  None),
+                ('union',      [5, 6],  None),
+                ('union',      [6, 7],  None),
+                ('union',      [3, 8],  None),
+                ('union',      [8, 9],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 1, 1, 1, 3, 3]'),
+                ('connected',  [1, 5],  True),
+                ('connected',  [5, 7],  True),
+                ('connected',  [4, 9],  False),
+                # 0 1-2-5-6-7 3-8-9-4
+                ('union',      [9, 4],  None),
+                ('connected',  [4, 9],  True),
             ]
         )
 
@@ -65,30 +65,43 @@ def run(sln):
                 ('UnionFind',  [10],  None),
                 ('str',        [], '[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
                 ('union',      [3, 4],  None),
                 ('str',        [], '[0, 1, 2, 3, 3, 5, 6, 7, 8, 9]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+
                 ('union',      [8, 3],  None),
                 ('str',        [], '[0, 1, 2, 8, 8, 5, 6, 7, 8, 9]'),
-                                   # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9                
+                                   # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9     
+
                 ('union',      [5, 6],  None),
                 ('str',        [], '[0, 1, 2, 8, 8, 5, 5, 7, 8, 9]'),
-                                   # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9                     
+                                   # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9     
+
                 ('union',      [4, 9],  None),
                 ('str',        [], '[0, 1, 2, 8, 8, 5, 5, 7, 8, 8]'),
-                                   # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9       
+                                   # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9   
+
                 ('union',      [1, 2],  None),
                 ('str',        [], '[0, 1, 1, 8, 8, 5, 5, 7, 8, 8]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9   
+
                 ('connected',  [8, 9],  True),
+
                 ('connected',  [5, 0],  False),
+                
                 ('union',      [0, 5],  None),
+                
                 ('str',        [], '[0, 1, 1, 8, 8, 0, 0, 7, 8, 8]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9   
+                
                 ('union',      [2, 7],  None),
+                
                 ('str',        [], '[0, 1, 1, 8, 8, 0, 0, 1, 8, 8]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9   
+                
                 ('union',      [1, 6],  None),       
+                
                 ('str',        [], '[1, 1, 1, 8, 8, 1, 1, 1, 8, 8]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9                                       
             ]
@@ -98,7 +111,7 @@ def run(sln):
         obj = test_module(
             sln.module,
             [
-                ('UnionFind',  [], None),
+                ('UnionFind',  [0], None),
                 ('init',       [0, 1, 1, 8, 8, 0, 0, 1, 8, 8], None),
                 ('str',        [], '[0, 1, 1, 8, 8, 0, 0, 1, 8, 8]'),
                                    # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9        
@@ -112,7 +125,7 @@ def run(sln):
         obj = test_module(
             sln.module,
             [
-                ('UnionFind',  [], None),
+                ('UnionFind',  [0], None),
                 ('init',       [0, 1, 2, 3, 3, 5, 6, 7, 8, 9], None),
                 ('str',        [], '[0, 1, 2, 3, 3, 5, 6, 7, 8, 9]'),
                 ('union',      [8, 3],  None),       

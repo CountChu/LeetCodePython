@@ -27,7 +27,7 @@ def test_module(module, script_ls):
             assert out == answer 
         elif op == 'str':
             out = str(obj)
-            assert out == answer
+            assert out == answer, out
         else :
             assert False, op        
 
@@ -36,7 +36,7 @@ def test_module(module, script_ls):
     return obj
 
 def run(sln):
-    if False:
+    if True:
         obj = test_module(
             sln.module,
             [
@@ -68,23 +68,34 @@ def run(sln):
                 ('union',      [1, 5],  None),
                 # [0, 0, 0, 0, 0, 4, 4]
                 #  0, 1, 2, 3, 4, 5, 6
-
                 ('str',        [], '[0, 0, 0, 0, 0, 4, 4]'),
             ]
         )
 
-    if False:
+    if True:
         obj = test_module(
             sln.module,
             [
                 ('UnionFind',  [10],  None),
                 # 0 1-2-5-6-7 3-8-9 4
                 ('union',      [1, 2],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 5, 6, 7, 8, 9]'),
+
                 ('union',      [2, 5],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 1, 6, 7, 8, 9]'),
+
                 ('union',      [5, 6],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 1, 1, 7, 8, 9]'),
+
                 ('union',      [6, 7],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 1, 1, 1, 8, 9]'),
+
                 ('union',      [3, 8],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 1, 1, 1, 3, 9]'),
+
                 ('union',      [8, 9],  None),
+                ('str',        [], '[0, 1, 1, 3, 4, 1, 1, 1, 3, 3]'),
+
                 ('connected',  [1, 5],  True),
                 ('connected',  [5, 7],  True),
                 ('connected',  [4, 9],  False),
@@ -95,7 +106,7 @@ def run(sln):
             ]
         )
 
-    if False:
+    if True:
         obj = test_module(
             sln.module,
             [

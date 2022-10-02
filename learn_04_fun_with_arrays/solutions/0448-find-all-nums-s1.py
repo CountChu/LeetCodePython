@@ -5,8 +5,9 @@ solution_json = {
     "date": "2021/4/29",
     "design": 0,
     "coding": 5,
-    "runtime": "364 ms",
-    "memory": "25.2 MB"     
+    "runtime": "376 ms",
+    "fasterThan": "90%",
+    "memory": "23.7 MB"     
 }
 
 class Solution:
