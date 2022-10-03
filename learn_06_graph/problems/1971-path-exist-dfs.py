@@ -1,6 +1,9 @@
 #
 # https://leetcode.com/problems/find-if-path-exists-in-graph/
 #
+# There is a bi-directional graph with n vertices, where each vertex is labeled 
+# from 0 to n - 1 (inclusive).
+#
 # DFS solution
 #
 # Example 1:

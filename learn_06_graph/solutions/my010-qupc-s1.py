@@ -23,16 +23,25 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
+#
+# Here is the official solution.
+#        
 
 class UnionFind:
     def __init__(self, size):
         self.root = [i for i in range(size)]
+
+    def init(self, a):
+        self.root = a        
 
     def __str__(self):
         return '%s' % self.root
 
     def dump(self):
         print(str(self))
+
+    def get_a(self):
+        return self.root        
 
     def find(self, x):
         if x == self.root[x]:

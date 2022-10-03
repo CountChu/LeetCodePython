@@ -23,6 +23,9 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
+#
+# Here is the official solution.
+#  
 
 class UnionFind:
     def __init__(self, size):
@@ -31,6 +34,10 @@ class UnionFind:
         # The initial "rank" of each vertex is 1, because each of them is
         # a standalone vertex with no connection to other vertices.
         self.rank = [1] * size
+
+    def init(self, a, w):
+        self.root = a
+        self.rank = w
 
     def __str__(self):
         return '%s' % self.root

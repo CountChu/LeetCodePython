@@ -10,7 +10,7 @@ def test_solution(sln, start, edges, target):
     print("v_d = %s" % v_d)
     print('')
 
-    assert v_d == target
+    assert v_d == target, v_d
 
 def run(sln):
 

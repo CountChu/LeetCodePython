@@ -12,25 +12,27 @@ def test_solution(sln, edges, target):
     assert out == target
 
 def run(sln):
-    test_solution(
-        sln, 
-        [
-            ('A', 'B'),
-            ('A', 'C'),
-            ('B', 'D'),
-            ('C', 'B'),
-            ('C', 'D'),
-        ],
-        ['A', 'C', 'B', 'D']
-    ),
+    if True:
+        test_solution(
+            sln, 
+            [
+                ('A', 'B'),
+                ('A', 'C'),
+                ('B', 'D'),
+                ('C', 'B'),
+                ('C', 'D'),
+            ],
+            ['A', 'C', 'B', 'D']
+        ),
     
-    test_solution(
-        sln, 
-        [
-            ('1', '0'),
-            ('2', '0'),
-            ('3', '1'),
-            ('3', '2'),
-        ],
-        ['3', '1', '2', '0']
-    )    
+    if True:
+        test_solution(
+            sln, 
+            [
+                ('1', '0'),
+                ('2', '0'),
+                ('3', '1'),
+                ('3', '2'),
+            ],
+            ['3', '1', '2', '0']
+        )    

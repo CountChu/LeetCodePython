@@ -28,12 +28,18 @@ class UnionFind:
     def __init__(self, size):
         pass
 
+    def init(self, a):
+        pass
+
     def __str__(self):
         return ''
 
     def dump(self):
         print(str(self))
 
+    def get_a(self):
+        return None
+        
     def find(self, x):
         return -1
 

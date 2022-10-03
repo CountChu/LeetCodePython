@@ -33,15 +33,13 @@
             "id": "my008",
             "inferId": "find-root",
             "name": "Find a root of a given x",
-            "level": "easy",
-            "like": true
+            "level": "easy"
         },        
         {
             "id": "my009",
             "inferId": "path-compress",
             "name": "Implement path compression",
-            "level": "easy",
-            "like": true
+            "level": "easy"
         },
         {
             "id": "my010",

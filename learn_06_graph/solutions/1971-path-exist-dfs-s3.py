@@ -24,14 +24,15 @@ solution_json = {
     "date": "2022/9/13",
     "design": 0,
     "coding": 0,
-    "runtime": "4653 ms",
-    "fasterThan": "5%",
-    "memory": "106.3 MB" 
+    "runtime": "3837 ms",
+    "fasterThan": "20%",
+    "memory": "104.5 MB" 
 }
 
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
+        self.log = []
 
     def validPath(self, n: int, edges: List[List[int]], s: int, d: int) -> bool:
         g = [[] for _ in range(n)]
@@ -47,16 +48,16 @@ class Solution:
                 break
 
             v = stack.pop()
+            self.log.append(v)
 
             if v == d:
                 return True
 
-            if v in seen:
-                continue 
-
             seen.add(v)
 
             for w in g[v]:
+                if w in seen:
+                    continue
                 stack.append(w)
 
         return False

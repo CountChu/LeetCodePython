@@ -98,7 +98,6 @@ def main():
     
     if problem == None:
         print('Error. The problem ID %s is not found.' % args.problem)
-        br()
         sys.exit(0)
 
     print('Problem: %s' % problem['name'])  
