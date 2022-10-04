@@ -1,11 +1,11 @@
 # LeetCodePython
 The project LeetCodePython provides:
-1. A platform to test your Python solutions of the problems in LeetCode with test scripts. 
-2. My Python solutions of LeetCode. 
+1. A platform to locally test your Python solutions of the problems in LeetCode with test scripts. 
+2. My Python solutions of LeetCode problems. 
 
 You can use the platform to organize your problems of LeetCode and practicing your Python solutions locally.
 
-All problems, solutions, and test scripts are specified in config.json. Therefor you can run test.py to test your solution of a given problem.
+All problems, solutions, and test scripts are specified in config.json. Therefore you can run test.py to test your solution of a given problem.
 
 ## test.py
 
