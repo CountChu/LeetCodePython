@@ -5,8 +5,9 @@ solution_json = {
     "date": "2021/5/1",
     "design": 6,
     "coding": 8,
-    "runtime": "40 ms",
-    "memory": "16.1 MB"
+    "runtime": "57 ms",
+    "fasterThan": "57%",    
+    "memory": "14.2 MB"
 }
 
 # Definition for a binary tree node.

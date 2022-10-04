@@ -32,10 +32,11 @@ br = pdb.set_trace
 
 solution_json = {
     "date": "2022/9/22",
+    "again": ["2022/10/4"],
     "design": 0,
     "coding": 0,
-    "runtime": "147 ms",
-    "fasterThan": "6%",
+    "runtime": "123 ms",
+    "fasterThan": "20%",
     "memory": "17.6 MB" 
 }
 
@@ -53,7 +54,6 @@ class Solution:
         self.module = sys.modules[__name__]
 
     def hasCycle(self, head: ListNode) -> bool:
-
 
         step1 = head 
         step2 = head 

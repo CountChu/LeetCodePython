@@ -19,9 +19,9 @@ def test(module, script_ls):
         elif op == 'size':
             out = obj.size()
             assert out == size 
-        elif op == '__str__':
-            out = obj.__str__() 
-            assert out == answer 
+        elif op == 'str':
+            out = str(obj)
+            assert out == answer, out 
         else :
             assert False, op        
 
@@ -38,14 +38,14 @@ def run(sln):
                 ('add',      [3],  None), 
                 ('add',      [1],  None), 
                 ('add',      [2],  None),
-                ('__str__',  [], '[1, 3, 2]'),
+                ('str',      [], '[1, 3, 2]'),
                 ('peek',     [],  1),
                 ('pop',      [],  1),
                 ('pop',      [],  2),
                 ('pop',      [],  3),
                 ('add',      [4],  None),
                 ('add',      [5],  None),
-                ('__str__',  [], '[4, 5]'),
+                ('str',  [], '[4, 5]'),
             ]
         )
 
@@ -61,9 +61,9 @@ def run(sln):
                 ('add',      [8],  None),
                 ('add',      [9],  None),
                 ('add',      [10],  None),
-                ('__str__',  [], '[4, 5, 6, 7, 8, 9, 10]'),
+                ('str',      [], '[4, 5, 6, 7, 8, 9, 10]'),
                 ('pop',      [],  4),
-                ('__str__',  [], '[5, 7, 6, 10, 8, 9]'),                
+                ('str',      [], '[5, 7, 6, 10, 8, 9]'),                
             ]
         )
 
@@ -75,17 +75,17 @@ def run(sln):
                 ('add',      [3],  None), 
                 ('add',      [1],  None), 
                 ('add',      [2],  None),
-                ('__str__',  [], '[1, 3, 2]'),
+                ('str',      [], '[1, 3, 2]'),
                 ('peek',     [],  1),
                 ('pop',      [],  1),
                 ('pop',      [],  2),
                 ('pop',      [],  3),
                 ('add',      [4],  None),
                 ('add',      [5],  None),
-                ('__str__',  [], '[4, 5]'),
+                ('str',      [], '[4, 5]'),
                 ('add',      [6],  None),           
-                ('__str__',  [], '[4, 5, 6]'), 
+                ('str',      [], '[4, 5, 6]'), 
                 ('pop',      [],  4),
-                ('__str__',  [], '[5, 6]'),             
+                ('str',      [], '[5, 6]'),             
             ]
         )

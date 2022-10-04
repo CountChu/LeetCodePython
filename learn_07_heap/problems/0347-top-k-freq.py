@@ -29,9 +29,4 @@ solution_json = {
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        h = {}
-        for num in nums:
-            if num not in h:
-                h[num] = 0 
-            h[num] += 1
-        br()
+        pass

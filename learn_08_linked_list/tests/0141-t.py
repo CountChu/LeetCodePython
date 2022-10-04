@@ -40,3 +40,4 @@ def run(sln):
     test_solution(sln, [3, 2, 0, -4], 1, True)
     test_solution(sln, [1, 2], 0, True)
     test_solution(sln, [1], -1, False)
+    test_solution(sln, [], -1, False)

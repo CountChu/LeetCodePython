@@ -6,6 +6,7 @@
 from typing import List
 import sys
 import pdb
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",
@@ -37,7 +38,10 @@ class MinHeap:
     #
 
     def __str__(self):
-        return ""        
+        return ''  
+
+    def dump(self):
+        print ('')        
 
     #
     # Function to add an element

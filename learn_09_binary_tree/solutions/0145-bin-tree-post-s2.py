@@ -10,12 +10,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/4",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "55 ms",
+    "fasterThan": "42%",
+    "memory": "13.8 MB" 
 }
 
 class TreeNode:
@@ -26,4 +26,14 @@ class TreeNode:
 
 class Solution:
     def postorderTraversal(self, root: TreeNode) -> List[int]:      
-        pass
+        out = []
+        go(root, out)
+        return out
+
+def go(nd, out):
+    if nd == None:
+        return
+
+    go(nd.left, out)
+    go(nd.right, out)
+    out.append(nd.val)

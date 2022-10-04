@@ -3,10 +3,9 @@ import pdb
 
 def test(sln, nums, answer):
     print('nums = %s, answer = %s' % (nums, answer))
-    nums_1 = binary_tree.transform_ls(nums)
-    root = binary_tree.ls_to_tree(nums_1)
-    nums_2 = binary_tree.tree_to_ls(root)
-    assert nums_1 == nums_2
+    root = binary_tree_v3.ls_to_tree(nums)
+    nums_1 = binary_tree_v3.tree_to_ls(root)
+    assert nums == nums_1
 
     out = sln.postorderTraversal(root)
     assert out == answer, out

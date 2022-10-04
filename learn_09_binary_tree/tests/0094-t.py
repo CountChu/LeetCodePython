@@ -1,8 +1,18 @@
 import pdb
+br = pdb.set_trace
 
 from data_structure import *
 
 def test(sln, nums, answer):
+    print('nums = %s, answer = %s' % (nums, answer))
+    root = binary_tree_v3.ls_to_tree(nums)
+    nums1 = binary_tree_v3.tree_to_ls(root)
+    assert nums == nums1
+    
+    out = sln.inorderTraversal(root)
+    assert out == answer, out
+
+def test_(sln, nums, answer):
     print('nums = %s, answer = %s' % (nums, answer))
     nums_1 = binary_tree.transform_ls(nums)
     root = binary_tree.ls_to_tree(nums_1)

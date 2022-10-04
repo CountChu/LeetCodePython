@@ -19,32 +19,34 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/10/4",
+    "date": "2022/9/5",
     "design": 0,
     "coding": 0,
-    "runtime": "265 ms",
-    "fasterThan": "14",
+    "runtime": "232 ms",
+    "fasterThan": "11%",
     "memory": "18.9 MB" 
 }
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         h = {}
-        for v in nums:
-            if v not in h:
-                h[v] = 0
-            h[v] += 1
+        for num in nums:
+            if num not in h:
+                h[num] = 0 
+            h[num] += 1
 
-        v_c_ls = []
-        for v, c in h.items():
-            v_c_ls.append((v, c))
+        r_h = {}                        # r_h[count] = [num]
+        for num, count in h.items():
+            if count not in r_h:
+                r_h[count] = []
+            r_h[count].append(num)
 
-        v_c_ls.sort(key = lambda x : x[1], reverse=True)
+        count_ls = list(r_h.keys())
+        count_ls.sort(reverse=True)
+        num_ls = []
+        for count in count_ls:
+            num_ls += r_h[count]
         
-        out = []
-        for i in range(k):
-            out.append(v_c_ls[i][0])
+        out = num_ls[:k]
 
         return out
-
-

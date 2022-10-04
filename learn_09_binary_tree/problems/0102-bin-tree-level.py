@@ -1,16 +1,21 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/binary-tree-level-order-traversal/
 #
-# Given an array...
+# Given the root of a binary tree, return the level order traversal 
+# of its nodes' values. (i.e., from left to right, level by level).
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: root = [3,9,20,null,null,15,7]
+#       Output: [[3],[9,20],[15,7]]
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: root = [1]
+#       Output: [[1]]
 # 
+# Example 3: 
+#       Input: root = []
+#       Output: []
+#
 
 from typing import List
 import sys
@@ -26,19 +31,12 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
-    def __init__(self):
-        self.module = sys.modules[__name__]
-
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
-        pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        
+    def levelOrder(self, root: TreeNode) -> List[List[int]]:      
+        return []
