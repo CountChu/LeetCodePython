@@ -22,12 +22,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/5",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "41 ms",
+    "fasterThan": "97%",
+    "memory": "15 MB" 
 }
 
 class TreeNode:
@@ -38,4 +38,31 @@ class TreeNode:
 
 class Solution:
     def hasPathSum(self, root: TreeNode, targetSum: int) -> bool:   
-        return False   
+        ctx = {
+            'target': targetSum,
+            'out': False
+        }
+        acc = 0
+        go(root, acc, ctx)
+
+        return ctx['out'] 
+
+def go(nd, acc, ctx):
+    if nd == None:
+        return
+
+    if ctx['out'] == True:
+        return 
+
+    #print(nd.val)
+    acc += nd.val
+
+    if nd.left == None and nd.right == None:
+        if acc == ctx['target']:
+            ctx['out'] = True 
+            return 
+
+    go(nd.left, acc, ctx)
+    go(nd.right, acc, ctx)
+
+

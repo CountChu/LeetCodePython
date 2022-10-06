@@ -7,15 +7,6 @@ def test(sln, s, answer):
     sln.reverseString(out)
     assert out == answer, out
 
-def run(sln, module):
+def run(sln):
     test(sln, ["h","e","l","l","o"], ["o","l","l","e","h"])
     test(sln, ["H","a","n","n","a","h"], ["h","a","n","n","a","H"])
-
-'''
-class Solution:
-    def reverseString(self, s: List[str]) -> None:
-    	reverseString(s)
-
-def reverseString(s):
-	pass
-'''	

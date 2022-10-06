@@ -1,4 +1,5 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
@@ -8,6 +9,10 @@ solution_json = {
     "runtime": "168 ms",
     "memory": "20.4 MB"
 }
+
+class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
 
 class TreeNode(object):
     def __init__(self, x):
@@ -122,7 +127,7 @@ class Codec:
         return root
 
 
-Solution = Codec
+#Solution = Codec
         
 
 # Your Codec object will be instantiated and called as such:

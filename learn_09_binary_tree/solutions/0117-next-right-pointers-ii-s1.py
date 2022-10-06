@@ -54,36 +54,7 @@ class Solution:
         #pdb.set_trace()
         return root
 
-    def tree_to_ls(self, root):
-        d = False
 
-        if root == None:
-            return []
-
-        out_ls = []
-
-        #pdb.set_trace()
-        q = [root]
-        while True:
-            if q == []:
-                break
-
-            n = q.pop(0)
-            if d:
-                print(n.val)
-
-            out_ls.append(n.val)
-            if n.next == None:
-                out_ls.append('#')
-
-            if n.left != None:
-                q.append(n.left)
-
-            if n.right != None:
-                q.append(n.right)
-
-        #pdb.set_trace()
-        return out_ls
 
 
 

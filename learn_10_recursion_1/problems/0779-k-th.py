@@ -1,15 +1,25 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/k-th-symbol-in-grammar/
 #
-# Given an array...
+# We build a table of n rows (1-indexed). We start by writing 0 in the 1st row. 
+# Now in every subsequent row, we look at the previous row 
+# and replace each occurrence of 0 with 01, and each occurrence of 1 with 10.
+#
+# 0 -> 01
+# 1 -> 10
+#
+# n = 3      1 2 3 4   
+#   row 1:   0
+#   row 2:   0 1
+#   row 3:   0 1 1 0  
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: n = 1, k = 1
+#       Output: 0
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: n = 2, k = 1
+#       Output: 0
 # 
 
 from typing import List
@@ -30,15 +40,5 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def kthGrammar(self, n: int, k: int) -> int:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

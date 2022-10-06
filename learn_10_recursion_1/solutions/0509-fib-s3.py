@@ -29,12 +29,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/6",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "59 ms",
+    "fasterThan": "47%",
+    "memory": "13.9 MB" 
 }
 
 class Solution:
@@ -42,4 +42,17 @@ class Solution:
         self.module = sys.modules[__name__]
 
     def fib(self, n: int) -> int:
-        pass    
+        dp = {}                         # dp[n]= f(n)
+        dp[0] = 0 
+        dp[1] = 1
+        out = f(n, dp)
+        br()
+        return out
+
+def f(n, dp):
+    if n in dp:
+        return dp[n]
+
+    dp[n] = f(n - 1, dp) + f(n - 2, dp) 
+    return dp[n]
+

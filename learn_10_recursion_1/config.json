@@ -24,7 +24,7 @@
             "level": "easy"
         },    
         {
-            "id-": "0700-ref",
+            "ref": "0700",
             "name": "700. Search in a Binary Search Tree"
         },       
         {
@@ -46,7 +46,7 @@
             "level": "easy"
         },     
         {
-            "id-": "0104-ref",
+            "ref": "0104",
             "name": "104. Maximum Depth of Binary Tree"
         },   
         {

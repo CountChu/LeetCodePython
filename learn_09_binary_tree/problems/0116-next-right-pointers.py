@@ -1,15 +1,26 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 #
-# Given an array...
+# You are given a perfect binary tree where all leaves are on the same level, 
+# and every parent has two children. The binary tree has the following definition:
+#
+#   struct Node {
+#       int val;
+#       Node *left;
+#       Node *right;
+#       Node *next;
+#   }
+#
+# Populate each next pointer to point to its next right node. 
+# If there is no next right node, the next pointer should be set to NULL.
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: [1,2,3,4,5,6,7]
+#       Output: [1,#,2,3,#,4,5,6,7,#]
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: []
+#       Output: []
 # 
 
 from typing import List
@@ -26,19 +37,16 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+class Node:
+    def __init__(self, val: int = 0, left: 'Node' = None, right: 'Node' = None, next: 'Node' = None):
+        self.val = val
+        self.left = left
+        self.right = right
+        self.next = next
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def connect(self, root: Node) -> Node: 
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

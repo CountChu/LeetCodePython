@@ -1,15 +1,18 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/powx-n/
 #
-# Given an array...
+# Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: x = 2.00000, n = 10
+#       Output: 1024.00000
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: x = 2.10000, n = 3
+#       Output: 9.26100
+# Example 3:
+#       Input: x = 2.00000, n = -2
+#       Output: 0.25000
 # 
 
 from typing import List
@@ -30,15 +33,5 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def myPow(self, x: float, n: int) -> float:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

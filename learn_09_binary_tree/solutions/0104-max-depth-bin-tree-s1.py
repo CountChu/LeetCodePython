@@ -1,12 +1,14 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
     "date": "2021/5/1",
     "design": 1,
     "coding": 10,
-    "runtime": "52 ms",
-    "memory": "17.9 MB"
+    "runtime": "81 ms",
+    "fasterThan": "36%",    
+    "memory": "16.4 MB"
 }
 
 # Definition for a binary tree node.
@@ -17,6 +19,9 @@ class TreeNode:
         self.right = right
 
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
+
     def maxDepth(self, root: TreeNode) -> int:
     	d = False
 

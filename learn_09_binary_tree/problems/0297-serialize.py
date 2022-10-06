@@ -1,15 +1,18 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 #
-# Given an array...
+# Serialization is the process of converting a data structure or object 
+# into a sequence of bits so that it can be stored in a file or memory buffer, 
+# or transmitted across a network connection link to be reconstructed later 
+# in the same or another computer environment.
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: root = [1,2,3,null,null,4,5]
+#       Output: [1,2,3,null,null,4,5]
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: root = []
+#       Output: []
 # 
 
 from typing import List
@@ -30,15 +33,34 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
 
-class MyClass:
-    def __init__(self):
+#
+# Your Codec object will be instantiated and called as such:
+# ser = Codec()
+# deser = Codec()
+# ans = deser.deserialize(ser.serialize(root))
+#
+
+class Codec:
+
+    def serialize(self, root):
+        """Encodes a tree to a single string.
+        
+        :type root: TreeNode
+        :rtype: str
+        """
         pass
 
-    def __str__(self):
-        return ''
+    def deserialize(self, data):
+        """Decodes your encoded data to tree.
+        
+        :type data: str
+        :rtype: TreeNode
+        """
+        pass
 
-    def dump(self):
-        print(str(self))        

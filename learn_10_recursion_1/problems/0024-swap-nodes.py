@@ -1,15 +1,21 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/swap-nodes-in-pairs/
 #
-# Given an array...
+# Given a linked list, swap every two adjacent nodes and return its head. 
+# You must solve the problem without modifying the values 
+# in the list's nodes (i.e., only nodes themselves may be changed.)
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: head = [1,2,3,4]
+#       Output: [2,1,4,3]
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: []
+#       Output: []
+# 
+# Example 3: 
+#       Input: [1]
+#       Output: [1]
 # 
 
 from typing import List
@@ -26,19 +32,15 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def swapPairs(self, head: ListNode) -> ListNode:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        
+   

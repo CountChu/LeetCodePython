@@ -10,5 +10,18 @@ def test(sln, nums, p, q, answer):
     assert out.val == answer, out
 
 def run(sln):
-    test(sln, [3,5,1,6,2,0,8,None,None,7,4], 5, 1, 3)
-    #test(sln, [3,5,1,6,2,0,8,None,None,7,4], 5, 4, 5)
+    if True:
+        test(
+            sln, 
+            [3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 
+            5, 
+            1, 
+            3)
+
+    if True:
+        test(
+            sln, 
+            [3, 5, 1, 6, 2, 0, 8, None, None, 7, 4], 
+            5, 
+            4, 
+            5)

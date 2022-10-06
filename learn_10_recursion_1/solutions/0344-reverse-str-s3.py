@@ -21,19 +21,38 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/6",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "463 ms",
+    "fasterThan": "26%",
+    "memory": "42.7 MB" 
 }
 
+
+'''
+      0 1 2 3 4
+      h e l l o
+      0       4
+        1   3
+          2
+
+'''
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
     def reverseString(self, s: List[str]) -> None:
-        """
-        Do not return anything, modify s in-place instead.
-        """
+        func(s, 0, len(s) - 1)
+        #br()
+
+def func(s, i, j):
+    if i >= j:
+        return
+
+    s[i], s[j] = s[j], s[i]
+    i += 1 
+    j -= 1
+    func(s, i, j)
+
+

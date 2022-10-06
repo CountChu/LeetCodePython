@@ -1,15 +1,16 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/unique-binary-search-trees-ii/
 #
-# Given an array...
+# Given an integer n, return all the structurally unique BST's (binary search trees), 
+# which has exactly n nodes of unique values from 1 to n. Return the answer in any order.
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: n = 3
+#       Output: [[1,null,2,null,3],[1,null,3,2],[2,1,3],[3,1,null,null,2],[3,2,null,1]]
 #
 # Example 2: 
-#       Input:
-#       Output: 
+#       Input: n = 1
+#       Output: [[1]]
 # 
 
 from typing import List
@@ -26,19 +27,15 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def generateTrees(self, n: int) -> List[TreeNode]:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

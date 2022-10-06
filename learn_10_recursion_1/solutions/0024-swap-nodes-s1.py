@@ -1,4 +1,5 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
@@ -18,6 +19,9 @@ class ListNode:
 #  
 
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
+
     def swapPairs(self, head):
     	debug = False
 

@@ -21,12 +21,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/6",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "62 ms",
+    "fasterThan": "17%",
+    "memory": "13.9 MB" 
 }
 
 class Solution:
@@ -34,4 +34,16 @@ class Solution:
         self.module = sys.modules[__name__]
 
     def climbStairs(self, n: int) -> int:
-        pass
+        dp = {}
+        dp[1] = 1
+        dp[2] = 2
+        i = 3 
+        while True:
+            if i > n:
+                break
+
+            dp[i] = dp[i-1] + dp[i-2]
+            i += 1
+        
+        return dp[n]
+

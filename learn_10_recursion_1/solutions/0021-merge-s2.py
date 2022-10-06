@@ -4,8 +4,9 @@ import pdb
 solution_json = {
     "date": "2021/4/18",
     "coding": 12,
-    "runtime": "52 ms",
-    "memory": "15.8 MB"
+    "runtime": "72 ms",
+    "fasterThan": "36.8%",
+    "memory": "14 MB"
 }
 
 # Definition for singly-linked list.
@@ -55,31 +56,5 @@ class Solution:
             pre = n3
 
         return head
-
-    def list_to_ll(self, ls):
-
-        head = None
-        n0 = None
-        for v in ls:
-            n1 = ListNode(v)
-            if head == None:
-                head = n1
-            if n0 != None:
-                n0.next = n1
-            n0 = n1
-
-        return head
-
-    def ll_to_list(self, head):
-
-        ls = []
-        n = head
-        while True:
-            if n == None:
-                break
-            ls.append(n.val)
-            n = n.next
-        return ls       
-
 
 

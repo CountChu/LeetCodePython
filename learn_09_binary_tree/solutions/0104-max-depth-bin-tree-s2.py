@@ -21,12 +21,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/5",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "82 ms",
+    "fasterThan": "34%",
+    "memory": "16.4 MB" 
 }
 
 class TreeNode:
@@ -40,4 +40,22 @@ class Solution:
         self.module = sys.modules[__name__]
 
     def maxDepth(self, root: TreeNode) -> int:   
-        pass
+        ctx = {}
+        ctx['out'] = 0
+        depth = 0
+        go(root, depth, ctx)
+        return ctx['out']
+
+def go(nd, depth, ctx):
+    if nd == None:
+        return
+
+    depth += 1
+    ctx['out'] = max(ctx['out'], depth)
+    go(nd.left, depth, ctx)
+    go(nd.right, depth, ctx)
+
+
+
+
+

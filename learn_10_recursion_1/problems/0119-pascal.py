@@ -1,16 +1,27 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/pascals-triangle-ii/
 #
-# Given an array...
+# Given an integer rowIndex, return the rowIndexth (0-indexed) row 
+# of the Pascal's triangle.
+#
+# In Pascal's triangle, each number is the sum of the two numbers directly 
+# above it as shown:
 #
 # Example 1:
-#       Input:
-#       Output:
+#       Input: rowIndex = 3
+#       Output: [1,3,3,1]
 #
 # Example 2: 
-#       Input:
-#       Output: 
-# 
+#       Input: rowIndex = 0
+#       Output: [1]
+#
+# Example 3:
+#       Input: rowIndex = 1
+#       Output: [1,1]
+#
+# Constraints:
+#       0 <= rowIndex <= 33
+#       
 
 from typing import List
 import sys
@@ -30,15 +41,5 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
-        pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        
+    def getRow(self, rowIndex: int) -> List[int]:
+        pass     
