@@ -1,19 +1,15 @@
 #
-# https://leetcode.com/problems/n-ary-tree-preorder-traversal/#
+# https://leetcode.com/problems/n-ary-tree-postorder-traversal/
 #
-# Given the root of an n-ary tree, return the preorder traversal 
+# Given the root of an n-ary tree, return the postorder traversal 
 # of its nodes' values.
 #
 # Nary-Tree input serialization is represented in their level order traversal. 
 # Each group of children is separated by the null value (See examples)
 #
 # Example 1:
-#       Input: root = [
-#           1,
-#           null, 3, 2, 4,
-#           null, 5, 6
-#           ]
-#       Output: [1, 3, 5, 6, 2, 4]
+#       Input: root = [1,null,3,2,4,null,5,6]
+#       Output: [5,6,3,2,4,1]
 #
 # Example 2: 
 #       Input: [
@@ -23,7 +19,7 @@
 #           null, null, 11, null, 12, null, 13, null,
 #           null,14
 #       ]
-#       Output: [1, 2, 3, 6, 7, 11, 14, 4, 8, 12, 5, 9, 13, 10]
+#       Output: [2, 6, 14, 11, 7, 3, 12, 8, 4, 13, 9, 10, 5, 1]
 # 
 
 from typing import List
@@ -33,11 +29,12 @@ br = pdb.set_trace
 
 solution_json = {
     "date": "2022/9/27",
+    "again": ["2022/10/7"],
     "design": 0,
     "coding": 0,
-    "runtime": "60 ms",
-    "fasterThan": "83%",
-    "memory": "16.3 MB" 
+    "runtime": "91 ms",
+    "fasterThan": "52%",
+    "memory": "16.4 MB" 
 }
 
 #
@@ -49,24 +46,21 @@ class Node:
         self.val = val
         self.children = children
 
-def go(nd, val_ls):
-    if nd == None:
-        return 
-
-    #print(nd.val)
-    val_ls.append(nd.val)
-    if nd.children == None:
-        return
-
-    for child in nd.children:
-        go(child, val_ls)
-
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def preorder(self, root: 'Node') -> List[int]:
+    def postorder(self, root: 'Node') -> List[int]:
+        if root == None:
+            return []
+
         out = []
         go(root, out)
         return out
+
+def go(nd, out):
+    if nd.children != None:
+        for child in nd.children:
+            go(child, out)
+    out.append(nd.val)
 

@@ -13,7 +13,7 @@ def test_solution(sln, ls, target):
     assert out == target
 
 def run(sln):
-    if False:
+    if True:
         test_solution(
             sln, 
             [

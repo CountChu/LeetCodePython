@@ -1,13 +1,19 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
     "date": "2021/5/5",
     "design": 30,
     "coding": 60,
-    "runtime": "208 ms",
-    "memory": "21.3 MB"
+    "runtime": "391 ms",
+    "fasterThan": "11%",    
+    "memory": "19.8 MB"
 }
+
+class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -39,7 +45,8 @@ class KthLargest:
                 self.root = delete(self.root)
                 self.count -= 1
 
-        #pdb.set_trace()
+    def dump(self):
+        pass
 
     def add(self, val: int) -> int:
         d = False
@@ -130,10 +137,3 @@ def get_leftmost(root):
 
     return leftmost, parent        
 
-
-
-
-
-class Solution:
-    def func(self, nums):
-        pdb.set_trace()

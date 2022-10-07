@@ -1,10 +1,11 @@
 from data_structure import *
 import pdb
 
-def test(sln, module, op_ls, data_ls, answer_ls):
-    print('op_ls = %s, data_ls = %s, answer = %s' % (op_ls, data_ls, answer_ls))
-    
-    for op, data, answer in zip(op_ls, data_ls, answer_ls):
+def test_module(module, script_ls):
+    for script in script_ls:
+        print(script)
+        op, data, answer = script
+        
         if op == 'KthLargest':
             obj = module.KthLargest(data[0], data[1])
             assert None == answer, None
@@ -16,31 +17,60 @@ def test(sln, module, op_ls, data_ls, answer_ls):
         else:
             assert(op, False)
 
-def run(sln, module):
+        obj.dump()
+
+def run(sln):
 
     if True:
-        test(
-            sln, 
-            module,
-            ["KthLargest", "add", "add", "add", "add", "add"],
-            [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]],
-            [None, 4, 5, 5, 8, 8],
-            )
+        '''
+            3,       [4, 5, 8, 2]
+                     [8, 5, 4, 2]
+            add 3    [8, 5, 4, 3, 2]
+            add 5    [8, 5, 5, 4, 3, 2]
+        '''
+        test_module(
+            sln.module,
+            [
+                ("KthLargest", [3, [4, 5, 8, 2]], None),
+                ("add",        [3],  4),
+                ("add",        [5],  5),
+                ("add",        [10], 5),
+                ("add",        [9],  8),
+                ("add",        [4],  8),
+            ]
+        )
 
     if True:
-        test(
-            sln,
-            module,
-            ["KthLargest","add","add","add","add","add"],
-            [[1,[]],[-3],[-2],[-4],[0],[4]],
-            [None, -3, -2, -2, 0, 4], 
-            )
+        test_module(
+            sln.module,
+            [
+                ("KthLargest", [1,[]],  None),
+                ("add",        [-3],    -3),
+                ("add",        [-2],    -2),
+                ("add",        [-4],    -2),
+                ("add",        [0],      0),
+                ("add",        [4],      4),
+            ] 
+        )
 
     if True:
-        test(
-            sln,
-            module,
-            ["KthLargest","add","add","add","add","add"],
-            [[3,[5,-1]], [2], [1], [-1], [3], [4]],
-            [None, -1, 1, 1, 2, 3],
-            )
+        test_module(
+            sln.module,
+            [
+                ("KthLargest", [3,[5,-1]],  None),
+                ("add",        [2],          -1),
+                ("add",        [1],           1), 
+                ("add",        [-1],          1), 
+                ("add",        [3],           2), 
+                ("add",        [4],           3),
+            ]
+        )
+
+
+
+
+
+
+
+
+

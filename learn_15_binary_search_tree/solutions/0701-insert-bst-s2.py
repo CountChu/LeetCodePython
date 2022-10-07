@@ -9,13 +9,6 @@
 # Notice that there may exist multiple valid ways for the insertion, 
 # as long as the tree remains a BST after insertion. 
 # You can return any of them.
-#
-# Constraints:
-#       - The number of nodes in the tree will be in the range [0, 10^4].
-#       - -10^8 <= Node.val <= 10^8
-#       - All the values Node.val are unique.
-#       - -10^8 <= val <= 10^8
-#       - It's guaranteed that val does not exist in the original BST.
 # 
 
 from typing import List
@@ -24,12 +17,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/7",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "175 ms",
+    "fasterThan": "77%",
+    "memory": "16.9 MB" 
 }
 
 class TreeNode:
@@ -38,9 +31,41 @@ class TreeNode:
         self.left = left
         self.right = right
 
+'''
+         4
+    2         7
+ 1    3
+ insert 5      
+
+'''
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
     def insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
-        pass
+        if root == None:
+            return TreeNode(val)
+
+        nd = root
+        head = root
+        while True:
+            if nd == None:
+                break
+
+            if nd.val < val:
+                if nd.right == None:
+                    nd.right = TreeNode(val)
+                    break
+                else:
+                    nd = nd.right 
+            elif nd.val > val:
+                if nd.left == None:
+                    nd.left = TreeNode(val)
+                    break
+                else:
+                    nd = nd.left 
+            else:
+                assert False
+        return head
+
+

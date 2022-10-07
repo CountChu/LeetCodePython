@@ -1,4 +1,5 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
@@ -8,6 +9,10 @@ solution_json = {
     "runtime": "80 ms",
     "memory": "22.2 MB"
 }
+
+class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -34,6 +39,9 @@ class BSTIterator:
         if self.d:
             print(self.dumpStack())
 
+    def dump(self):
+        pass
+
     def next(self) -> int:
         val, n = self.s.pop()
         if n.right != None:
@@ -59,12 +67,6 @@ class BSTIterator:
             str += '%d, ' % val
         str += ']'
         return str
-
-
-
-class Solution(object):
-    def __init__(self):
-        pass
         
 # Your BSTIterator object will be instantiated and called as such:
 # obj = BSTIterator(root)

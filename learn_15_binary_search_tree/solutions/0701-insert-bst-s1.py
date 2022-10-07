@@ -1,4 +1,5 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
@@ -16,6 +17,9 @@ class TreeNode:
         self.right = right
 
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
+
     def insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
     	d = False
     	if root == None:

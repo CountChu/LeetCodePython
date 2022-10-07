@@ -20,12 +20,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/7",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "1804 ms",
+    "fasterThan": "6%",
+    "memory": "18.3 MB" 
 }
 
 class Solution:
@@ -35,10 +35,19 @@ class Solution:
 class KthLargest:
 
     def __init__(self, k: int, nums: List[int]):
-        pass
+        self.k = k
+        self.nums = nums
+        self.nums.sort(reverse=True)
+        self.nums = self.nums[:self.k]
 
     def add(self, val: int) -> int:  
-        pass
+        self.nums.append(val)
+        self.nums.sort(reverse=True)
+        self.nums = self.nums[:self.k]
+        return self.nums[-1]
+
+    def dump(self):
+        print(self.nums)
 
 #
 # Your KthLargest object will be instantiated and called as such:

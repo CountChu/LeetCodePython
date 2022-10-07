@@ -11,12 +11,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/7",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "178 ms",
+    "fasterThan": "14%",
+    "memory": "20 MB" 
 }
 
 class Solution:
@@ -29,16 +29,34 @@ class TreeNode:
         self.left = left
         self.right = right
 
+'''
+          7
+      3       15
+            9   20
+'''
 class BSTIterator:
 
     def __init__(self, root: TreeNode):
-        pass        
+        self.v_ls = []
+        go(root, self.v_ls)        
 
     def next(self) -> int:
-        pass
+        return self.v_ls.pop(0)
 
     def hasNext(self) -> bool:
-        pass
+        return self.v_ls != []
+
+    def dump(self):
+        print(self.v_ls)
+
+def go(nd, v_ls):
+    if nd == None:
+        return
+    
+    go(nd.left, v_ls)
+    #print(nd.val)
+    v_ls.append(nd.val)
+    go(nd.right, v_ls)
 
 #
 # Your BSTIterator object will be instantiated and called as such:

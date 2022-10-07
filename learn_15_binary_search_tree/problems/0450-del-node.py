@@ -1,15 +1,14 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/delete-node-in-a-bst/
 #
-# Given an array...
+# Given a root node reference of a BST and a key, delete the node 
+# with the given key in the BST. Return the root node reference (possibly updated) 
+# of the BST.
 #
-# Example 1:
-#       Input:
-#       Output:
+# Basically, the deletion can be divided into two stages:
 #
-# Example 2: 
-#       Input:
-#       Output: 
+# Search for a node to remove.
+# If the node is found, delete the node. 
 # 
 
 from typing import List
@@ -26,19 +25,19 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def deleteNode(self, root: TreeNode, key: int) -> TreeNode:
         pass
 
-    def __str__(self):
-        return ''
 
-    def dump(self):
-        print(str(self))        
+
+

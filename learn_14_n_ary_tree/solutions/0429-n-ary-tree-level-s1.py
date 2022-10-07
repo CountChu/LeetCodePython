@@ -31,7 +31,8 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/9/?26",
+    "date": "2022/9/26",
+    "again": ["2022/10/7"],
     "design": 0,
     "coding": 0,
     "runtime": "114 ms",
@@ -67,7 +68,7 @@ class Solution:
             if q == []:
                 break 
 
-            (level, nd) = q.pop(0)
+            level, nd = q.pop(0)
             if nd.children == None:
                 continue
 

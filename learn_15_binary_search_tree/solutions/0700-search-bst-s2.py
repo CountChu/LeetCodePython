@@ -15,12 +15,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/7",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "80 ms",
+    "fasterThan": "93%",
+    "memory": "16.5 MB" 
 }
 
 class TreeNode:
@@ -29,12 +29,31 @@ class TreeNode:
         self.left = left
         self.right = right
 
+'''
+          4
+      2       7
+    1   3  
+'''
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
     def searchBST(self, root: TreeNode, val: int) -> TreeNode:
-        pass
+        nd = root
+        while True:
+            if nd == None:
+                break
+
+            if nd.val == val:
+                return nd 
+            elif val < nd.val:
+                nd = nd.left 
+            else:
+                nd = nd.right
+
+        return None
+
+
 
 
 

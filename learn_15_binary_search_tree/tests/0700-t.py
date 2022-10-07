@@ -8,6 +8,6 @@ def test(sln, nums, val, answer):
     out_ls = binary_tree_v3.tree_to_ls(out)
     assert out_ls == answer, out_ls
 
-def run(sln, module):
-    test(sln, [4,2,7,1,3], 2, [2,1,3])
-    test(sln, [4,2,7,1,3], 5, [])
+def run(sln):
+    test(sln, [4, 2, 7, 1, 3], 2, [2, 1, 3])
+    test(sln, [4, 2, 7, 1, 3], 5, [])
