@@ -1,15 +1,12 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/balanced-binary-tree/
 #
-# Given an array...
+# Given a binary tree, determine if it is height-balanced.
 #
-# Example 1:
-#       Input:
-#       Output:
+# For this problem, a height-balanced binary tree is defined as:
 #
-# Example 2: 
-#       Input:
-#       Output: 
+# a binary tree in which the left and right subtrees of every node differ 
+# in height by no more than 1.
 # 
 
 from typing import List
@@ -26,19 +23,15 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
-        pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        
+    def isBalanced(self, root: TreeNode) -> bool:
+        pass   
