@@ -38,12 +38,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/10",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "200 ms",
+    "fasterThan": "91%",
+    "memory": "19.8 MB" 
 }
 
 class Solution:
@@ -60,17 +60,50 @@ class Solution:
 
 class MyHashSet:
     def __init__(self):
+        self.n = 10000
+        self.b = [[] for i in range(self.n)] # bucket
         pass
 
     def dump(self):
-        pass
+        for y, ls in enumerate(self.b):
+            for x, v in enumerate(ls):
+                print('%d: %d: %s' % (x, y, v))
 
     def add(self, key: int) -> None:
-        pass        
+        y, found, x = get_idx(self.n, self.b, key)
+
+        if not found:
+            if x == -1:
+                self.b[y].append(key)
+            else:
+                self.b[y][x] = key        
 
     def remove(self, key: int) -> None:
-        pass
+        y, found, x = get_idx(self.n, self.b, key)
+        if not found:
+            return
+
+        self.b[y][x] = None
 
     def contains(self, key: int) -> bool:
-        return True
+        y, found, x = get_idx(self.n, self.b, key)
+        return found
 
+def get_idx(n, b, key):
+    y = key % n
+    found = False
+    x = -1
+    x2 = -1
+    for i, v in enumerate(b[y]):
+        if v == None:
+            if x2 == -1:
+                x2 = i
+
+        if key == v:
+            found = True
+            x = i
+
+    if found:
+        return y, found, x 
+    else:
+        return y, found, x2

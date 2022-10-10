@@ -20,12 +20,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/9",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "172 ms",
+    "fasterThan": "7%",
+    "memory": "15.7 MB" 
 }
 
 class TreeNode:
@@ -38,5 +38,48 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
+    '''
+       0   1  2  3  4
+    [-10, -3, 0, 5, 9]
+
+              0
+         -3       9
+     -10       5 
+
+     0  1 
+    [1, 3]
+    
+
+    '''
     def sortedArrayToBST(self, nums: List[int]) -> TreeNode:        
-        pass
+        root = build(nums)
+        return root
+
+def build(ls):
+    if ls == []:
+        return None
+
+    left_ls, v, right_ls = split(ls)
+    #print(v)
+    nd = TreeNode(v)
+
+    left_nd = build(left_ls)
+    nd.left = left_nd
+
+    right_nd = build(right_ls)
+    nd.right = right_nd 
+
+    #print(v, '----')
+
+    return nd
+
+def split(ls):
+    m = len(ls) // 2
+    v = ls[m]
+    left_ls = ls[:m]
+    right_ls = ls[m+1:]
+    return left_ls, v, right_ls
+
+
+
+

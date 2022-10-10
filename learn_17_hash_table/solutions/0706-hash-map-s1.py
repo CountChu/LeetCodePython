@@ -42,9 +42,6 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
 #
 # Your MyHashMap object will be instantiated and called as such:
 # obj = MyHashMap()

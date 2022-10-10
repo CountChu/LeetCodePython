@@ -22,7 +22,7 @@ def test_module(module, script_ls):
             obj.put(data[0], data[1])
         elif op == 'get':
             out = obj.get(data[0])
-            assert out == answer
+            assert out == answer, out
         elif op == 'remove':
             out = obj.remove(data[0])
             assert out == answer 

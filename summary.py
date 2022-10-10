@@ -247,46 +247,67 @@ def handle_problem(args, cfg):
                         progress_d[id]['solutions'].append(sln)   
 
     #
-    # Report progress.
+    # Transform progress_d into progress_ls
+    # progress_ls = [progress]
+    # progress = {'solution', 'problem'}
+    #
+
+    progress_ls = []
+    for id in progress_d:
+        problem = progress_d[id]['problem']
+        solutions = progress_d[id]['solutions']
+        for sln in solutions:
+            sln['programDateTime'] = sln['programDate'] + ' ' + sln['programTime']
+            progress = {'solution': sln, 'problem': problem}
+            progress_ls.append(progress)
+
+    #
+    # Sort progress_ls by programDateTime
+    #
+
+    progress_ls.sort(key = lambda x: x['solution']['programDateTime'])
+
+    #
+    # Report progress_ls.
     #
 
     #pdb.set_trace()
     print('Progress on %s:' % date_str)
     print('')
-    for id in progress_d:
-        problem = progress_d[id]['problem']
-        id = problem['id']
-        level = problem['level']
-        name = problem['name']        
-        print('    %4s, %7s: %s' % (id, level, name))
-        solutions = progress_d[id]['solutions']
-        for sln in solutions:
-            if sln['programDate'] == date_str:
-                line = '                   %s | %2s | ' % (sln['programTime'], sln['id'])
-            else:
-                line = '                   %s %s | %2s | ' % (sln['programDate'], sln['programTime'], sln['id'])
-            
-            if 'design' in sln:
-                if sln['design'] != 0:
-                    line += 'design: %d mins, ' % sln['design']            
-            
-            if 'coding' in sln:
-                if sln['coding'] != 0:
-                    line += 'coding: %d mins, ' % sln['coding']
-            
-            if 'runtime' in sln:
-                line += 'runtime: %s, ' % sln['runtime']
-            
-            if 'fasterThan' in sln:
-                line += 'fasterThan: %s, ' % sln['fasterThan']
+    for progress in progress_ls:
+        sln = progress['solution']
+        problem = progress['problem']
 
-            if 'memory' in sln:
-                line += 'memory: %s, ' % sln['memory']
-            
-            if 'bug' in sln:
-                line += 'bug: %s, ' % sln['bug']
-            print(line)
+        if sln['programDate'] == date_str:
+            time_str = sln['programTime']
+        else:
+            time_str = '%s %s' % (sln['programDate'], sln['programTime'])        
+
+        print('%s | %4s | %6s | %s' % (time_str, problem['id'], problem['level'], problem['name']))
+
+        line = ' ' * len(time_str) + ' | ' + sln['id'] + ' | '
+        if 'design' in sln:
+            if sln['design'] != 0:
+                line += 'design: %d mins, ' % sln['design']            
+        
+        if 'coding' in sln:
+            if sln['coding'] != 0:
+                line += 'coding: %d mins, ' % sln['coding']
+        
+        if 'runtime' in sln:
+            line += 'runtime: %s, ' % sln['runtime']
+        
+        if 'fasterThan' in sln:
+            line += 'fasterThan: %s, ' % sln['fasterThan']
+
+        if 'memory' in sln:
+            line += 'memory: %s, ' % sln['memory']
+        
+        if 'bug' in sln:
+            line += 'bug: %s, ' % sln['bug']
+        print(line)
         print('')
+
     print('')        
 
     #

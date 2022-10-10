@@ -30,12 +30,12 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/?/??",
+    "date": "2022/10/10",
     "design": 0,
     "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
+    "runtime": "1644 ms",
+    "fasterThan": "16%%",
+    "memory": "18.3 MB" 
 }
 
 class Solution:
@@ -52,16 +52,57 @@ class Solution:
 
 class MyHashMap:
     def __init__(self):
-        pass
+        self.n = 10000
+        self.b = [[] for i in range(self.n)] # bucket, b[y][x] = (key, value)
 
     def dump(self):
-        pass
+        for y, ls in enumerate(self.b):
+            for x, pair in enumerate(ls):
+                if pair != None:
+                    print('%d: %d: %s' % (y, x, pair))
 
     def put(self, key: int, value: int) -> None:
-        pass
+        y, found, x = find(self.b, self.n, key)
+        if found:
+            self.b[y][x] = (key, value)
+        else:
+            self.b[y].append((key, value))
 
     def get(self, key: int) -> int:
-        return 0
+        y, found, x = find(self.b, self.n, key)
+        if not found:
+            return -1
+
+        _, value = self.b[y][x]
+        return value
 
     def remove(self, key: int) -> None:
-        pass
+        y, found, x = find(self.b, self.n, key)
+        if not found:
+            return  
+
+        self.b[y][x] = None
+
+
+def find(b, n, key):
+    y = key % n
+    found = False
+    x = -1
+    x_none = -1
+    for i, pair in enumerate(b[y]):
+        if pair == None:
+            if x_none == -1:
+                x_none = i
+        else:
+            if pair[0] == key:
+                found = True
+                x = i   
+                break
+
+    if found:
+        return y, found, x
+    else:
+        return y, found, x_none
+
+
+
