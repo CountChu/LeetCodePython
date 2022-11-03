@@ -23,6 +23,12 @@
             "inferId": "tribonacci",
             "name": "1137. N-th Tribonacci Number",
             "level": "easy"
-        }             
+        },       
+        {
+            "id": "0740",
+            "inferId": "delete_earn",
+            "name": "740. Delete and Earn",
+            "level": "medium"
+        }         
     ]
 }

@@ -77,9 +77,8 @@ class MyCircularQueue:
         self.h = 0
         self.t = 0
 
-    def __repr__(self):
-        s = 'h: %d, t: %d, q: %s' % (self.h, self.t, self.q)
-        return s
+    def dump(self):
+        print('h: %d, t: %d, q: %s' % (self.h, self.t, self.q))
 
     def next(self, idx):
         return (idx + 1) % self.s

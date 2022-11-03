@@ -12,7 +12,7 @@ def test_solution(sln, cost, target):
     assert out == target
 
 def run(sln):
-    test_solution(sln, [10,15,20], 15)
+    test_solution(sln, [10, 15, 20], 15)
     test_solution(sln, [1, 100], 1)    
     test_solution(sln, [1, 100, 1], 2)
     test_solution(sln, [1, 100, 1, 1], 2)

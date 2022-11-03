@@ -38,7 +38,7 @@ def test(module, script_ls):
     	else:
     		assert False, op
 
-    	print(obj)
+    	obj.dump()
     return obj
 
 def run(sln):

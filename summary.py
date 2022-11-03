@@ -200,9 +200,30 @@ def handle_problem(args, cfg):
                 continue
 
             level_coding_d[level].append(coding)
-            if args.detail:
-                print('%s:' % name)
-                print('    level = %6s, coding = %d' % (level, coding))    
+
+    #
+    # Build problem['history']
+    #
+
+    for problem in problems:
+        if problem['solved']:
+            history = util.gen_history(problem['solutions'])
+            problem['history'] = history
+
+    if args.detail:
+        for problem in problems:
+            pid = problem['id']
+            name = problem['name']
+            level = problem['level']
+            date = ''
+
+            if problem['solved']:
+                key, sln = util.get_last_solution(problem)
+            else:
+                key = ''
+                
+            print('%6s | %6s | %-14s | %s' % (pid, level, key, name))
+
     print('')
 
     #
@@ -341,7 +362,7 @@ def main():
     # Merge configs into a config
     #
 
-    cfg = config.collect()
+    cfg = config.collect(None)
 
     #
     # Check cfg syntex.

@@ -4,6 +4,8 @@ def test(sln, s, target):
     assert out == target
 
 def run(sln):
+    test(sln, "]", False)    
+    test(sln, "[", False)
     test(sln, "()", True)
     test(sln, "()[]{}", True)
     test(sln, "(]", False)

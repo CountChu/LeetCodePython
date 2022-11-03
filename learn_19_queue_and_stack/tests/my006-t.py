@@ -14,7 +14,9 @@ def test(module, script_ls):
             obj.pop()
         elif op == 'top':
             out = obj.top()
-            assert out == answer
+            assert out == answer, out
+
+        obj.dump()
 
     return obj
 
@@ -28,6 +30,8 @@ def run(sln):
             ('push',     [-3], None), 
             ('pop',      [],   None), 
             ('top',      [],   0), 
+            ('push',     [1], None), 
+            ('top',      [],   1), 
+
         ]
     )
-    print(obj)

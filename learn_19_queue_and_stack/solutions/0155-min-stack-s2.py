@@ -21,6 +21,7 @@ import pdb
 
 solution_json = {
     "date": "2022/9/3",
+    "again": ["2022/10/18"],
     "design": 0,
     "coding": 0,
     "runtime": "75 ms",
@@ -40,11 +41,11 @@ class MinStack:
         self.min = None                 # The min value of the stack.
         self.refresh_min = False        # Determine if refreshing min.
 
-    def __repr__(self):
+    def dump(self):
         if self.min == None:
-            return '%d, None, %s, %s' % (self.t, self.refresh_min, self.s)
+            print('%d, None, %s, %s' % (self.t, self.refresh_min, self.s))
         else:
-            return '%d, %d, %s, %s' % (self.t, self.min, self.refresh_min, self.s)
+            print('%d, %d, %s, %s' % (self.t, self.min, self.refresh_min, self.s))
        
     def push(self, val: int) -> None:
         self.t += 1

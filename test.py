@@ -84,7 +84,7 @@ def main():
     # Merge configs into a config
     #
 
-    cfg = config.collect()
+    cfg = config.collect(args.problem)
     
     #
     # Find problem in the config.

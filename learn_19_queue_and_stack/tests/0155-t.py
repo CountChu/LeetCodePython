@@ -19,6 +19,8 @@ def test(module, script_ls):
             out = obj.getMin()
             assert out == answer
 
+        obj.dump()
+
     return obj
 
 def run(sln):
@@ -35,7 +37,6 @@ def run(sln):
             ('getMin',   [],   -2), 
         ]
     )
-    print(obj)
 
 '''
 class MinStack:

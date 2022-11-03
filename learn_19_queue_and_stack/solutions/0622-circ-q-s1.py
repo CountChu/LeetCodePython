@@ -23,6 +23,9 @@ class MyCircularQueue:
         self.head = -1
         self.tail = -1
 
+    def dump(self):
+        pass
+
     def enQueue(self, value: int) -> bool:
         out = False
 

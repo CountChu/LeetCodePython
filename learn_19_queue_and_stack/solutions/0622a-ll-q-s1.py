@@ -31,17 +31,6 @@ class Node:
         self.val = val 
         self.next = None
 
-    def __repr__(self):
-        s1 = ''
-        n = self  
-        while True:
-            if n == None:
-                break
-
-            s1 += str(n.val) + " -> " 
-            n = n.next
-        return s1
-
 class MyCircularQueue:
 
     def __init__(self, k: int):
@@ -49,6 +38,17 @@ class MyCircularQueue:
         self.size = 0
         self.head = None
         self.tail = None
+
+    def dump(self):
+        s = ''
+        nd = self.head
+        while True:
+            if nd == None:
+                break
+
+            s += str(nd.val) + ' -> '
+            nd = nd.next
+        print(s)
         
     def enQueue(self, value: int) -> bool:
         if self.size >= self.max_size:

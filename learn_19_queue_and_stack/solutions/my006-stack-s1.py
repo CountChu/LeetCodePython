@@ -34,8 +34,8 @@ class Stack:
         self.s = []                     # stack
         self.t = -1                     # index of top. size = t + 1
 
-    def __repr__(self):
-        return '%d, %s' % (self.t, self.s)
+    def dump(self):
+        print('%d, %s' % (self.t, self.s))
        
     def push(self, val: int) -> None:
         self.t += 1

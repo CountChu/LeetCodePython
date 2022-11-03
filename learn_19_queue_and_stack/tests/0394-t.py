@@ -6,8 +6,9 @@ def test(sln, s, answer):
     out = sln.decodeString(s)
     assert out == answer, out
 
-def run(sln, module):
+def run(sln):
     test(sln, "3[ab2[c]d]", "abccdabccdabccd")
+
     test(sln, "3[a]2[bc]", "aaabcbc")
     test(sln, "3[a2[c]]", "accaccacc")    
     test(sln, "2[abc]3[cd]ef", "abcabccdcdcdef")    

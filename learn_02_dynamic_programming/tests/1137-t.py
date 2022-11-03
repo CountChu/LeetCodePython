@@ -13,6 +13,7 @@ def test_solution(sln, n, target):
 
 
 def run(sln):
+    test_solution(sln, 1, 1)
     test_solution(sln, 4, 4)
     test_solution(sln, 25, 1389537)
     test_solution(sln, 3, 2)

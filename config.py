@@ -55,23 +55,24 @@ def infer_solutions(cfg, bn, solution_bns, problem):
 
     return solutions
 
-def handle_id(problem, cfg, lesson_dn, solution_bns, merged_cfg):
+def handle_id(pid, problem, cfg, lesson_dn, solution_bns, merged_cfg):
     #print('Handle %s' % problem['id'])
     problem['lesson'] = lesson_dn
 
     if 'inferId' in problem: 
         problem_fn = get_problem_fn_create(cfg, lesson_dn, problem)
-        if not os.path.exists(problem_fn):
-            print('The problem does not exist.')
-            print(problem_fn)
-            answer = input('Do you want to create it? [y/Y]')
-            if answer in ['y', 'Y']:
-                f = open(problem_fn, 'w')
-                content = gen.problem()
-                f.write(content)
-                f.close()
-                print('Build ', problem_fn)
-            sys.exit()
+        if pid != None and problem['id'] == pid: 
+            if not os.path.exists(problem_fn):
+                print('The problem does not exist.')
+                print(problem_fn)
+                answer = input('Do you want to create it? [y/Y]')
+                if answer in ['y', 'Y']:
+                    f = open(problem_fn, 'w')
+                    content = gen.problem()
+                    f.write(content)
+                    f.close()
+                    print('Build ', problem_fn)
+                sys.exit()
 
         problem['fn'] = problem_fn
 
@@ -123,7 +124,9 @@ def handle_id(problem, cfg, lesson_dn, solution_bns, merged_cfg):
 
             t = os.path.getmtime(fn)
             dt = datetime.fromtimestamp(t)
-            sln['programDate'] = dt.strftime('%Y/%-m/%-d')
+
+            #sln['programDate'] = dt.strftime('%Y/%-m/%-d')
+            sln['programDate'] = dt.strftime('%Y/%m/%d')
             sln['programTime'] = dt.strftime('%H:%M')
 
     merged_cfg['problems'].append(problem)
@@ -139,7 +142,7 @@ def handle_ref(problem, lesson_dn, merged_cfg):
 
     merged_cfg['references'].append(reference)
 
-def collect():
+def collect(pid):
     cfg_ls = []
     lesson_dn_ls = []
     for bn in os.listdir('.'):
@@ -191,7 +194,7 @@ def collect():
 
         for problem in cfg['problems']:
             if 'id' in problem:
-                handle_id(problem, cfg, lesson_dn, solution_bns, merged_cfg)
+                handle_id(pid, problem, cfg, lesson_dn, solution_bns, merged_cfg)
 
             elif 'ref' in problem:
                 handle_ref(problem, lesson_dn, merged_cfg)

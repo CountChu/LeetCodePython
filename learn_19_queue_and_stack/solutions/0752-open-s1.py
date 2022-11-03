@@ -1,4 +1,5 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
@@ -10,6 +11,9 @@ solution_json = {
 }  
 
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
+
     def openLock(self, deadends: List[str], target: str) -> int:
         d = False
 

@@ -12,30 +12,6 @@
 # that should be merged, and the last n elements are set to 0 and should be ignored. 
 # nums2 has a length of n.
 #
-# Example 1:
-#       Input:
-#           nums1 = [1,2,3,0,0,0], 
-#           m = 3, 
-#           nums2 = [2,5,6], 
-#           n = 3
-#       Output: [1,2,2,3,5,6]
-#
-# Example 2: 
-#       Input:
-#           nums1 = [1], 
-#           m = 1, 
-#           nums2 = [], 
-#           n = 0
-#       Output: [1]
-#
-# Example 3: 
-#       Input:
-#           nums1 = [0], 
-#           m = 0, 
-#           nums2 = [1], 
-#           n = 1
-#       Output: [1]
-#
 
 from typing import List
 import sys

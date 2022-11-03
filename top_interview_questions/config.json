@@ -1,0 +1,319 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0001",
+            "inferId": "two-sum", 
+            "name": "1. Two Sum",
+            "level": "easy"
+        },
+        {
+            "id": "0013",
+            "inferId": "roman-to-int",
+            "name": "13. Roman to Integer",
+            "level": "easy"
+        },
+        {
+            "id": "0014",
+            "inferId": "longest-common-prefix",
+            "name": "14. Longest Common Prefix",
+            "level": "easy"
+        },      
+        {
+            "ref": "0020",
+            "name": "20. Valid Parentheses",
+            "level": "easy"
+        },      
+        {
+            "ref": "0021",
+            "name": "21. Merge Two Sorted Lists",
+            "level": "easy"
+        },      
+        {
+            "ref": "0026",
+            "name": "26. Remove Duplicates from Sorted Array",
+            "level": "easy"
+        },                   
+        {
+            "id": "0066",
+            "inferId": "plus-one",
+            "name": "66. Plus One",
+            "level": "easy"
+        },  
+        {
+            "id": "0069",
+            "inferId": "sqrtx",
+            "name": "69. Sqrt(x) ",
+            "level": "easy"
+        },
+        {
+            "ref": "0070",
+            "name": "70. Climbing Stairs",
+            "level": "easy"
+        },
+        {
+            "ref": "0088",
+            "name": "88. Merge Sorted Array",
+            "level": "easy"
+        },
+        {
+            "ref": "0094",
+            "name": "94. Binary Tree Inorder Traversal",
+            "level": "medium"
+        },
+        {
+            "ref": "0101",
+            "name": "101. Symmetric Tree",
+            "level": "easy"
+        },
+        {
+            "ref": "0104",
+            "name": "104. Maximum Depth of Binary Tree",
+            "level": "easy"
+        },
+        {
+            "ref": "0108",
+            "name": "108. Convert Sorted Array to Binary Search Tree",
+            "level": "easy"
+        },       
+        {
+            "id": "0118",
+            "inferId": "pascal-tri",
+            "name": "118. Pascal's Triangle",
+            "level": "easy"
+        },
+        {
+            "id": "0121",
+            "inferId": "best-time",
+            "name": "121. Best Time to Buy and Sell Stock",
+            "level": "easy"
+        },
+        {
+            "id": "0125",
+            "inferId": "valid-pali",
+            "name": "125. Valid Palindrome",
+            "level": "easy"
+        },
+        {
+            "id": "0136",
+            "inferId": "single-num",
+            "name": "136. Single Number",
+            "level": "easy"
+        },
+        {
+            "ref": "0141",
+            "name": "141. Linked List Cycle",
+            "level": "easy" 
+        },             
+        {
+            "id": "0160",
+            "inferId": "intersect",
+            "name": "160. Intersection of Two Linked Lists",
+            "level": "easy" 
+        },
+        {
+            "id": "0163",
+            "inferId": "miss-ranges",
+            "name": "163. Missing Ranges",
+            "level": "easy" 
+        },
+        {
+            "id": "0169",
+            "inferId": "majority",
+            "name": "169. Majority Element",
+            "level": "easy" 
+        },
+        {
+            "id": "0171",
+            "inferId": "excel",
+            "name": "171. Excel Sheet Column Number",
+            "level": "easy" 
+        },
+        {
+            "id": "0190",
+            "inferId": "reverse-bits",
+            "name": "190. Reverse Bits",
+            "level": "easy" 
+        },
+        {
+            "id": "0191",
+            "inferId": "num-1-bits",
+            "name": "191. Number of 1 Bits",
+            "level": "easy" 
+        },
+        {
+            "id": "0202",
+            "inferId": "happy-num",
+            "name": "202. Happy Number",
+            "level": "easy" 
+        },
+        {
+            "ref": "0206",
+            "name": "206. Reverse Linked List",
+            "level": "easy"
+        },  
+        {
+            "ref": "0217",
+            "name": "217. Contains Duplicate",
+            "level": "easy"
+        },
+        {
+            "id": "0234",
+            "inferId": "pali-ll",
+            "name": "234. Palindrome Linked List",
+            "level": "easy" 
+        },
+        {
+            "id": "0242",
+            "inferId": "anagram",
+            "name": "242. Valid Anagram",
+            "level": "easy" 
+        },
+        {
+            "id": "0268",
+            "inferId": "miss-num",
+            "name": "268. Missing Number",
+            "level": "easy" 
+        }, 
+        {
+            "ref": "0283",
+            "name": "283. Move Zeroes",
+            "level": "easy"
+        },                
+        {
+            "id": "0326",
+            "inferId": "power-3",
+            "name": "326. Power of Three",
+            "level": "easy"
+        },       
+        {
+            "ref": "0344",
+            "name": "344. Reverse String",
+            "level": "easy"
+        },           
+        {
+            "id": "0350",
+            "inferId": "intersect-two-arrays",
+            "name": "350. Intersection of Two Arrays II",
+            "level": "easy"
+        },  
+        {
+            "id": "0387",
+            "inferId": "first-unique",
+            "name": "387. First Unique Character in a String",
+            "level": "easy"
+        },     
+        {
+            "id": "0412",
+            "inferId": "fizz-buzz",
+            "name": "412. Fizz Buzz",
+            "level": "easy"
+        },
+        {
+            "ref": "0002",
+            "name": "2. Add Two Numbers",
+            "level": "medium"
+        },
+        {
+            "ref": "0003",
+            "name": "3. Longest Substring Without Repeating Characters",
+            "level": "medium"
+        },      
+        {
+            "ref": "0005",
+            "name": "5. Longest Palindromic Substring",
+            "level": "medium"
+        },   
+        {
+            "ref": "0007",
+            "name": "7. Reverse Integer",
+            "level": "medium"
+        },                            
+        {
+            "ref": "0008",
+            "name": "8. String to Integer (atoi)",
+            "level": "medium"
+        },    
+        {
+            "ref": "0011",
+            "name": "11. Container With Most Water",
+            "level": "medium"
+        },       
+        {
+            "ref": "0015",
+            "name": "15. 3Sum",
+            "level": "medium"
+        }, 
+        {
+            "ref": "0017",
+            "name": "17. Letter Combinations of a Phone Number",
+            "level": "medium"
+        },       
+        {
+            "ref": "0019",
+            "name": "19. Remove Nth Node From End of List",
+            "level": "medium"
+        },   
+        {
+            "ref": "0022",
+            "name": "22. Generate Parentheses",
+            "level": "medium"
+        },        
+        {
+            "ref": "0028",
+            "name": "28. Find the Index of the First Occurrence in a String",
+            "level": "medium"
+        },         
+        {
+            "ref": "0029",
+            "name": "29. Divide Two Integers",
+            "level": "medium"
+        },   
+        {
+            "id": "0033",
+            "inferId": "roated-sorted",
+            "name": "33. Search in Rotated Sorted Array",
+            "level": "medium"
+        },       
+        {
+            "id": "0034",
+            "inferId": "search-range",
+            "name": "34. Find First and Last Position of Element in Sorted Array",
+            "level": "medium"
+        },    
+        {
+            "id": "0036",
+            "inferId": "sudoku",
+            "name": "36. Valid Sudoku",
+            "level": "medium"
+        },        
+        {
+            "id": "0038",
+            "inferId": "count-say",
+            "name": "38. Count and Say",
+            "level": "medium"
+        },     
+        {
+            "id": "0046",
+            "inferId": "permute",
+            "name": "46. Permutations",
+            "level": "medium"
+        },    
+        {
+            "id": "0048",
+            "inferId": "rotate",
+            "name": "48. Rotate Image",
+            "level": "medium"
+        },     
+        {
+            "id": "0049",
+            "inferId": "group-anagrams",
+            "name": "Group Anagrams",
+            "level": "medium"
+        }                           
+    ]
+}

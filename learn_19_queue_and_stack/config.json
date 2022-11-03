@@ -27,13 +27,13 @@
             "level": "medium"
         },
         {
-            "id-": "0752",
+            "id": "0752",
             "inferId": "open",
             "name": "752. Open the Lock",
             "level": "medium"
         },
         {
-            "id-": "0279",
+            "id": "0279",
             "inferId": "perfect-squares",
             "name": "279. Perfect Squares",
             "level": "medium"
@@ -42,7 +42,7 @@
             "id": "0155",
             "inferId": "min-stack",
             "name": "155. Min Stack",
-            "level": "easy"
+            "level": "medium"
         },
         {
             "id": "my006",
@@ -52,73 +52,67 @@
             "like": true
         },
         {
-            "id-": "0020",
+            "id": "0020",
             "inferId": "valid-parentheses",
             "name": "20. Valid Parentheses",
             "level": "easy"
         },      
         {
-            "id-": "0739",
+            "id": "0739",
             "inferId": "daily-temp",
             "name": "739. Daily Temperatures",
             "level": "medium"
         },          
         {
-            "id-": "0150",
+            "id": "0150",
             "inferId": "reverse-polish",
             "name": "150. Evaluate Reverse Polish Notation",
             "level": "medium"
-        },
+        },      
         {
-            "id-": "0200a",
-            "inferId": "islands-stack",
-            "name": "0200. Number of Islands (stack)",
-            "level": "medium"
-        },       
-        {
-            "id-": "0133",
+            "id": "0133",
             "inferId": "clone-graph",
             "name": "133. Clone Graph",
             "level": "medium"
         },         
         {
-            "id-": "0494",
+            "id": "0494",
             "inferId": "target-sum",
             "name": "494. Target Sum",
             "level": "medium"
         },
         {
-            "id-": "0232",
+            "id": "0232",
             "inferId": "q-with-stack",
             "name": "232. Implement Queue using Stacks",
             "level": "easy"
         },           
         {
-            "id-": "0225",
+            "id": "0225",
             "inferId": "stack-with-q",
             "name": "225. Implement Stack using Queues",
             "level": "easy"
         },          
         {
-            "id-": "0394",
+            "id": "0394",
             "inferId": "decode-str",
             "name": "394. Decode String",
             "level": "medium"
         },     
         {
-            "id-": "0733",
+            "id": "0733",
             "inferId": "flood-fill",
             "name": "733. Flood Fill",
             "level": "easy"
         },        
         {
-            "id-": "0542",
+            "id": "0542",
             "inferId": "01-matrix",
             "name": "542. 01 Matrix",
             "level": "medium"
         },     
         {
-            "id-": "0841",
+            "id": "0841",
             "inferId": "keys-rooms",
             "name": "841. Keys and Rooms",
             "level": "medium"

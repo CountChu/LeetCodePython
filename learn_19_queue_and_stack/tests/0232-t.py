@@ -1,11 +1,11 @@
 from data_structure import *
 import pdb
 
-def test(sln, module, op_ls, data_ls, answer_ls):
-    print('op_ls = %s, data_ls = %s, answer_ls = %s' % (op_ls, data_ls, answer_ls))
+def test(module, script_ls):
+    for script in script_ls:
+        print(script)
+        op, data, answer = script 
     
-    for op, data, answer in zip(op_ls, data_ls, answer_ls):
-        print(op, data, answer)
         if op == 'MyQueue':
             obj = module.MyQueue()
         elif op == 'push':
@@ -22,56 +22,15 @@ def test(sln, module, op_ls, data_ls, answer_ls):
         else:
             assert False, op
 
-def run(sln, module):
+def run(sln):
     test(
-        sln, 
-        module,
-        ["MyQueue", "push", "push", "peek", "pop", "empty"],
-        [[], [1], [2], [], [], []],
-        [None, None, None, 1, 1, False])
+        sln.module, 
+        [
+            ["MyQueue",  [],     None],
+            ["push",     [1],    None],
+            ["push",     [2],    None],
+            ["peek",     [],     1],
+            ["pop",      [],     1],
+            ["empty",    [],     False],
+        ])
 
-'''
-class Solution:
-    def __init__(self):
-        pass
-
-class MyQueue:
-
-    def __init__(self):
-        """
-        Initialize your data structure here.
-        """
-        
-
-    def push(self, x: int) -> None:
-        """
-        Push element x to the back of queue.
-        """
-        
-
-    def pop(self) -> int:
-        """
-        Removes the element from in front of queue and returns that element.
-        """
-        
-
-    def peek(self) -> int:
-        """
-        Get the front element.
-        """
-        
-
-    def empty(self) -> bool:
-        """
-        Returns whether the queue is empty.
-        """
-        
-
-
-# Your MyQueue object will be instantiated and called as such:
-# obj = MyQueue()
-# obj.push(x)
-# param_2 = obj.pop()
-# param_3 = obj.peek()
-# param_4 = obj.empty()
-'''

@@ -5,6 +5,7 @@
 from typing import List
 import sys
 import pdb
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",
@@ -14,6 +15,11 @@ solution_json = {
     "fasterThan": "",
     "memory": "?? MB" 
 }
+
+class Node:
+    def __init__(self, val):
+        self.val = val 
+        self.next = None
 
 class Solution:
     def __init__(self):

@@ -32,7 +32,10 @@ class Stack:
 
     def __init__(self):
         pass
-       
+
+    def dump(self):
+        pass
+
     def push(self, val: int) -> None:    	
         pass
 

@@ -6,7 +6,7 @@ def test(sln, image, sr, sc, newColor, answer):
     out = sln.floodFill(image, sr, sc, newColor)
     assert out == answer, out
 
-def run(sln, module):
+def run(sln):
 
     if True:
         test(
@@ -25,9 +25,23 @@ def run(sln, module):
     if True:
         test(
             sln, 
-            [[0,0,0],[0,0,0]],
+            [[0,0,0],
+             [0,0,0]],
             0,
             0,
             2,
-            [[2,2,2],[2,2,2]]
+            [[2,2,2],
+             [2,2,2]]
+            )
+
+    if True:
+        test(
+            sln, 
+            [[0,0,0],
+             [0,1,0]],
+            0,
+            0,
+            2,
+            [[2,2,2],
+             [2,1,2]]
             )

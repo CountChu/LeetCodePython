@@ -22,6 +22,7 @@ solution_json = {
     "design": 0,
     "coding": 0,
     "runtime": "?? ms",
+    "fasterThan": "?%",    
     "memory": "?? MB"       
 }
 
