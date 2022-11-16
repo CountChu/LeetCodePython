@@ -72,29 +72,7 @@ class Solution:
             pre_node.next = n3
         
         return head
-        
-    #
-    # 3/28: I spent 15 mins to write to_linked_list() and to_list()
-    #        
-            
-    def to_linked_list(self, ls):
-        head = ListNode(ls[0])
-        n0 = head
-        for i in range(1, len(ls)):
-            n1 = ListNode(ls[i])
-            n0.next = n1
-            n0 = n1
-        return head
-
-    def to_list(self, head):
-        ls = []
-        node = head
-        while True:
-            ls.append(node.val)
-            if node.next == None:
-                break
-            node = node.next
-        return ls    
+         
         
         
 

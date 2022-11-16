@@ -8,3 +8,5 @@ def run(sln):
     test(sln, "aaaaa", "bba", -1)
     test(sln, "", "", 0)
     test(sln, "mississippi", "issip", 4)
+    test(sln, "aaa", "aaaa", -1)
+    test(sln, "mississippi", "issipi", -1)

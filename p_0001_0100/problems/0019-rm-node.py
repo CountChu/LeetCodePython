@@ -1,15 +1,8 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/remove-nth-node-from-end-of-list/
 #
-# Given an array...
-#
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# Given the head of a linked list, remove the nth node from the end of the list 
+# and return its head.
 # 
 
 from typing import List
@@ -26,19 +19,17 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
         pass
 
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        
+    

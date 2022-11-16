@@ -57,6 +57,11 @@ The app is to test a problem of LeCoo by solutions.
             dest='lesson',
             help='E.g., p_0001_0100')  
 
+    parser.add_argument(
+            '-p',
+            dest='problem',
+            help='Problem ID. E.g., 0002')  
+
     return parser.parse_args()
 
 def display_problems(title, pbl_ls):
@@ -176,6 +181,7 @@ def handle_problem(args, cfg):
             unsolved_pbl_ls.append(problem)
 
     print('Solved Problem: %d' % solved_count)
+    print('')
 
     #
     # Build level_coding_d
@@ -204,27 +210,13 @@ def handle_problem(args, cfg):
     #
     # Build problem['history']
     #
-
+    '''
     for problem in problems:
         if problem['solved']:
             history = util.gen_history(problem['solutions'])
             problem['history'] = history
-
-    if args.detail:
-        for problem in problems:
-            pid = problem['id']
-            name = problem['name']
-            level = problem['level']
-            date = ''
-
-            if problem['solved']:
-                key, sln = util.get_last_solution(problem)
-            else:
-                key = ''
-                
-            print('%6s | %6s | %-14s | %s' % (pid, level, key, name))
-
-    print('')
+    '''
+    #print('')
 
     #
     # Report level_coding_d
@@ -307,25 +299,8 @@ def handle_problem(args, cfg):
         print('%s | %4s | %6s | %s' % (time_str, problem['id'], problem['level'], problem['name']))
 
         line = ' ' * len(time_str) + ' | ' + sln['id'] + ' | '
-        if 'design' in sln:
-            if sln['design'] != 0:
-                line += 'design: %d mins, ' % sln['design']            
+        line += util.get_performance(sln)
         
-        if 'coding' in sln:
-            if sln['coding'] != 0:
-                line += 'coding: %d mins, ' % sln['coding']
-        
-        if 'runtime' in sln:
-            line += 'runtime: %s, ' % sln['runtime']
-        
-        if 'fasterThan' in sln:
-            line += 'fasterThan: %s, ' % sln['fasterThan']
-
-        if 'memory' in sln:
-            line += 'memory: %s, ' % sln['memory']
-        
-        if 'bug' in sln:
-            line += 'bug: %s, ' % sln['bug']
         print(line)
         print('')
 
@@ -336,6 +311,52 @@ def handle_problem(args, cfg):
     #
 
     display_problems('Unsolved problems', unsolved_pbl_ls)
+
+    #
+    # All problem status
+    #
+
+    if args.detail:
+        print('All problems status:')
+        for problem in problems:
+            pid = problem['id']
+            name = problem['name']
+            level = problem['level']
+            date = ''
+
+            if problem['solved']:
+                key, sln = util.get_last_solution(problem)
+            else:
+                key = ''
+                
+            print('%6s | %6s | %-14s | %s' % (pid, level, key, name))
+    print('')    
+
+    #
+    # One problem status
+    #
+
+    if args.problem != None:
+        if args.problem not in cfg['idProblem']:
+            print('Error! The problem %s does not exist.' % args.problem)
+            sys.exit(0)
+
+        problem = cfg['idProblem'][args.problem]
+        pid = problem['id']
+        name = problem['name']
+        level = problem['level']
+        lesson = problem['lesson']
+        print('The problem:   %s | %6s | %s @ %s' % (pid, level, name, lesson))
+
+        print('The history:')
+        #history = problem['history']
+        history = util.gen_history(problem['solutions'])
+        for key in sorted(history.keys()):
+            sln = history[key]
+            line = ' '*15 + key + " | "
+            line += util.get_performance(sln)
+            print(line)
+    print('')
 
 def handle_lesson(args, cfg):
     problems = cfg['problems']

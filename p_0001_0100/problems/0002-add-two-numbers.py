@@ -4,13 +4,16 @@
 
 from typing import List
 import pdb
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",
+    "design": 0,
     "coding": 0,
     "runtime": "?? ms",
+    "fasterThan": "?%",    
     "memory": "?? MB"
-}  
+}
 
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -19,34 +22,4 @@ class ListNode:
 
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
-        return None
-                
-    def to_linked_list(self, ls):
-        head = None
-        pre_node = None
-        for val in ls:
-            node = ListNode(val)
-            if pre_node != None:
-                pre_node.next = node
-            if head == None:
-                head = node
-            pre_node = node    
-            #print(val)
-
-        return head
-
-    def to_list(self, linked_list):
-        ls = []
-        node = linked_list
-        while True:
-            val = node.val
-            #print(val)
-            ls.append(val)
-            node = node.next
-            if node == None:
-                break
-                
-        return ls
-        
-
- 
+        pass

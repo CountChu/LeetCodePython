@@ -11,6 +11,7 @@ def test(sln, s, target):
 def run(sln):
     test(sln, 'babad', 'bab')
     test(sln, 'cbbd', 'bb')    
+    test(sln, 'aacabdkacaa', 'aca')    
     test(sln, 'a', 'a')    
     test(sln, 'ac', 'a')   
     test(sln, 'ccc', 'ccc')

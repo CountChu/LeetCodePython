@@ -1,10 +1,12 @@
 from typing import List
 import pdb
+br = pdb.set_trace
 
 solution_json = {
     "date": "2021/4/17",
     "coding": 46,
     "runtime": "1060 ms",
+    "fasterThan": "87%",    
     "memory": "17.8 MB"
 }   
 
@@ -13,6 +15,7 @@ class Solution:
     def threeSum(self, nums):
         nums.sort()
         #print('nums = %s' % nums)
+        
         n = len(nums)
         out_ls = []
         seen = {}
@@ -26,7 +29,9 @@ class Solution:
             two_sum_ls = self.twoSum(nums[i+1:], v2)
             for two_sum in two_sum_ls:
                 out = [v] + two_sum
+                #print(i, out)
                 out_ls.append(out)
+
         return out_ls
 
     def twoSum(self, nums, target):

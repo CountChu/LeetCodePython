@@ -1,16 +1,14 @@
 #
-# https://leetcode.com/problems/...
-#
-# Given an array...
-#
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# https://leetcode.com/problems/divide-two-integers/
+# Given two integers dividend and divisor, divide two integers 
+# without using multiplication, division, and mod operator.
 # 
+# The integer division should truncate toward zero, which means losing its 
+# fractional part. For example, 8.345 would be truncated to 8, and -2.7335 
+# would be truncated to -2.
+#
+# Return the quotient after dividing dividend by divisor.
+#
 
 from typing import List
 import sys
@@ -30,15 +28,5 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def divide(self, dividend: int, divisor: int) -> int:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

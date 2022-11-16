@@ -1,26 +1,19 @@
 #
+# https://leetcode.com/problems/string-to-integer-atoi/
+#
 # Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer 
 # (similar to C/C++'s atoi function).
 #
-# Example 1:
-#       Input: s = "42"
-#       Output: 42
-#
-# Example 2:
-#       Input: s = "   -42"
-#       Output: -42
-# 
-# Example 3:
-#       Input: s = "4193 with words"
-#       Output: 4193
-#
 
 import pdb
+br = pdb.set_trace
 
 solution_json = {
     "date": "2022/?/??",
+    "design": 0,    
     "coding": 0,
     "runtime": "?? ms",
+    "fasterThan": "",    
     "memory": "?? MB"
 }
 

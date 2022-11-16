@@ -1,15 +1,12 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 #
-# Given an array...
+# Given a string containing digits from 2-9 inclusive, 
+# return all possible letter combinations that the number could represent. 
+# Return the answer in any order.
 #
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# A mapping of digits to letters (just like on the telephone buttons) 
+# is given below. Note that 1 does not map to any letters.
 # 
 
 from typing import List
@@ -30,15 +27,5 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def letterCombinations(self, digits: str) -> List[str]:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

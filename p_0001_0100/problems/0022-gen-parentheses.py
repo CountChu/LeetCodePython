@@ -1,15 +1,8 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/generate-parentheses/
 #
-# Given an array...
-#
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# Given n pairs of parentheses, write a function to generate all combinations 
+# of well-formed parentheses.
 # 
 
 from typing import List
@@ -26,19 +19,23 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+'''
+    n = 1:   ()
+    n = 2:   ()()   (())     ()()
+    n = 3:  
+'''
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def generateParenthesis(self, n: int) -> List[str]:
         pass
 
-    def __str__(self):
-        return ''
 
-    def dump(self):
-        print(str(self))        
+
+
+
+
+
+        

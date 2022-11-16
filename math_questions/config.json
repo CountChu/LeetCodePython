@@ -1,0 +1,15 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0204",
+            "inferId": "count-primes", 
+            "name": "204. Count Primes",
+            "level": "medium"
+        }
+    ]
+}

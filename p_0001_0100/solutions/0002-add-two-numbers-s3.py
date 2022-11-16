@@ -68,33 +68,7 @@ class Solution:
 
         #pdb.set_trace()
         return l3
-                
-    def to_linked_list(self, ls):
-        head = None
-        pre_node = None
-        for val in ls:
-            node = ListNode(val)
-            if pre_node != None:
-                pre_node.next = node
-            if head == None:
-                head = node
-            pre_node = node    
-            #print(val)
 
-        return head
-
-    def to_list(self, linked_list):
-        ls = []
-        node = linked_list
-        while True:
-            val = node.val
-            #print(val)
-            ls.append(val)
-            node = node.next
-            if node == None:
-                break
-                
-        return ls
         
 
  

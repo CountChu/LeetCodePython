@@ -1,15 +1,10 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/3sum/
 #
-# Given an array...
+# Given an integer array nums, return all the triplets [nums[i], nums[j], nums[k]] 
+# such that i != j, i != k, and j != k, and nums[i] + nums[j] + nums[k] == 0.
 #
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# Notice that the solution set must not contain duplicate triplets.
 # 
 
 from typing import List
@@ -26,19 +21,27 @@ solution_json = {
     "memory": "?? MB" 
 }
 
+''' 
+      0  1  2  3   4   5 
+    [-1, 0, 1, 2, -1, -4]
+
+    -4: [5]
+    -1: [0, 4]
+     0: [1]
+     1: [2]
+     2: [3]
+
+     -1+0 = -1  (0, 1)
+     -1+1 = 0   (0, 2)
+     -1+2 = 1   (0, 3)
+     -1-1 = -2  (0, 4)
+     -1-4 = -5  (0, 5)
+
+'''
+
 class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

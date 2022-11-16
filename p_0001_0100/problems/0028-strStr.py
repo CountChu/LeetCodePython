@@ -1,15 +1,8 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/
 #
-# Given an array...
-#
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# Given two strings needle and haystack, return the index of the first occurrence 
+# of needle in haystack, or -1 if needle is not part of haystack.
 # 
 
 from typing import List
@@ -30,15 +23,6 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def strStr(self, haystack: str, needle: str) -> int:
         pass
-
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        
+   

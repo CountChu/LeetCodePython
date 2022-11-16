@@ -1,13 +1,18 @@
 from typing import List
+import sys
 import pdb
 
 solution_json = {
     "date": "2021/4/23",
+    "design": 0,    
     "coding": 8,
     "bug": "Time Limit Exceeded"
 }
 
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
+    
     def divide(self, dividend: int, divisor: int) -> int:
         d = False
 

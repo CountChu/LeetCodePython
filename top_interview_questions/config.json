@@ -63,7 +63,7 @@
         {
             "ref": "0094",
             "name": "94. Binary Tree Inorder Traversal",
-            "level": "medium"
+            "level": "easy"
         },
         {
             "ref": "0101",
@@ -314,6 +314,150 @@
             "inferId": "group-anagrams",
             "name": "Group Anagrams",
             "level": "medium"
-        }                           
+        },
+        {
+            "ref": "0050",
+            "name": "50. Pow(x, n)",
+            "level": "medium"
+        },        
+        {
+            "ref": "0053",
+            "name": "53. Maximum Subarray",
+            "level": "medium"
+        },
+        {
+            "id": "0054",
+            "inferId": "spiral-matrix",
+            "name": "54. Spiral Matrix",
+            "level": "medium"
+        },
+        {
+            "id": "0055",
+            "inferId": "jump-game",
+            "name": "55. Jump Game",
+            "level": "medium"
+        },        
+        {
+            "id": "0056",
+            "inferId": "merge-intervals",
+            "name": "56. Merge Intervals",
+            "level": "medium"
+        },        
+        {
+            "id": "0062",
+            "inferId": "unique-paths",
+            "name": "62. Unique Paths",
+            "level": "medium"
+        },        
+        {
+            "id": "0073",
+            "inferId": "set-matrix-zeroes",
+            "name": "73. Set Matrix Zeroes",
+            "level": "medium"
+        },
+        {
+            "id": "0075",
+            "inferId": "sort-colors",
+            "name": "75. Sort Colors",
+            "level": "medium"
+        },
+        {
+            "id": "0078",
+            "inferId": "subsets",
+            "name": "78. Subsets",
+            "level": "medium"
+        },     
+        {
+            "id": "0079",
+            "inferId": "word-search",
+            "name": "79. Word Search",
+            "level": "medium"
+        },          
+        {
+            "id": "0091",
+            "inferId": "decode-ways",
+            "name": "91. Decode Ways",
+            "level": "medium"
+        },
+        {
+            "ref": "0098",
+            "name": "98. Validate Binary Search Tree",
+            "level": "medium"
+        },    
+        {
+            "ref": "0102",
+            "name": "102. Binary Tree Level Order Traversal",
+            "level": "medium"
+        },             
+        {
+            "id": "0103",
+            "inferId": "bin-tree-zigzag",
+            "name": "103. Binary Tree Zigzag Level Order Traversal",
+            "level": "medium"
+        },    
+        {
+            "ref": "0105",
+            "name": "105. Construct Binary Tree from Preorder and Inorder Traversal",
+            "level": "medium"
+        },  
+        {
+            "ref": "0116",
+            "name": "116. Populating Next Right Pointers in Each Node",
+            "level": "medium"
+        },
+        {
+            "id": "0122",
+            "inferId": "buy-stock",
+            "name": "122. Best Time to Buy and Sell Stock II",
+            "level": "medium"
+        },        
+        {
+            "id": "0128",
+            "inferId": "longest-seq",
+            "name": "128. Longest Consecutive Sequence",
+            "level": "medium"
+        },    
+        {
+            "id": "0130",
+            "inferId": "regions",
+            "name": "130. Surrounded Regions",
+            "level": "medium"
+        },
+        {
+            "id": "0131",
+            "inferId": "pali",
+            "name": "131. Palindrome Partitioning",
+            "level": "medium"
+        },
+        {
+            "id": "0134",
+            "inferId": "gas",
+            "name": "134. Gas Station",
+            "level": "medium"
+        },    
+        {
+            "id": "0138",
+            "inferId": "copy-list",
+            "name": "138. Copy List with Random Pointer",
+            "level": "medium"
+        },         
+        {
+            "id": "0139",
+            "inferId": "word-break",
+            "name": "139. Word Break",
+            "level": "medium"
+        },         
+        {
+            "id": "0146",
+            "inferId": "lru",
+            "name": "146. LRU Cache",
+            "level": "medium"
+        },            
+        {
+            "id": "0148",
+            "inferId": "sort-list",
+            "name": "148. Sort List",
+            "level": "medium"
+        }        
     ]
 }

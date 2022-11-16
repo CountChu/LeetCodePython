@@ -1,15 +1,8 @@
 #
-# https://leetcode.com/problems/...
+# https://leetcode.com/problems/maximum-subarray/
 #
-# Given an array...
-#
-# Example 1:
-#       Input:
-#       Output:
-#
-# Example 2: 
-#       Input:
-#       Output: 
+# Given an integer array nums, find the subarray which has the largest sum 
+# and return its sum.
 # 
 
 from typing import List
@@ -30,15 +23,6 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findNumbers(self, nums: List[int]) -> int:
-        return 0
-
-class MyClass:
-    def __init__(self):
+    def maxSubArray(self, nums: List[int]) -> int:
         pass
 
-    def __str__(self):
-        return ''
-
-    def dump(self):
-        print(str(self))        

@@ -75,4 +75,29 @@ def get_last_solution(problem):
     out = problem['history'][key]
     return key, out
 
+def get_performance(sln):
+    out = ''
+
+    if 'design' in sln:
+        if sln['design'] != 0:
+            out += 'design: %d mins, ' % sln['design']            
+    
+    if 'coding' in sln:
+        if sln['coding'] != 0:
+            out += 'coding: %d mins, ' % sln['coding']
+    
+    if 'runtime' in sln:
+        out += 'runtime: %s, ' % sln['runtime']
+    
+    if 'fasterThan' in sln:
+        out += 'fasterThan: %s, ' % sln['fasterThan']
+
+    if 'memory' in sln:
+        out += 'memory: %s, ' % sln['memory']
+    
+    if 'bug' in sln:
+        out += 'bug: %s, ' % sln['bug']
+
+    return out
+
 
