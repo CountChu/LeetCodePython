@@ -1,4 +1,5 @@
 import sys
+import datetime
 
 import pdb
 br = pdb.set_trace
@@ -27,15 +28,6 @@ from typing import List
 import sys
 import pdb
 br = pdb.set_trace
-
-solution_json = {
-    "date": "2022/?/??",
-    "design": 0,
-    "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
-}
 
 class Solution:
     def __init__(self):
@@ -123,9 +115,32 @@ def run(sln):
 """
     return content  
 
-def solution():
+def solution_0():
     br()
 
+def solution(problem_fn, solution_fn):
+
+    f = open(problem_fn)
+    lines = f.readlines()
+    f.close()
+
+    today = datetime.datetime.now().strftime('%Y/%-m/%-d')
+
+    content = f"""solution_json = {{
+    "date": "{today}",
+    "design": 0,
+    "coding": 0,
+    "runtime": "?? ms",
+    "fasterThan": "??%",
+    "memory": "?? MB"
+}}
+
+"""
+    lines.insert(0, content)
+    
+    f = open(solution_fn, 'w')
+    f.writelines(lines)
+    f.close()
 
 
 
