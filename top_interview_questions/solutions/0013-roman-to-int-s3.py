@@ -1,3 +1,12 @@
+solution_json = {
+    "date": "2023/12/13",
+    "design": 0,
+    "coding": 13,
+    "runtime": "48 ms",
+    "fasterThan": "74%",
+    "memory": "16 MB"
+}
+
 #
 # https://leetcode.com/problems/roman-to-integer/
 #
@@ -29,67 +38,72 @@
 # Given a roman numeral, convert it to an integer.
 #
 
+from typing import List
+import sys
 import pdb
 br = pdb.set_trace
-
-
-solution_json = {
-    "date": "2021/4/11",
-    "again": ["2022/10/31"],
-    "coding": 7,
-    "runtime": "91 ms",
-    "fasterThan": "58%",    
-    "memory": "13.9 MB"
-}
+lg = print
 
 '''
-    0 1 2 3 4 5 6
-    M C M X C I V
-
-    M,    CM,  XC, IV
-    1000, 900, 90, 4    ---> 1994   
-
+    I: 1
+    V: 5
+    X: 10
+    L: 50
+    C: 100
+    D: 500
+    M: 1000
     IV: 4
     IX: 9
     XL: 40
     XC: 90
     CD: 400
     CM: 900
+
+    0 1 2 3 4 5 6
+    M C M X C I V
+    . 1000
+      . . 900 
+          . . 90
+              . . 4
 '''
 
+h = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000,
+    'IV': 4,
+    'IX': 9,
+    'XL': 40,
+    'XC': 90,
+    'CD': 400,
+    'CM': 900,
+}
+
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
 
     def romanToInt(self, s: str) -> int:
-        h = {
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M': 1000,
-            'IV': 4,
-            'IX': 9,
-            'XL': 40,
-            'XC': 90,
-            'CD': 400,
-            'CM': 900,
-        }
-
-        out = 0
+        n = len(s)
         idx = 0
+        out = 0
         while True:
-            cc = s[idx:idx+2]
-
-            if cc not in h:
-                out += h[cc[0]]
-                idx += 1
-            else:
-                out += h[cc]
+            c2 = s[idx:idx+2]
+            if c2 in h:
+                #lg('c2 = %s' % c2)
+                out += h[c2]
                 idx += 2
+            else:
+                c1 = s[idx:idx+1]
+                #lg('c1 = %s' % c1)
+                out += h[c1]
+                idx += 1
 
-            if idx >= len(s):
+            if idx >= n:
                 break
 
-        print('out = %d' % out)
         return out

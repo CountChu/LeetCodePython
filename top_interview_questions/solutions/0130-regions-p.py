@@ -18,7 +18,8 @@ solution_json = {
     "coding": 0,
     "runtime": "?? ms",
     "fasterThan": "",
-    "memory": "?? MB" 
+    "memory": "?? MB",
+    "bug": "Time Limit Exceeded"
 }
 
 '''

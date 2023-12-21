@@ -45,21 +45,21 @@ class Solution:
     def __init__(self):
         self.module = sys.modules[__name__]
 
-    def findMissingRanges(self, nums: List[int], lower: int, upper: int) -> List[str]:
+    def findMissingRanges(self, nums: List[int], lower: int, upper: int) -> List[int]:
         if nums == []:
             if upper - lower == 0:
-                return ['1']
+                return [[1, 1]]
             else:
-                return ['%d->%d'%(lower, upper)]
+                return [[lower, upper]]
 
         out = []
 
         v1 = nums[0]
         if lower < v1:
             if v1 - lower == 1:
-                out.append('%d' % lower)
+                out.append([lower, lower])
             else:
-                out.append('%d->%d' % (lower, v1-1))
+                out.append([lower, v1-1])
 
         for i in range(1, len(nums)):
             v0 = nums[i-1]
@@ -72,16 +72,16 @@ class Solution:
                 v0 += 1
                 v1 -= 1
                 if v0 == v1:
-                    out.append('%d' % v0)
+                    out.append([v0, v0])
                 else:
-                    out.append('%d->%d' % (v0, v1))
+                    out.append([v0, v1])
 
         v0 = nums[-1]
         if v0 < upper:
             if upper - v0 == 1:
-                out.append('%d' % upper)
+                out.append([upper, upper])
             else:
-                out.append('%d->%d' % (v0+1, upper))
+                out.append([v0+1, upper])
 
         return out
 

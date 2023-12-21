@@ -29,67 +29,56 @@
 # Given a roman numeral, convert it to an integer.
 #
 
+from typing import List
+import sys
 import pdb
 br = pdb.set_trace
 
-
 solution_json = {
-    "date": "2021/4/11",
-    "again": ["2022/10/31"],
-    "coding": 7,
-    "runtime": "91 ms",
-    "fasterThan": "58%",    
-    "memory": "13.9 MB"
+    "date": "2023/11/22",
+    "design": 0,
+    "coding": 0,
+    "runtime": "47 ms",
+    "fasterThan": "79%",
+    "memory": "16.45 MB" 
 }
 
-'''
-    0 1 2 3 4 5 6
-    M C M X C I V
+h1 = {
+    'I': 1,
+    'V': 5,
+    'X': 10,
+    'L': 50,
+    'C': 100,
+    'D': 500,
+    'M': 1000,
+    }
 
-    M,    CM,  XC, IV
-    1000, 900, 90, 4    ---> 1994   
-
-    IV: 4
-    IX: 9
-    XL: 40
-    XC: 90
-    CD: 400
-    CM: 900
-'''
+h2 = {
+    'IV': 4,
+    'IX': 9,
+    'XL': 40,
+    'XC': 90,
+    'CD': 400,
+    'CM': 900,
+    }
 
 class Solution:
+    def __init__(self):
+        self.module = sys.modules[__name__]
 
     def romanToInt(self, s: str) -> int:
-        h = {
-            'I': 1,
-            'V': 5,
-            'X': 10,
-            'L': 50,
-            'C': 100,
-            'D': 500,
-            'M': 1000,
-            'IV': 4,
-            'IX': 9,
-            'XL': 40,
-            'XC': 90,
-            'CD': 400,
-            'CM': 900,
-        }
-
+        i = 0
         out = 0
-        idx = 0
         while True:
-            cc = s[idx:idx+2]
-
-            if cc not in h:
-                out += h[cc[0]]
-                idx += 1
-            else:
-                out += h[cc]
-                idx += 2
-
-            if idx >= len(s):
+            if s[i:i+2] in h2:
+                out += h2[s[i:i+2]] 
+                i += 2 
+            elif s[i] in h1:
+                out += h1[s[i]]
+                i += 1 
+            
+            if i >= len(s):
                 break
 
-        print('out = %d' % out)
         return out
+        pass
