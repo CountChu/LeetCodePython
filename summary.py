@@ -1,3 +1,16 @@
+#
+# FILENAME.
+#       summary.py - Summary Python App.
+#
+# FUNCTIONAL DESCRIPTION.
+#       The app summarizes the progress.
+#
+# NOTICE.
+#       Author: visualge@gmail.com (CountChu)
+#       Created on 2021/4/11
+#       Updated on 2023/11/30
+#
+
 import json
 import argparse
 import statistics
@@ -16,7 +29,17 @@ br = pdb.set_trace
 
 def build_args():
     desc = '''
-The app is to test a problem of LeCoo by solutions.
+The app summarizes the progress.
+
+Usage 1:
+    python summary.py lesson
+
+Usage 2:
+    python summary.py problem
+
+Usage 2:
+    python summary.py problem -p    
+
 '''
 
     parser = argparse.ArgumentParser(
