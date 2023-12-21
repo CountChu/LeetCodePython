@@ -9,15 +9,7 @@ from typing import List
 import sys
 import pdb
 br = pdb.set_trace
-
-solution_json = {
-    "date": "2022/?/??",
-    "design": 0,
-    "coding": 0,
-    "runtime": "?? ms",
-    "fasterThan": "",
-    "memory": "?? MB" 
-}
+lg = print
 
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
