@@ -1,6 +1,8 @@
 def test(sln, s, target):
+    print('s = %s, target = %d' % (s, target))    
     out = sln.romanToInt(s)    
-    assert out == target
+    assert out == target, out
+    print('')
 
 def run(sln):
     test(sln, 'MCMXCIV', 1994)    

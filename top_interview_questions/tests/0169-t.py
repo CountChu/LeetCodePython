@@ -12,5 +12,5 @@ def test_solution(sln, nums, target):
     assert out == target
 
 def run(sln):
-    #test_solution(sln, [3, 2, 3], 3)
+    test_solution(sln, [3, 2, 3], 3)
     test_solution(sln, [2, 2, 1, 1, 1, 2, 2], 2)

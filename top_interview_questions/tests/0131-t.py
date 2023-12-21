@@ -6,6 +6,7 @@ br = pdb.set_trace
 def test_solution(sln, s, target):
     print("s = %s, target = %s" % (s, target))
     out = sln.partition(s)
+    out.sort()
     print("out = %s" % out)
     print('')
 

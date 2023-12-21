@@ -15,5 +15,6 @@ def run(sln):
     test_solution(sln, [2, 2, 1], 1)
     test_solution(sln, [4, 1, 2, 1, 2], 4)
     test_solution(sln, [1], 1)
+    test_solution(sln, [1, 0, 1], 0)
 
 

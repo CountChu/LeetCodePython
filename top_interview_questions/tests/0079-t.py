@@ -13,7 +13,7 @@ def test_solution(sln, board, word, target):
 
 
 def run(sln):
-    if 1 == 1:
+    if True:
         test_solution(
             sln, 
             
@@ -25,7 +25,7 @@ def run(sln):
 
             True)
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln,
 
@@ -38,7 +38,7 @@ def run(sln):
             True)
 
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln,
 
@@ -50,7 +50,7 @@ def run(sln):
 
             False)
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln,
 
@@ -60,7 +60,7 @@ def run(sln):
 
             True)
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln, 
 
@@ -71,7 +71,7 @@ def run(sln):
 
              True)
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln, 
 
@@ -82,7 +82,7 @@ def run(sln):
 
              True)
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln, 
 

@@ -13,7 +13,7 @@ def test_solution(sln, matrix, target):
     assert out == target
 
 def run(sln):
-    if 1 == 1:
+    if True:
         test_solution(
             sln,
 
@@ -25,7 +25,7 @@ def run(sln):
              [0,0,0],
              [1,0,1]])
 
-    if 1 == 1:
+    if True:
         test_solution(
             sln,
 

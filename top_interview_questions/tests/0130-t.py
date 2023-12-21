@@ -14,7 +14,7 @@ def test_solution(sln, board, target):
 
 def run(sln):
     
-    if 0 == 1:
+    if False:
         test_solution(
             sln, 
 
@@ -28,7 +28,7 @@ def run(sln):
              ["X","X","X","X"],
              ["X","O","X","X"]])
 
-    if 0 == 1:
+    if False:
         test_solution(
             sln, 
 
@@ -36,7 +36,7 @@ def run(sln):
             
             [["X"]])
 
-    if 1 == 1:
+    if False:
         test_solution(
             sln, 
 
@@ -53,6 +53,18 @@ def run(sln):
              ["X","O","X","X","X","X"],
              ["O","O","X","O","X","X"],
              ["X","X","O","O","O","O"]])
+
+    if True:
+        test_solution(
+            sln, 
+
+            [["O","X","O"],
+             ["X","O","X"],
+             ["O","X","O"]], 
+            
+            [["O","X","O"],
+             ["X","X","X"],
+             ["O","X","O"]])
 
 
 

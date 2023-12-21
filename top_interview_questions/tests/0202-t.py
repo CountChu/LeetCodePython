@@ -14,3 +14,4 @@ def test_solution(sln, n, target):
 def run(sln):
     test_solution(sln, 19, True)
     test_solution(sln, 2, False)
+    test_solution(sln, 1, True)

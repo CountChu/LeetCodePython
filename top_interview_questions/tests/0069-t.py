@@ -10,3 +10,4 @@ def run(sln):
     test(sln, 4, 2)
     test(sln, 8, 2)
     test(sln, 100, 10)
+    test(sln, 0, 0)

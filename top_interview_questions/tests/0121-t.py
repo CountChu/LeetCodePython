@@ -12,6 +12,10 @@ def test_solution(sln, prices, target):
     assert out == target
 
 def run(sln):
+    test_solution(sln, [7, 2, 5, 3, 6, 4, 1, 2, 10], 9)
+    test_solution(sln, [7, 2, 5, 3, 6, 4, 1, 2], 4)
+
     test_solution(sln, [7, 1, 5, 3, 6, 4], 5)
     test_solution(sln, [7, 6, 4, 3, 1], 0)
+    test_solution(sln, [2, 4, 1], 2)
 
