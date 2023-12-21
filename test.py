@@ -1,3 +1,16 @@
+#
+# FILENAME.
+#       test.py - Test Python App.
+#
+# FUNCTIONAL DESCRIPTION.
+#       The app runs a python program by given a solution ID to solve a problem. 
+#
+# NOTICE.
+#       Author: visualge@gmail.com (CountChu)
+#       Created on 2021/4/11
+#       Updated on 2023/11/30
+#
+
 import json
 import argparse
 import os
@@ -18,7 +31,13 @@ br = pdb.set_trace
 
 def build_args():
     desc = '''
-The app is to test a problem of LeCood by solutions.
+The app runs a python program by given a solution ID to solve a problem.
+
+Usage 1:
+    python test.py 0073 -s p
+
+Usage 2:
+    python test.py 0073
 '''
 
     parser = argparse.ArgumentParser(
@@ -60,7 +79,7 @@ def solve_it(test_module, solution):
         print(bn)
         answer = input('Do you want to create it? [y/Y]')
         if answer in ['y', 'Y']:
-            content = gen.solution()
+            content = gen.solution_0()
             f = open(bn, 'w')
             f.wirtelines(content)
             print('Build ', bn)
@@ -126,7 +145,9 @@ def main():
 
     if args.sid == None:
         for solution in problem['solutions']:
+            print('Solution: %s' % solution['id'])
             solve_it(test_module, solution)
+            print('')
 
     else:
 
@@ -154,7 +175,7 @@ def main():
                         solution_bn = '%s-%s-%s.py' % (problem['id'], problem['inferId'], args.sid)
                         solution_fn = os.path.join(problem['lesson'], 'solutions', solution_bn)
                         assert not os.path.exists(solution_fn)
-                        shutil.copy(problem['fn'], solution_fn)
+                        gen.solution(problem['fn'], solution_fn)
                         print(solution_fn)
 
                 sys.exit(0)
