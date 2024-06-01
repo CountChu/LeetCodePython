@@ -148,6 +148,7 @@ def collect(pid):
     for bn in os.listdir('.'):
         fn = os.path.join(bn, 'config.json')
         if os.path.exists(fn):         
+            print('Load %s' % fn)
             lesson_dn_ls.append(bn)   
             f = open(fn)
             cfg = json.load(f)

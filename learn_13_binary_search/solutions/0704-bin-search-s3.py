@@ -31,9 +31,12 @@ solution_json = {
 }
 
 '''
-      i     k     v  j
-      0  1  2  3  4  5
+                  v  
+      0  1  2  3  4   5
     [-1, 0, 3, 5, 9, 12]
+      i     k         j
+               i  k   j
+
 '''
 
 class Solution:
@@ -46,7 +49,7 @@ class Solution:
 
 def func(nums, i, j, target, ctx):
     k = (i + j) // 2
-    #print(i, k, j)
+    print(i, k, j)
     if ctx['out'] != -1:
         return
 

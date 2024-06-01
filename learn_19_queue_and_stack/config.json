@@ -52,9 +52,8 @@
             "like": true
         },
         {
-            "id": "0020",
+            "ref": "0020",
             "inferId": "valid-parentheses",
-            "name": "20. Valid Parentheses",
             "level": "easy"
         },      
         {

@@ -1,0 +1,57 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0202",
+            "inferId": "happy-num",
+            "name": "202. Happy Number",
+            "level": "easy" 
+        },  
+        {
+            "id": "0206",
+            "inferId": "reverse-ll",   
+            "name": "206. Reverse Linked List",
+            "level": "easy"
+        },  
+        {
+            "id": "0234",
+            "inferId": "pali-ll",
+            "name": "234. Palindrome Linked List",
+            "level": "easy" 
+        },
+        {
+            "id": "0236",
+            "inferId": "lca-bin-tree",
+            "name": "236. Lowest Common Ancestor of a Binary Tree",
+            "level": "medium"
+        },   
+        {
+            "id": "0242",
+            "inferId": "anagram",
+            "name": "242. Valid Anagram",
+            "level": "easy" 
+        },
+        {
+            "id": "0268",
+            "inferId": "miss-num",
+            "name": "268. Missing Number",
+            "level": "easy" 
+        },      
+        {
+            "id": "0283",
+            "inferId": "move-zeros",
+            "name": "283. Move Zeroes",
+            "level": "easy"
+        }, 
+        {
+            "id": "0297",
+            "inferId": "serialize",
+            "name": "297. Serialize and Deserialize Binary Tree",
+            "level": "hard"
+        }                                    
+    ]
+}

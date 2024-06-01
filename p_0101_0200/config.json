@@ -1,0 +1,189 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0101",
+            "inferId": "sym-tree",            
+            "name": "101. Symmetric Tree",
+            "level": "easy"
+        },         
+        {
+            "id": "0102",
+            "inferId": "bin-tree-level",            
+            "name": "102. Binary Tree Level Order Traversal",
+            "level": "medium"
+        },   
+        {
+            "id": "0103",
+            "inferId": "bin-tree-zigzag",
+            "name": "103. Binary Tree Zigzag Level Order Traversal",
+            "level": "medium"
+        }, 
+        {
+            "id": "0104",
+            "inferId": "max-depth-bin-tree",            
+            "name": "104. Maximum Depth of Binary Tree",
+            "level": "easy"
+        },
+        {
+            "id": "0105",
+            "inferId": "bin-tree-p-i",            
+            "name": "105. Construct Binary Tree from Preorder and Inorder Traversal",
+            "level": "medium"
+        },         
+        {
+            "id": "0106",
+            "inferId": "bin-tree-i-p",            
+            "name": "106. Construct Binary Tree from Inorder and Postorder Traversal",
+            "level": "easy"
+        },  
+        {
+            "id": "0112",
+            "inferId": "path-sum",            
+            "name": "112. Path Sum",
+            "level": "easy"
+        },   
+        {
+            "id": "0116",
+            "inferId": "next-right-pointers",            
+            "name": "116. Populating Next Right Pointers in Each Node",
+            "level": "medium"
+        },         
+        {
+            "id": "0117",
+            "inferId": "next-right-pointers-ii",
+            "name": "117. Populating Next Right Pointers in Each Node II",
+            "level": "medium"
+        },  
+        {
+            "id": "0118",
+            "inferId": "pascal-tri",
+            "name": "118. Pascal's Triangle",
+            "level": "easy"
+        },
+        {
+            "id": "0119",
+            "inferId": "pascal",   
+            "name": "119. Pascal's Triangle II",
+            "level": "easy"
+        },        
+        {
+            "id": "0121",
+            "inferId": "best-time",
+            "name": "121. Best Time to Buy and Sell Stock",
+            "level": "easy"
+        },
+        {
+            "id": "0122",
+            "inferId": "buy-stock",
+            "name": "122. Best Time to Buy and Sell Stock II",
+            "level": "medium"
+        },  
+        {
+            "id": "0125",
+            "inferId": "valid-pali",
+            "name": "125. Valid Palindrome",
+            "level": "easy"
+        },
+        {
+            "id": "0128",
+            "inferId": "longest-seq",
+            "name": "128. Longest Consecutive Sequence",
+            "level": "medium"
+        }, 
+        {
+            "id": "0130",
+            "inferId": "regions",
+            "name": "130. Surrounded Regions",
+            "level": "medium"
+        },
+        {
+            "id": "0131",
+            "inferId": "pali",
+            "name": "131. Palindrome Partitioning",
+            "level": "medium"
+        },
+        {
+            "id": "0134",
+            "inferId": "gas",
+            "name": "134. Gas Station",
+            "level": "medium"
+        }, 
+        {
+            "id": "0136",
+            "inferId": "single-num",
+            "name": "136. Single Number",
+            "level": "easy"
+        },
+        {
+            "id": "0138",
+            "inferId": "copy-list",
+            "name": "138. Copy List with Random Pointer",
+            "level": "medium"
+        }, 
+        {
+            "id": "0139",
+            "inferId": "word-break",
+            "name": "139. Word Break",
+            "level": "medium"
+        },  
+        {
+            "id": "0141",
+            "inferId": "ll-cycle",
+            "name": "141. Linked List Cycle",
+            "level": "easy" 
+        },
+        {
+            "id": "0146",
+            "inferId": "lru",
+            "name": "146. LRU Cache",
+            "level": "medium"
+        },    
+        {
+            "id": "0148",
+            "inferId": "sort-list",
+            "name": "148. Sort List",
+            "level": "medium"
+        },     
+        {
+            "id": "0160",
+            "inferId": "intersect",
+            "name": "160. Intersection of Two Linked Lists",
+            "level": "easy" 
+        },
+        {
+            "id": "0163",
+            "inferId": "miss-ranges",
+            "name": "163. Missing Ranges",
+            "level": "easy" 
+        },
+        {
+            "id": "0169",
+            "inferId": "majority",
+            "name": "169. Majority Element",
+            "level": "easy" 
+        },
+        {
+            "id": "0171",
+            "inferId": "excel",
+            "name": "171. Excel Sheet Column Number",
+            "level": "easy" 
+        },
+        {
+            "id": "0190",
+            "inferId": "reverse-bits",
+            "name": "190. Reverse Bits",
+            "level": "easy" 
+        },
+        {
+            "id": "0191",
+            "inferId": "num-1-bits",
+            "name": "191. Number of 1 Bits",
+            "level": "easy" 
+        }                              
+    ]
+}

@@ -30,21 +30,18 @@
             "level": "easy"
         },      
         {
-            "id": "0088",
+            "ref": "0088",
             "inferId": "merge-sorted",
-            "name": "88. Merge Sorted Array",
             "level": "easy"
         },
         {
-            "id": "0027",
+            "ref": "0027",
             "inferId": "rm-element",
-            "name": "27. Remove Element",
             "level": "easy"
         },
         {
-            "id": "0026",
+            "ref": "0026",
             "inferId": "rm-dup",
-            "name": "26. Remove Duplicates from Sorted Array",
             "level": "easy"
         },
         {
@@ -66,9 +63,8 @@
             "level": "easy"
         },
         {
-            "id": "0283",
+            "ref": "0283",
             "inferId": "move-zeros",
-            "name": "283. Move Zeroes",
             "level": "easy"
         }, 
         {

@@ -6,8 +6,10 @@
     },
     "problems": [
         {
-            "ref": "0001",
-            "name": "1. Two Sum"
+            "id": "0001",
+            "inferId": "two-sum", 
+            "name": "1. Two Sum",
+            "level": "easy"
         },
         {
             "id": "0002",
@@ -85,13 +87,17 @@
             "level": "medium"
         },
         {
-            "ref": "0013",
-            "name": "13. Roman to Integer"
-        },
-        {
-            "ref": "0014",
+            "id": "0013",
+            "inferId": "roman-to-int",
+            "name": "13. Roman to Integer",
             "level": "easy"
-        },     
+        }, 
+        {
+            "id": "0014",
+            "inferId": "longest-common-prefix",
+            "name": "14. Longest Common Prefix",
+            "level": "easy"
+        },                    
         {
             "id": "0015",
             "inferId": "3sum",
@@ -121,7 +127,19 @@
             "inferId": "rm-node",
             "name": "19. Remove Nth Node From End of List",
             "level": "medium"
-        },                        
+        },      
+        {
+            "id": "0020",
+            "inferId": "valid-parentheses",
+            "name": "20. Valid Parentheses",
+            "level": "easy"
+        },        
+        {
+            "id": "0021",
+            "inferId": "merge",   
+            "name": "21. Merge Two Sorted Lists",
+            "level": "easy"
+        },                              
         {
             "id": "0022",
             "inferId": "gen-parentheses",
@@ -132,12 +150,30 @@
             "id-": "0023",
             "name": "23. Merge k Sorted Lists",
             "level": "hard"
-        },                    
+        },     
+        {
+            "id": "0024",
+            "inferId": "swap-nodes",            
+            "name": "24. Swap Nodes in Pairs",
+            "level": "medium"
+        },         
         {
             "id-": "0025",
             "name": "25. Reverse Nodes in k-Group",
             "level": "hard"
         },            
+        {
+            "id": "0026",
+            "inferId": "rm-dup",
+            "name": "26. Remove Duplicates from Sorted Array",
+            "level": "easy"
+        },
+        {
+            "id": "0027",
+            "inferId": "rm-element",
+            "name": "27. Remove Element",
+            "level": "easy"
+        },
         {
             "id": "0028",
             "inferId": "strStr",
@@ -166,27 +202,83 @@
             "level": "hard"
         }, 
         {
-            "id-": "0033",
+            "id": "0033",
+            "inferId": "roated-sorted",
             "name": "33. Search in Rotated Sorted Array",
             "level": "medium"
         }, 
         {
-            "id-": "0034",
+            "id": "0034",
+            "inferId": "search-range",
             "name": "34. Find First and Last Position of Element in Sorted Array",
             "level": "medium"
-        },                                                 
+        },                                                
         {
             "id": "0035",
             "inferId": "search-insert-pos",
             "name": "35. Search Insert Position",
             "level": "easy"
-        },       
+        },  
+        {
+            "id": "0036",
+            "inferId": "sudoku",
+            "name": "36. Valid Sudoku",
+            "level": "medium"
+        },  
+        {
+            "id": "0038",
+            "inferId": "count-say",
+            "name": "38. Count and Say",
+            "level": "medium"
+        }, 
+        {
+            "id": "0046",
+            "inferId": "permute",
+            "name": "46. Permutations",
+            "level": "medium"
+        },    
+        {
+            "id": "0048",
+            "inferId": "rotate",
+            "name": "48. Rotate Image",
+            "level": "medium"
+        },     
+        {
+            "id": "0049",
+            "inferId": "group-anagrams",
+            "name": "Group Anagrams",
+            "level": "medium"
+        },
+        {
+            "id": "0050",
+            "inferId": "pow",   
+            "name": "50. Pow(x, n)",
+            "level": "medium"
+        },               
         {
             "id": "0053",
             "inferId": "max-subarray",
             "name": "53. Maximum Subarray",
             "level": "easy"
         },
+        {
+            "id": "0054",
+            "inferId": "spiral-matrix",
+            "name": "54. Spiral Matrix",
+            "level": "medium"
+        },
+        {
+            "id": "0055",
+            "inferId": "jump-game",
+            "name": "55. Jump Game",
+            "level": "medium"
+        },        
+        {
+            "id": "0056",
+            "inferId": "merge-intervals",
+            "name": "56. Merge Intervals",
+            "level": "medium"
+        }, 
         {
             "id": "0058",
             "inferId": "length-of-last-word",
@@ -198,11 +290,19 @@
             "inferId": "rotate-list",
             "name": "61. Rotate List",
             "level": "medium"
-        },              
+        },    
         {
-            "ref": "0066",
-            "name": "66. Plus One"
-        },
+            "id": "0062",
+            "inferId": "unique-paths",
+            "name": "62. Unique Paths",
+            "level": "medium"
+        }, 
+        {
+            "id": "0066",
+            "inferId": "plus-one",
+            "name": "66. Plus One",
+            "level": "easy"
+        },                    
         {
             "id": "0067",
             "inferId": "add-binary",
@@ -215,9 +315,41 @@
             "level": "hard"
         },         
         {
-            "ref": "0069",
-            "name": "69. Sqrt(x) "
-        },    
+            "id": "0069",
+            "inferId": "sqrtx",
+            "name": "69. Sqrt(x) ",
+            "level": "easy"
+        },  
+        {
+            "id": "0070",
+            "inferId": "climb",   
+            "name": "70. Climbing Stairs",
+            "level": "easy"
+        },   
+        {
+            "id": "0073",
+            "inferId": "set-matrix-zeroes",
+            "name": "73. Set Matrix Zeroes",
+            "level": "medium"
+        },
+        {
+            "id": "0075",
+            "inferId": "sort-colors",
+            "name": "75. Sort Colors",
+            "level": "medium"
+        },
+        {
+            "id": "0078",
+            "inferId": "subsets",
+            "name": "78. Subsets",
+            "level": "medium"
+        },     
+        {
+            "id": "0079",
+            "inferId": "word-search",
+            "name": "79. Word Search",
+            "level": "medium"
+        },           
         {
             "id": "0082",
             "inferId": "rm-dup",
@@ -237,11 +369,36 @@
             "level": "medium"
         },
         {
+            "id": "0088",
+            "inferId": "merge-sorted",
+            "name": "88. Merge Sorted Array",
+            "level": "easy"
+        },  
+        {
+            "id": "0091",
+            "inferId": "decode-ways",
+            "name": "91. Decode Ways",
+            "level": "medium"
+        },    
+        {
             "id": "0092",
             "inferId": "reverse-ll",
             "name": "92. Reverse Linked List II",
             "level": "medium"
         },        
+        {
+            "id": "0094",
+            "inferId": "bin-tree-in",
+            "name": "94. Binary Tree Inorder Traversal",
+            "level": "easy",
+            "like": true
+        }, 
+        {
+            "id": "0095",
+            "inferId": "unique-bst",   
+            "name": "95. Unique Binary Search Trees II",
+            "level": "medium"
+        },                
         {
             "id": "0100",
             "inferId": "same-tree",

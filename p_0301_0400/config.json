@@ -1,0 +1,33 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0326",
+            "inferId": "power-3",
+            "name": "326. Power of Three",
+            "level": "easy"
+        },  
+        {
+            "id": "0344",
+            "inferId": "reverse-str",
+            "name": "344. Reverse String",
+            "level": "easy"
+        },  
+        {
+            "id": "0350",
+            "inferId": "intersect-two-arrays",
+            "name": "350. Intersection of Two Arrays II",
+            "level": "easy"
+        },  
+        {
+            "id": "0387",
+            "inferId": "first-unique",
+            "name": "387. First Unique Character in a String",
+            "level": "easy"
+        }                           
+    ]
+}

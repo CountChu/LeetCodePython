@@ -69,10 +69,11 @@ def gen_history(sln_ls):
     return out
 
 def get_last_solution(problem):
-    keys = list(problem['history'].keys())
+    history = gen_history(problem['solutions'])
+    keys = list(history.keys())
     keys.sort()
     key = keys[-1]
-    out = problem['history'][key]
+    out = history[key]
     return key, out
 
 def get_performance(sln):

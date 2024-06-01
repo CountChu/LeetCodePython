@@ -31,15 +31,20 @@ def build_args():
     desc = '''
 The app summarizes the progress.
 
-Usage 1:
+Usage 1: List all lessons
     python summary.py lesson
 
-Usage 2:
+Usage 2: List all problems.
     python summary.py problem
 
-Usage 2:
-    python summary.py problem -p    
+Usage 3: Report the solving history of the problem, 0002.
+    python summary.py problem -p 0002
 
+Usage 4: List problems in the lesson, top_interview_questions.
+    python summary.py problem -l top_interview_questions
+
+Usage 5: List problems I like.
+    python summary.py problem --like
 '''
 
     parser = argparse.ArgumentParser(
@@ -100,7 +105,8 @@ def display_problems(title, pbl_ls):
         level = problem['level']
         name = problem['name']
         fmt = '    %'+str(w)+'s, %7s: %s'
-        print(fmt % (id, level, name))
+        #print(fmt % (id, level, name))
+        print('    %-6s| %8s| %s' % (id, level, name))
     print('')
 
 def display_references(title, refer_ls):
@@ -162,13 +168,15 @@ def handle_problem(args, cfg):
             if problem['lesson'] == args.lesson:
                 problems.append(problem)
 
-        display_problems('Liked problems', problems)
+        display_problems('Problems in the lesson:', problems)
 
 
         references = []
         for reference in cfg['references']:
             if reference['lesson'] == args.lesson:
                 references.append(reference)
+
+        references = sorted(references, key=lambda x: x['ref'])
         display_references('Liked problems(refer)', references)
 
         sys.exit(0)
@@ -340,7 +348,7 @@ def handle_problem(args, cfg):
     #
 
     if args.detail:
-        print('All problems status:')
+        print('All problems status: (%d)' % len(problems))
         for problem in problems:
             pid = problem['id']
             name = problem['name']
@@ -376,12 +384,35 @@ def handle_problem(args, cfg):
         history = util.gen_history(problem['solutions'])
         for key in sorted(history.keys()):
             sln = history[key]
-            line = ' '*15 + key + " | "
+            line = '    %-16s' % key + " | "
             line += util.get_performance(sln)
             print(line)
     print('')
 
 def handle_lesson(args, cfg):
+    problems = cfg['problems']
+
+    lesson_count_ref = {}
+
+    for problem in problems:
+        lesson = problem['lesson']
+        if not lesson in lesson_count_ref:
+            lesson_count_ref[lesson] = [0, 0]
+        lesson_count_ref[lesson][0] += 1 
+
+    references = []
+    for reference in cfg['references']:
+        lesson = reference['lesson']
+        if not lesson in lesson_count_ref:
+            lesson_count_ref[lesson] = [0, 0]
+        lesson_count_ref[lesson][1] += 1 
+
+    print('Lessons: Count, Ref - Lesson')
+    for lesson in sorted(lesson_count_ref.keys()):
+        count, ref = lesson_count_ref[lesson]
+        print('    %2d, %2d - %s' % (count, ref, lesson))
+
+def handle_lesson_old(args, cfg):
     problems = cfg['problems']
 
     lessons = set()

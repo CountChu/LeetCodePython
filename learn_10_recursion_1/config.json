@@ -6,21 +6,18 @@
     },
     "problems": [
         {
-            "id": "0344",
+            "ref": "0344",
             "inferId": "reverse-str",
-            "name": "344. Reverse String",
             "level": "easy"
         },
         {
-            "id": "0024",
+            "ref": "0024",
             "inferId": "swap-nodes",            
-            "name": "24. Swap Nodes in Pairs",
             "level": "medium"
         },        
         {
-            "id": "0206",
+            "ref": "0206",
             "inferId": "reverse-ll",   
-            "name": "206. Reverse Linked List",
             "level": "easy"
         },    
         {
@@ -28,9 +25,8 @@
             "name": "700. Search in a Binary Search Tree"
         },       
         {
-            "id": "0119",
+            "ref": "0119",
             "inferId": "pascal",   
-            "name": "119. Pascal's Triangle II",
             "level": "easy"
         },       
         {
@@ -40,9 +36,8 @@
             "level": "easy"
         },        
         {
-            "id": "0070",
+            "ref": "0070",
             "inferId": "climb",   
-            "name": "70. Climbing Stairs",
             "level": "easy"
         },     
         {
@@ -50,15 +45,13 @@
             "name": "104. Maximum Depth of Binary Tree"
         },   
         {
-            "id": "0050",
+            "ref": "0050",
             "inferId": "pow",   
-            "name": "50. Pow(x, n)",
             "level": "medium"
         },     
         {
-            "id": "0021",
+            "ref": "0021",
             "inferId": "merge",   
-            "name": "21. Merge Two Sorted Lists",
             "level": "easy"
         },      
         {
@@ -68,9 +61,8 @@
             "level": "medium"
         },      
         {
-            "id": "0095",
+            "ref": "0095",
             "inferId": "unique-bst",   
-            "name": "95. Unique Binary Search Trees II",
             "level": "medium"
         }                              
     ]

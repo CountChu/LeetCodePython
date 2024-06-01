@@ -12,7 +12,7 @@
             "level": "medium"
         },
         {
-            "id": "0141",
+            "ref": "0141",
             "inferId": "ll-cycle",
             "name": "141. Linked List Cycle",
             "level": "easy" 

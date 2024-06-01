@@ -1,0 +1,15 @@
+{
+    "dirs": {
+        "problemDn": "problems",
+        "solutionDn": "solutions",
+        "testDn": "tests" 
+    },
+    "problems": [
+        {
+            "id": "0412",
+            "inferId": "fizz-buzz",
+            "name": "412. Fizz Buzz",
+            "level": "easy"
+        }                           
+    ]
+}

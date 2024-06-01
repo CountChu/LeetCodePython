@@ -9,73 +9,65 @@ import pdb
 br = pdb.set_trace
 
 solution_json = {
-    "date": "2022/11/5",
+    "date": "2022/11/17",
     "design": 0,    
     "coding": 0,
-    "runtime": "2369 ms",
-    "fasterThan": "32%",    
-    "memory": "13.9 MB"
+    "runtime": "959 ms",
+    "fasterThan": "75%",    
+    "memory": "14 MB"
 } 
 
-'''    
+'''
         0 1 2 3 4
         b a b a d
-          .
+    0   i
+    1     i
+    2       i        
 
         0 1 2 3
         c b b d
-          . .
-
-        0 1 2 3 4 5 6 7 8 9 10
-        a a c a b d k a c a a
-    0   a a 
-        a
-                b         
-
+        i
+          i
 '''
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        n = len(s) 
         out = ''
-        i = 0
-        while True:
-            if i >= len(s):
-                break
+        for i in range(n):
 
-            if i + 1 < len(s) and s[i] == s[i+1]:
-                pali = longest_pali(s, i, i+1)
-                #print(i, pali)
-                if len(out) < len(pali):
-                    out = pali
-
-            pali = longest_pali(s, i, i)
-            #print(i, pali)
+            j, k = find_longest(s, n, i, i)
+            pali = s[j:k+1]
+            #print(i, j, k, pali)
             if len(out) < len(pali):
                 out = pali
 
-            i += 1
+            if i + 1 < n and s[i] == s[i+1]:
+                j, k = find_longest(s, n, i, i+1)
+                pali = s[j:k+1]
+                #print(i, j, k, pali)
+                if len(out) < len(pali):
+                    out = pali
 
         return out
 
-def longest_pali(s, i, j):
-    out = s[i:j+1]
-    i -= 1
-    j += 1
+def find_longest(s, n, i, j):
+    out = None
     while True:
-        if i <= -1:
+        if i < 0:
             break
-        if j >= len(s):
+
+        if j >= n:
             break
 
         if s[i] == s[j]:
-            out = s[i:j+1]
-            #print(i, j, out)
+            out = (i, j)
         else:
             break
 
         i -= 1
         j += 1
 
-    return out
+    return out    
 
 

@@ -110,7 +110,7 @@ Do you want to create it? [y/Y]
 If you enter 'y' or 'Y', it will build a template as below:
 
 0001-two-sum.py
-```
+``` python
 #
 # https://leetcode.com/problems/...
 #
@@ -158,7 +158,7 @@ class MyClass:
 ```
 
 You can modify it as below.
-```
+``` python
 #
 # https://leetcode.com/problems/two-sum/
 #
@@ -205,8 +205,7 @@ Do you want to create it? [y/Y]
 If you enter 'y' or "Y", it will build a test scripts as below:
 
 0001-t.py
-```
-
+``` python
 from data_structure import *
 import pdb
 br = pdb.set_trace
@@ -272,7 +271,7 @@ def run(sln):
 ```
 
 You can clip it for your necessary. For example:
-```
+``` python
 def test(sln, nums, target, answer):
     print('nums = %s, target = %d, answer = %s' % (nums, target, answer))
     out = sln.twoSum(nums, target)
@@ -327,22 +326,28 @@ The 'p' is a postfix of the solution. You can use any postfix. The 'p' is the ab
 
 ## summary.py
 
+Usage 1: List all lessons
 ```
 % python summary.py lesson
-% python summary.py p
+```
+
+Usage 2: List all problems.
+```
 % python summary.py problem
-% python summary.py problem -l p_0001_0100
+```
+
+Usage 3: Report the solving history of the problem, 0002.
+```
+% python summary.py problem -p 0002
+```
+
+Usage 4: List problems in the lesson, top_interview_questions.
+```
+% python summary.py problem -l top_interview_questions
+```
+
+Usage 5: List problems I like.
+```
 % python summary.py p --like
 ```
 
-```
-% python summary.py problem -l learn_heap
-Liked problems: (4)
-     0215,  medium: 215. Kth Largest Element in an Array
-     0347,  medium: 347. Top K Frequent Elements
-    my001,    easy: Implement min heap
-    my002,    easy: Heapify an array
-
-Liked problems(refer): (1)
-    0703 @ learn_binary_search_tree, easy: 703. Kth Largest Element in a Stream
-```

@@ -13,9 +13,8 @@
             "like": true
         },
         {
-            "id": "0094",
+            "ref": "0094",
             "inferId": "bin-tree-in",
-            "name": "94. Binary Tree Inorder Traversal",
             "level": "easy",
             "like": true
         },     
@@ -26,63 +25,53 @@
             "level": "medium"
         },      
         {
-            "id": "0102",
+            "ref": "0102",
             "inferId": "bin-tree-level",            
-            "name": "102. Binary Tree Level Order Traversal",
             "level": "medium"
         },
         {
-            "id": "0104",
+            "ref": "0104",
             "inferId": "max-depth-bin-tree",            
-            "name": "104. Maximum Depth of Binary Tree",
             "level": "easy"
         },
         {
-            "id": "0101",
+            "ref": "0101",
             "inferId": "sym-tree",            
-            "name": "101. Symmetric Tree",
             "level": "easy"
         },       
         {
-            "id": "0112",
+            "ref": "0112",
             "inferId": "path-sum",            
-            "name": "112. Path Sum",
             "level": "easy"
         },
         {
-            "id": "0106",
+            "ref": "0106",
             "inferId": "bin-tree-i-p",            
-            "name": "106. Construct Binary Tree from Inorder and Postorder Traversal",
             "level": "easy"
         },    
         {
-            "id": "0105",
+            "ref": "0105",
             "inferId": "bin-tree-p-i",            
-            "name": "105. Construct Binary Tree from Preorder and Inorder Traversal",
             "level": "medium"
         },         
         {
-            "id": "0116",
+            "ref": "0116",
             "inferId": "next-right-pointers",            
-            "name": "116. Populating Next Right Pointers in Each Node",
             "level": "medium"
         },        
         {
-            "id": "0117",
+            "ref": "0117",
             "inferId": "next-right-pointers-ii",
-            "name": "117. Populating Next Right Pointers in Each Node II",
             "level": "medium"
         },           
         {
-            "id": "0236",
+            "ref": "0236",
             "inferId": "lca-bin-tree",
-            "name": "236. Lowest Common Ancestor of a Binary Tree",
             "level": "medium"
         },        
         {
-            "id": "0297",
+            "ref": "0297",
             "inferId": "serialize",
-            "name": "297. Serialize and Deserialize Binary Tree",
             "level": "hard"
         }        
     ]
